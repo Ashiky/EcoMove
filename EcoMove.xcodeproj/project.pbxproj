@@ -16,6 +16,7 @@
 		672E235A285C82EA00EE809C /* StructProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E2359285C82EA00EE809C /* StructProfile.swift */; };
 		672E235C285C833C00EE809C /* StructTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E235B285C833C00EE809C /* StructTransport.swift */; };
 		672E235E285C839500EE809C /* StructPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E235D285C839500EE809C /* StructPoint.swift */; };
+		672E2364285CBFA200EE809C /* MaConsoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E2363285CBFA200EE809C /* MaConsoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		672E2359285C82EA00EE809C /* StructProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructProfile.swift; sourceTree = "<group>"; };
 		672E235B285C833C00EE809C /* StructTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructTransport.swift; sourceTree = "<group>"; };
 		672E235D285C839500EE809C /* StructPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructPoint.swift; sourceTree = "<group>"; };
+		672E2363285CBFA200EE809C /* MaConsoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaConsoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		672E2347285C7A1600EE809C /* EcoMove */ = {
 			isa = PBXGroup;
 			children = (
+				672E2363285CBFA200EE809C /* MaConsoView.swift */,
 				672E2348285C7A1600EE809C /* EcoMoveApp.swift */,
 				672E234A285C7A1600EE809C /* ContentView.swift */,
 				62F6873C285CBCC200F45564 /* StartViews.swift */,
@@ -167,6 +170,7 @@
 				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
 				672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */,
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
+				672E2364285CBFA200EE809C /* MaConsoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +306,6 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,7 +335,6 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
