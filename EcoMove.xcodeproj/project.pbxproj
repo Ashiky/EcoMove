@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62F6873D285CBCC200F45564 /* StartViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6873C285CBCC200F45564 /* StartViews.swift */; };
 		672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E2348285C7A1600EE809C /* EcoMoveApp.swift */; };
 		672E234B285C7A1600EE809C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E234A285C7A1600EE809C /* ContentView.swift */; };
 		672E234D285C7A1900EE809C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 672E234C285C7A1900EE809C /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62F6873C285CBCC200F45564 /* StartViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViews.swift; sourceTree = "<group>"; };
 		672E2345285C7A1600EE809C /* EcoMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		672E2348285C7A1600EE809C /* EcoMoveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoMoveApp.swift; sourceTree = "<group>"; };
 		672E234A285C7A1600EE809C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				672E2348285C7A1600EE809C /* EcoMoveApp.swift */,
 				672E234A285C7A1600EE809C /* ContentView.swift */,
+				62F6873C285CBCC200F45564 /* StartViews.swift */,
 				672E234C285C7A1900EE809C /* Assets.xcassets */,
 				672E234E285C7A1900EE809C /* Preview Content */,
 			);
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				672E235C285C833C00EE809C /* StructTransport.swift in Sources */,
+				62F6873D285CBCC200F45564 /* StartViews.swift in Sources */,
 				672E235A285C82EA00EE809C /* StructProfile.swift in Sources */,
 				672E234B285C7A1600EE809C /* ContentView.swift in Sources */,
 				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
@@ -298,6 +302,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,6 +331,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
