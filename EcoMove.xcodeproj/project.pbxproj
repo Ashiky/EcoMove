@@ -16,6 +16,9 @@
 		62F6874B285CD8F500F45564 /* TopScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6874A285CD8F500F45564 /* TopScreen.swift */; };
 		62F6874D285CD97C00F45564 /* DetailBonAchat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6874C285CD97C00F45564 /* DetailBonAchat.swift */; };
 		62F6874F285CDAB600F45564 /* ScrollPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6874E285CDAB600F45564 /* ScrollPayment.swift */; };
+		62F68751285D023900F45564 /* RewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68750285D023900F45564 /* RewardView.swift */; };
+		62F68753285D03BB00F45564 /* DetailPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68752285D03BB00F45564 /* DetailPayment.swift */; };
+		62F68755285D075600F45564 /* ButtonPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68754285D075600F45564 /* ButtonPayment.swift */; };
 		672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E2348285C7A1600EE809C /* EcoMoveApp.swift */; };
 		672E234B285C7A1600EE809C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E234A285C7A1600EE809C /* ContentView.swift */; };
 		672E234D285C7A1900EE809C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 672E234C285C7A1900EE809C /* Assets.xcassets */; };
@@ -36,6 +39,9 @@
 		62F6874A285CD8F500F45564 /* TopScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScreen.swift; sourceTree = "<group>"; };
 		62F6874C285CD97C00F45564 /* DetailBonAchat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBonAchat.swift; sourceTree = "<group>"; };
 		62F6874E285CDAB600F45564 /* ScrollPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPayment.swift; sourceTree = "<group>"; };
+		62F68750285D023900F45564 /* RewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardView.swift; sourceTree = "<group>"; };
+		62F68752285D03BB00F45564 /* DetailPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPayment.swift; sourceTree = "<group>"; };
+		62F68754285D075600F45564 /* ButtonPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPayment.swift; sourceTree = "<group>"; };
 		672E2345285C7A1600EE809C /* EcoMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		672E2348285C7A1600EE809C /* EcoMoveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoMoveApp.swift; sourceTree = "<group>"; };
 		672E234A285C7A1600EE809C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,7 +94,10 @@
 				62F68748285CCD2700F45564 /* ScrollBonAchat.swift */,
 				62F6874C285CD97C00F45564 /* DetailBonAchat.swift */,
 				62F6874E285CDAB600F45564 /* ScrollPayment.swift */,
+				62F68752285D03BB00F45564 /* DetailPayment.swift */,
 				62F6874A285CD8F500F45564 /* TopScreen.swift */,
+				62F68750285D023900F45564 /* RewardView.swift */,
+				62F68754285D075600F45564 /* ButtonPayment.swift */,
 				672E234C285C7A1900EE809C /* Assets.xcassets */,
 				672E234E285C7A1900EE809C /* Preview Content */,
 			);
@@ -192,9 +201,12 @@
 				672E235A285C82EA00EE809C /* StructProfile.swift in Sources */,
 				672E234B285C7A1600EE809C /* ContentView.swift in Sources */,
 				62F6874D285CD97C00F45564 /* DetailBonAchat.swift in Sources */,
+				62F68755285D075600F45564 /* ButtonPayment.swift in Sources */,
 				62F68749285CCD2700F45564 /* ScrollBonAchat.swift in Sources */,
+				62F68753285D03BB00F45564 /* DetailPayment.swift in Sources */,
 				62F6874B285CD8F500F45564 /* TopScreen.swift in Sources */,
 				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
+				62F68751285D023900F45564 /* RewardView.swift in Sources */,
 				672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */,
 				62F68741285CC30B00F45564 /* DataRewards.swift in Sources */,
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
