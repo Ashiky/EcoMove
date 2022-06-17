@@ -13,7 +13,7 @@ struct StartViews: View {
             Text("ECOMOVE")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .foregroundColor(Color("greenColor"))
+                .foregroundColor(Color("DarkGreen"))
                 .padding()
             Spacer()
             
