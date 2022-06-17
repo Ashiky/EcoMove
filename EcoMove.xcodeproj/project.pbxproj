@@ -34,6 +34,7 @@
 		672E235A285C82EA00EE809C /* StructProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E2359285C82EA00EE809C /* StructProfile.swift */; };
 		672E235C285C833C00EE809C /* StructTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E235B285C833C00EE809C /* StructTransport.swift */; };
 		672E235E285C839500EE809C /* StructPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E235D285C839500EE809C /* StructPoint.swift */; };
+		672E2364285CBFA200EE809C /* MaConsoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E2363285CBFA200EE809C /* MaConsoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		672E2359285C82EA00EE809C /* StructProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructProfile.swift; sourceTree = "<group>"; };
 		672E235B285C833C00EE809C /* StructTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructTransport.swift; sourceTree = "<group>"; };
 		672E235D285C839500EE809C /* StructPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructPoint.swift; sourceTree = "<group>"; };
+		672E2363285CBFA200EE809C /* MaConsoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaConsoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		672E2347285C7A1600EE809C /* EcoMove */ = {
 			isa = PBXGroup;
 			children = (
+				672E2363285CBFA200EE809C /* MaConsoView.swift */,
 				672E2348285C7A1600EE809C /* EcoMoveApp.swift */,
 				672E234A285C7A1600EE809C /* ContentView.swift */,
 				47BE2211286313880042EEBA /* Reward */,
@@ -295,6 +298,7 @@
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
 				62F68745285CC90C00F45564 /* ButtonDon.swift in Sources */,
 				47DFFFEF2861B36500385E74 /* ScrollDon.swift in Sources */,
+				672E2364285CBFA200EE809C /* MaConsoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
