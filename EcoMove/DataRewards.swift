@@ -16,7 +16,7 @@ struct GetInfo{
     var descriptif: String
 }
 
-let payments = [GetInfo(image: "mountains", name: "virements", icone: "moneybag", price: 20000, subtitle: "Virement à partir de 20€" , descriptif: "")]
+let payments = [GetInfo(image: "mountains", name: "Virements", icone: "moneybag", price: 20000, subtitle: "Virement à partir de 20€" , descriptif: "")]
                 
  let purchase = [GetInfo(image: "woman", name: "Decatlhon", icone: "decathlon", price: 3000, subtitle: "Bon d'achat de 5 euros", descriptif: "Grand texte"),
                  GetInfo(image: "decathlon", name: "Decatlhon", icone: "decathlon", price: 3000, subtitle: "Bon d'achat de 5 euros", descriptif: "Grand texte"),

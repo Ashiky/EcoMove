@@ -28,7 +28,7 @@ struct ScrollBonAchat: View {
                     VStack{
                         HStack{
                             Text(bonpurchase.name)
-                                .font(.largeTitle)
+                                .font(.title)
                             Spacer()
                             Image(bonpurchase.icone)
                                 .resizable()

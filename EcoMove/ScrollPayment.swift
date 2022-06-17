@@ -28,11 +28,11 @@ struct ScrollPayment: View {
                     VStack{
                         HStack{
                             Text(payment.name)
-                                .font(.largeTitle)
+                                .font(.title)
                             Spacer()
                             Image(payment.icone)
                                 .resizable()
-                                .frame(width: 60, height: 50)
+                                .frame(width: 45, height: 45)
                         }
                         .padding(.horizontal)
                         HStack{
