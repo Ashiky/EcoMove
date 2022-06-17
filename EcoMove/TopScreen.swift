@@ -11,22 +11,23 @@ struct TopScreen: View {
     var body: some View {
         VStack(spacing: 20){
             HStack{
-                Text("8000 M")
-                    .font(.title3)
-                    .foregroundColor(.white)
-                   
-                    .background(RoundedRectangle(cornerRadius: 8) .fill(Color("DarkGreen"))
-                        .frame(width: 80, height: 30))
+                Text("8000")
+                    .font(.title2)
+                    .bold()
+                    .foregroundColor(Color("DarkGreen"))
                 Spacer()
                 Text("Historique")
-                    .foregroundColor(Color("DarkGreen"))
-                    .bold()
+                    .font(.subheadline)
+                    .foregroundColor(.white)
+                    .background(RoundedRectangle(cornerRadius: 16) .fill(Color("DarkGreen"))
+                        .frame(width: 90, height: 30))
             }.font(.title)
                 .padding(.top, 50)
-                
-            Text("Valeur en €:")
+            
+            Text("Valeur en €")
+                .foregroundColor(.white)
             Text("4,555 €")
-                .font(.largeTitle)
+                .font(.title)
                 .bold()
                 .foregroundColor(.white)
         }
