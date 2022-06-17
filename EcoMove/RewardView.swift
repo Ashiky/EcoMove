@@ -64,7 +64,8 @@ struct RewardView: View {
                 }
             }
             
-        }.navigationBarHidden(true)
+        }.foregroundColor(.black)
+        .navigationBarHidden(true)
     }
 }
 
