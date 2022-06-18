@@ -19,7 +19,7 @@ struct StartViews: View {
             
             Image("ecomove")
                 .resizable()
-                .frame(width: 250, height: 280, alignment: .center)
+                .frame(width: 350, height: 380, alignment: .center)
             
             Spacer()
             
