@@ -11,16 +11,20 @@ struct TopScreen: View {
     var body: some View {
         VStack(spacing: 20){
             HStack{
-                Text("8000")
+                Text("8000 \(Image(systemName: "millsign.square.fill"))")
                     .font(.title2)
                     .bold()
                     .foregroundColor(Color("DarkGreen"))
                 Spacer()
+                NavigationLink {
+                    HistoryView()
+                } label: {
                 Text("Historique")
                     .font(.subheadline)
                     .foregroundColor(.white)
                     .background(RoundedRectangle(cornerRadius: 16) .fill(Color("DarkGreen"))
                         .frame(width: 90, height: 30))
+                }
             }.font(.title)
                 .padding(.top, 50)
             

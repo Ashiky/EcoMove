@@ -14,7 +14,7 @@ struct RewardView: View {
     var body: some View {
         VStack{
             Spacer()
-            TopScreen()
+            TopCardView()
                 .edgesIgnoringSafeArea(.top)
             Picker("test", selection: $choose, content: {
                 Text("Dons").tag(0)
@@ -64,7 +64,8 @@ struct RewardView: View {
                 }
             }
             
-        }.foregroundColor(.black)
+        }//:VStack
+        .foregroundColor(.black)
             .navigationBarHidden(true)
     }
 }
