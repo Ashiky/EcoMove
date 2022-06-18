@@ -10,6 +10,8 @@
 		62A8C32D285DA9AB00CE251E /* HistoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C32C285DA9AB00CE251E /* HistoryCard.swift */; };
 		62A8C331285DC35300CE251E /* TopCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C330285DC35300CE251E /* TopCardView.swift */; };
 		62A8C333285DC8CC00CE251E /* HistoryTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C332285DC8CC00CE251E /* HistoryTravel.swift */; };
+		62A8C335285DD08A00CE251E /* ComingReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C334285DD08A00CE251E /* ComingReward.swift */; };
+		62A8C337285DD2F300CE251E /* CardPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C336285DD2F300CE251E /* CardPayment.swift */; };
 		62F6873D285CBCC200F45564 /* StartViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6873C285CBCC200F45564 /* StartViews.swift */; };
 		62F68741285CC30B00F45564 /* DataRewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68740285CC30B00F45564 /* DataRewards.swift */; };
 		62F68743285CC5C300F45564 /* ButtonReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68742285CC5C300F45564 /* ButtonReward.swift */; };
@@ -37,6 +39,8 @@
 		62A8C32C285DA9AB00CE251E /* HistoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCard.swift; sourceTree = "<group>"; };
 		62A8C330285DC35300CE251E /* TopCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardView.swift; sourceTree = "<group>"; };
 		62A8C332285DC8CC00CE251E /* HistoryTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTravel.swift; sourceTree = "<group>"; };
+		62A8C334285DD08A00CE251E /* ComingReward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingReward.swift; sourceTree = "<group>"; };
+		62A8C336285DD2F300CE251E /* CardPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPayment.swift; sourceTree = "<group>"; };
 		62F6873C285CBCC200F45564 /* StartViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViews.swift; sourceTree = "<group>"; };
 		62F68740285CC30B00F45564 /* DataRewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRewards.swift; sourceTree = "<group>"; };
 		62F68742285CC5C300F45564 /* ButtonReward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonReward.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 				62A8C332285DC8CC00CE251E /* HistoryTravel.swift */,
 				62A8C330285DC35300CE251E /* TopCardView.swift */,
 				62F68750285D023900F45564 /* RewardView.swift */,
+				62A8C334285DD08A00CE251E /* ComingReward.swift */,
+				62A8C336285DD2F300CE251E /* CardPayment.swift */,
 				62F68754285D075600F45564 /* ButtonPayment.swift */,
 			);
 			path = Views;
@@ -229,6 +235,7 @@
 				62F68743285CC5C300F45564 /* ButtonReward.swift in Sources */,
 				62F6873D285CBCC200F45564 /* StartViews.swift in Sources */,
 				672E235A285C82EA00EE809C /* StructProfile.swift in Sources */,
+				62A8C335285DD08A00CE251E /* ComingReward.swift in Sources */,
 				672E234B285C7A1600EE809C /* ContentView.swift in Sources */,
 				62F6874D285CD97C00F45564 /* DetailBonAchat.swift in Sources */,
 				62F68755285D075600F45564 /* ButtonPayment.swift in Sources */,
@@ -240,6 +247,7 @@
 				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
 				62F68751285D023900F45564 /* RewardView.swift in Sources */,
 				672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */,
+				62A8C337285DD2F300CE251E /* CardPayment.swift in Sources */,
 				62F68741285CC30B00F45564 /* DataRewards.swift in Sources */,
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
 				62F68745285CC90C00F45564 /* ButtonDon.swift in Sources */,
