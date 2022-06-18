@@ -22,18 +22,18 @@ struct RewardView: View {
                 Text("Bons d'achats").tag(2)
             }).pickerStyle(.segmented)
                 .padding(.horizontal)
-               
+            
             
             if choose == 0 {
                 ScrollView{
-                VStack {
-                    ForEach(donations, id: \.name){ dons in
-                        NavigationLink{
-//                            DetailView des dons
-                        } label: {
-//                            ScrollView des dons
-                        }
-                
+                    VStack {
+                        ForEach(donations, id: \.name){ dons in
+                            NavigationLink{
+                                //                            DetailView des dons
+                            } label: {
+                                //                            ScrollView des dons
+                            }
+                            
                         }
                     }
                 }
@@ -46,8 +46,8 @@ struct RewardView: View {
                             } label: {
                                 ScrollBonAchat(bonpurchase: bons)
                             }
+                        }
                     }
-                }
                 }
                 
             } else {
@@ -57,15 +57,15 @@ struct RewardView: View {
                             NavigationLink{
                                 DetailPayment(payment: pay)
                             } label: {
-                               ScrollPayment(payment: pay)
+                                ScrollPayment(payment: pay)
                             }
+                        }
                     }
-                }
                 }
             }
             
         }.foregroundColor(.black)
-        .navigationBarHidden(true)
+            .navigationBarHidden(true)
     }
 }
 

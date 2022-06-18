@@ -19,6 +19,7 @@
 		62F68751285D023900F45564 /* RewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68750285D023900F45564 /* RewardView.swift */; };
 		62F68753285D03BB00F45564 /* DetailPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68752285D03BB00F45564 /* DetailPayment.swift */; };
 		62F68755285D075600F45564 /* ButtonPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68754285D075600F45564 /* ButtonPayment.swift */; };
+		62F68757285D0D0200F45564 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68756285D0D0200F45564 /* HistoryView.swift */; };
 		672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E2348285C7A1600EE809C /* EcoMoveApp.swift */; };
 		672E234B285C7A1600EE809C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E234A285C7A1600EE809C /* ContentView.swift */; };
 		672E234D285C7A1900EE809C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 672E234C285C7A1900EE809C /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		62F68750285D023900F45564 /* RewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardView.swift; sourceTree = "<group>"; };
 		62F68752285D03BB00F45564 /* DetailPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPayment.swift; sourceTree = "<group>"; };
 		62F68754285D075600F45564 /* ButtonPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPayment.swift; sourceTree = "<group>"; };
+		62F68756285D0D0200F45564 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		672E2345285C7A1600EE809C /* EcoMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		672E2348285C7A1600EE809C /* EcoMoveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoMoveApp.swift; sourceTree = "<group>"; };
 		672E234A285C7A1600EE809C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62A8C32A285DA4ED00CE251E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62F68740285CC30B00F45564 /* DataRewards.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62A8C32B285DA50000CE251E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62F6873C285CBCC200F45564 /* StartViews.swift */,
+				62F68742285CC5C300F45564 /* ButtonReward.swift */,
+				62F68744285CC90C00F45564 /* ButtonDon.swift */,
+				62F68746285CCAE100F45564 /* ScrollPurchase.swift */,
+				62F68748285CCD2700F45564 /* ScrollBonAchat.swift */,
+				62F6874C285CD97C00F45564 /* DetailBonAchat.swift */,
+				62F6874E285CDAB600F45564 /* ScrollPayment.swift */,
+				62F68752285D03BB00F45564 /* DetailPayment.swift */,
+				62F6874A285CD8F500F45564 /* TopScreen.swift */,
+				62F68756285D0D0200F45564 /* HistoryView.swift */,
+				62F68750285D023900F45564 /* RewardView.swift */,
+				62F68754285D075600F45564 /* ButtonPayment.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		672E233C285C7A1600EE809C = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +151,8 @@
 				62F6874A285CD8F500F45564 /* TopScreen.swift */,
 				62F68750285D023900F45564 /* RewardView.swift */,
 				62F68754285D075600F45564 /* ButtonPayment.swift */,
+				62A8C32A285DA4ED00CE251E /* Models */,
+				62A8C32B285DA50000CE251E /* Views */,
 				672E234C285C7A1900EE809C /* Assets.xcassets */,
 				672E234E285C7A1900EE809C /* Preview Content */,
 			);
@@ -272,6 +303,7 @@
 				62F68749285CCD2700F45564 /* ScrollBonAchat.swift in Sources */,
 				62F68753285D03BB00F45564 /* DetailPayment.swift in Sources */,
 				62F6874B285CD8F500F45564 /* TopScreen.swift in Sources */,
+				62F68757285D0D0200F45564 /* HistoryView.swift in Sources */,
 				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
 				62F68751285D023900F45564 /* RewardView.swift in Sources */,
 				672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */,
