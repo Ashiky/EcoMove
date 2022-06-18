@@ -83,7 +83,6 @@
 		62A8C32B285DA50000CE251E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				62F6873C285CBCC200F45564 /* StartViews.swift */,
 				62F68742285CC5C300F45564 /* ButtonReward.swift */,
 				62F68744285CC90C00F45564 /* ButtonDon.swift */,
 				62F68746285CCAE100F45564 /* ScrollPurchase.swift */,
@@ -124,6 +123,7 @@
 			children = (
 				672E2348285C7A1600EE809C /* EcoMoveApp.swift */,
 				672E234A285C7A1600EE809C /* ContentView.swift */,
+				62F6873C285CBCC200F45564 /* StartViews.swift */,
 				62A8C32A285DA4ED00CE251E /* Models */,
 				62A8C32B285DA50000CE251E /* Views */,
 				672E234C285C7A1900EE809C /* Assets.xcassets */,
