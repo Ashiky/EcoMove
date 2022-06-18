@@ -9,7 +9,29 @@ import SwiftUI
 
 struct HistoryView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HistoryCard()
+            Text("valeur total:  8000\(Image(systemName: "millsign.square.fill"))")
+            Divider()
+        ScrollView{
+            VStack{
+                ForEach(9...17, id: \.self) { index in
+                    VStack(alignment: .leading, spacing: 10){
+                        Text("\(index) Juin")
+                            .padding(.horizontal)
+                            .font(.title2)
+                        HStack{
+                            Spacer()
+                        HistoryTravel()
+                            Spacer()
+                        }
+                        Divider()
+                    }//: VStack
+                } //: ForEach
+            }//: VStack
+        }//: ScrollView
+        } //: VStack
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
