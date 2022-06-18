@@ -105,7 +105,6 @@
 		62A8C32B285DA50000CE251E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				62F6873C285CBCC200F45564 /* StartViews.swift */,
 				62F68742285CC5C300F45564 /* ButtonReward.swift */,
 				62F68744285CC90C00F45564 /* ButtonDon.swift */,
 				62F68746285CCAE100F45564 /* ScrollPurchase.swift */,
