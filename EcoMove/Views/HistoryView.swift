@@ -8,28 +8,59 @@
 import SwiftUI
 
 struct HistoryView: View {
+    
+    @State var chooseHistory = 0
     var body: some View {
         VStack{
             HistoryCard()
-            Text("valeur total:  8000\(Image(systemName: "millsign.square.fill"))")
-            Divider()
-        ScrollView{
-            VStack{
-                ForEach(9...17, id: \.self) { index in
-                    VStack(alignment: .leading, spacing: 10){
-                        Text("\(index) Juin")
-                            .padding(.horizontal)
-                            .font(.title2)
-                        HStack{
-                            Spacer()
-                        HistoryTravel()
-                            Spacer()
-                        }
-                        Divider()
+            Picker("test", selection: $chooseHistory, content: {
+                Text("Nos points").tag(0)
+                Text("A venir").tag(1)
+            }).pickerStyle(.segmented)
+                .padding(.horizontal)
+            if chooseHistory == 0 {
+                ScrollView{
+                    VStack{
+                        ForEach(9...17, id: \.self) { index in
+                            VStack(alignment: .leading, spacing: 10){
+                                Text("\(index) Juin")
+                                    .padding(.horizontal)
+                                    .font(.title2)
+                                HStack{
+                                    Spacer()
+                                HistoryTravel()
+                                    Spacer()
+                                }
+                                Divider()
+                            }//: VStack
+                        } //: ForEach
                     }//: VStack
-                } //: ForEach
-            }//: VStack
-        }//: ScrollView
+                }//: ScrollView
+            } else {
+                ScrollView{
+                ComingReward()
+                }
+            }
+            
+            Divider()
+            
+//        ScrollView{
+//            VStack{
+//                ForEach(9...17, id: \.self) { index in
+//                    VStack(alignment: .leading, spacing: 10){
+//                        Text("\(index) Juin")
+//                            .padding(.horizontal)
+//                            .font(.title2)
+//                        HStack{
+//                            Spacer()
+//                        HistoryTravel()
+//                            Spacer()
+//                        }
+//                        Divider()
+//                    }//: VStack
+//                } //: ForEach
+//            }//: VStack
+//        }//: ScrollView
         } //: VStack
         .navigationBarTitleDisplayMode(.inline)
     }
