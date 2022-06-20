@@ -38,9 +38,10 @@ struct ScrollBonAchat: View {
                         HStack{
                             Text(bonpurchase.subtitle)
                             Spacer()
-                            Text("\(bonpurchase.price)")
+                            Text(" \(bonpurchase.price) \(Image(systemName:"millsign.square.fill"))")
                                 .bold()
                                 .foregroundColor(Color("DarkGreen"))
+                                
                         }.padding(.horizontal)
                     } //:VStack
                 ) //: ovarlay
@@ -52,6 +53,6 @@ struct ScrollBonAchat: View {
 
 struct ScrollBonAchat_Previews: PreviewProvider {
     static var previews: some View {
-        ScrollBonAchat(bonpurchase: purchase[0])
+        ScrollBonAchat(bonpurchase: purchase[1])
     }
 }

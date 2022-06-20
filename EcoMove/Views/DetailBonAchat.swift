@@ -30,11 +30,14 @@ struct DetailBonAchat: View {
                             
                     }
                     Text(bonpurchase.subtitle)
-                    Text("prix: \(bonpurchase.price)")
-                    Text("Description: ")
-                            .padding()
+                        Text("Prix: \(bonpurchase.price) \(Image(systemName: "millsign.square.fill"))")
+                            .bold()
+                            .foregroundColor(Color("DarkGreen"))
+                            
                 }.padding()
                     Text(bonpurchase.descriptif)
+                        .multilineTextAlignment(.leading)
+                        .padding(.horizontal)
                 
                 }
             }.navigationBarTitleDisplayMode(.inline)
@@ -45,6 +48,6 @@ struct DetailBonAchat: View {
 
 struct DetailBonAchat_Previews: PreviewProvider {
     static var previews: some View {
-        DetailBonAchat(bonpurchase: purchase[0])
+        DetailBonAchat(bonpurchase: purchase[1])
     }
 }
