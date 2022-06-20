@@ -16,9 +16,7 @@
 		62F68741285CC30B00F45564 /* DataRewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68740285CC30B00F45564 /* DataRewards.swift */; };
 		62F68743285CC5C300F45564 /* ButtonReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68742285CC5C300F45564 /* ButtonReward.swift */; };
 		62F68745285CC90C00F45564 /* ButtonDon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68744285CC90C00F45564 /* ButtonDon.swift */; };
-		62F68747285CCAE100F45564 /* ScrollPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68746285CCAE100F45564 /* ScrollPurchase.swift */; };
 		62F68749285CCD2700F45564 /* ScrollBonAchat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68748285CCD2700F45564 /* ScrollBonAchat.swift */; };
-		62F6874B285CD8F500F45564 /* TopScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6874A285CD8F500F45564 /* TopScreen.swift */; };
 		62F6874D285CD97C00F45564 /* DetailBonAchat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6874C285CD97C00F45564 /* DetailBonAchat.swift */; };
 		62F6874F285CDAB600F45564 /* ScrollPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6874E285CDAB600F45564 /* ScrollPayment.swift */; };
 		62F68751285D023900F45564 /* RewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68750285D023900F45564 /* RewardView.swift */; };
@@ -45,9 +43,7 @@
 		62F68740285CC30B00F45564 /* DataRewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRewards.swift; sourceTree = "<group>"; };
 		62F68742285CC5C300F45564 /* ButtonReward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonReward.swift; sourceTree = "<group>"; };
 		62F68744285CC90C00F45564 /* ButtonDon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDon.swift; sourceTree = "<group>"; };
-		62F68746285CCAE100F45564 /* ScrollPurchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPurchase.swift; sourceTree = "<group>"; };
 		62F68748285CCD2700F45564 /* ScrollBonAchat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollBonAchat.swift; sourceTree = "<group>"; };
-		62F6874A285CD8F500F45564 /* TopScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScreen.swift; sourceTree = "<group>"; };
 		62F6874C285CD97C00F45564 /* DetailBonAchat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBonAchat.swift; sourceTree = "<group>"; };
 		62F6874E285CDAB600F45564 /* ScrollPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPayment.swift; sourceTree = "<group>"; };
 		62F68750285D023900F45564 /* RewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardView.swift; sourceTree = "<group>"; };
@@ -89,12 +85,10 @@
 			children = (
 				62F68742285CC5C300F45564 /* ButtonReward.swift */,
 				62F68744285CC90C00F45564 /* ButtonDon.swift */,
-				62F68746285CCAE100F45564 /* ScrollPurchase.swift */,
 				62F68748285CCD2700F45564 /* ScrollBonAchat.swift */,
 				62F6874C285CD97C00F45564 /* DetailBonAchat.swift */,
 				62F6874E285CDAB600F45564 /* ScrollPayment.swift */,
 				62F68752285D03BB00F45564 /* DetailPayment.swift */,
-				62F6874A285CD8F500F45564 /* TopScreen.swift */,
 				62F68756285D0D0200F45564 /* HistoryView.swift */,
 				62A8C32C285DA9AB00CE251E /* HistoryCard.swift */,
 				62A8C332285DC8CC00CE251E /* HistoryTravel.swift */,
@@ -230,7 +224,6 @@
 				62A8C333285DC8CC00CE251E /* HistoryTravel.swift in Sources */,
 				62A8C32D285DA9AB00CE251E /* HistoryCard.swift in Sources */,
 				672E235C285C833C00EE809C /* StructTransport.swift in Sources */,
-				62F68747285CCAE100F45564 /* ScrollPurchase.swift in Sources */,
 				62F6874F285CDAB600F45564 /* ScrollPayment.swift in Sources */,
 				62F68743285CC5C300F45564 /* ButtonReward.swift in Sources */,
 				62F6873D285CBCC200F45564 /* StartViews.swift in Sources */,
@@ -242,7 +235,6 @@
 				62A8C331285DC35300CE251E /* TopCardView.swift in Sources */,
 				62F68749285CCD2700F45564 /* ScrollBonAchat.swift in Sources */,
 				62F68753285D03BB00F45564 /* DetailPayment.swift in Sources */,
-				62F6874B285CD8F500F45564 /* TopScreen.swift in Sources */,
 				62F68757285D0D0200F45564 /* HistoryView.swift in Sources */,
 				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
 				62F68751285D023900F45564 /* RewardView.swift in Sources */,
