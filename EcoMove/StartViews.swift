@@ -14,7 +14,7 @@ struct StartViews: View {
             
             Image("ecomove")
                 .resizable()
-                .frame(width: 350, height: 380, alignment: .center)
+                .frame(width: 380, height: 380, alignment: .center)
             
             Spacer()
             
@@ -28,6 +28,7 @@ struct StartViews: View {
                         .font(.title2)
                         .foregroundColor(.white)
                         .padding())
+                    .padding()
                     
             }
         } //: VStack
@@ -36,6 +37,8 @@ struct StartViews: View {
 
 struct StartViews_Previews: PreviewProvider {
     static var previews: some View {
-        StartViews()
+        Group {
+            StartViews()
+        }
     }
 }
