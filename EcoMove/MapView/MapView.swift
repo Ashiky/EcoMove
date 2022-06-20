@@ -15,6 +15,9 @@ struct Location: Identifiable {
 }
 
 struct MapView: View {
+    
+    @State private var sheetMode: SheetMode = .quarter
+    
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 43.295224, longitude: 5.374155), span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007))
     
     let location = [
@@ -23,15 +26,21 @@ struct MapView: View {
     ]
     
     var body: some View {
-        Map(coordinateRegion: $mapRegion, annotationItems: location) { location in
-            MapMarker(coordinate: location.coordinate, tint: .brown)
-
+        ZStack {
+            Map(coordinateRegion: $mapRegion, annotationItems: location) { location in
+                MapMarker(coordinate: location.coordinate, tint: .brown)
+            }
+            FlexibleSheet(sheetMode: $sheetMode) {
+                ModalViewAdresse()
+            }
+            .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
+            
         }
     }
 }
-
-struct MapView_Previews: PreviewProvider {
-    static var previews: some View {
-        MapView()
+    
+    struct MapView_Previews: PreviewProvider {
+        static var previews: some View {
+            MapView()
+        }
     }
-}

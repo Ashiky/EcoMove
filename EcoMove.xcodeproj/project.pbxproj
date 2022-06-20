@@ -20,6 +20,7 @@
 		9F409C18285CC0F400838CC3 /* ModalViewTrajet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C17285CC0F400838CC3 /* ModalViewTrajet.swift */; };
 		9F409C1A285CC21000838CC3 /* ModalViewWinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C19285CC21000838CC3 /* ModalViewWinPoint.swift */; };
 		9F409C57285FCEC000838CC3 /* FlexibleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C56285FCEC000838CC3 /* FlexibleSheet.swift */; };
+		9F409C59286074C800838CC3 /* ModalViewTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C58286074C800838CC3 /* ModalViewTransport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		9F409C17285CC0F400838CC3 /* ModalViewTrajet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewTrajet.swift; sourceTree = "<group>"; };
 		9F409C19285CC21000838CC3 /* ModalViewWinPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewWinPoint.swift; sourceTree = "<group>"; };
 		9F409C56285FCEC000838CC3 /* FlexibleSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleSheet.swift; sourceTree = "<group>"; };
+		9F409C58286074C800838CC3 /* ModalViewTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewTransport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				9F409C14285CC08E00838CC3 /* ModalViewAdresse.swift */,
+				9F409C58286074C800838CC3 /* ModalViewTransport.swift */,
 				9F409C17285CC0F400838CC3 /* ModalViewTrajet.swift */,
 				9F409C19285CC21000838CC3 /* ModalViewWinPoint.swift */,
 				9F409C56285FCEC000838CC3 /* FlexibleSheet.swift */,
@@ -196,6 +199,7 @@
 				9F409C1A285CC21000838CC3 /* ModalViewWinPoint.swift in Sources */,
 				9F409C0D285CB3CE00838CC3 /* MapView.swift in Sources */,
 				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
+				9F409C59286074C800838CC3 /* ModalViewTransport.swift in Sources */,
 				9F409C18285CC0F400838CC3 /* ModalViewTrajet.swift in Sources */,
 				672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */,
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
@@ -334,7 +338,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,7 +367,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -30,7 +30,7 @@ struct FlexibleSheet<Content: View>: View {
         case .none:
             return UIScreen.main.bounds.height
         case .quarter:
-            return UIScreen.main.bounds.height - 200
+            return UIScreen.main.bounds.height - 300
         case .half:
             return UIScreen.main.bounds.height/2
         case .full:

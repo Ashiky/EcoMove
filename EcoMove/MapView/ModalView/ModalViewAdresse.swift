@@ -25,6 +25,14 @@ struct ModalViewAdresse: View {
             )
             .disableAutocorrection(true)
            
+            Button("Modes de transports alentours") {
+                ModalViewTransport()
+            }
+            .frame(maxWidth: 500, maxHeight: 50, alignment: .center)
+            .foregroundColor(Color("DarkGreen"))
+            .background(.white)
+            .cornerRadius(5)
+            
         }
         .textFieldStyle(.roundedBorder)
         .padding()
