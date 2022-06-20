@@ -11,11 +11,8 @@ struct ButtonDon: View {
     var body: some View {
         VStack{
             Spacer()
-            HStack{
-                
-            }
             Button{
-//               Screen donation
+//               Screen donation validation
             }label: {
                 Text("Faire un Don")
                     .font(.system(size: 25))

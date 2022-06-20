@@ -32,6 +32,7 @@ struct ScrollBonAchat: View {
                             Spacer()
                             Image(bonpurchase.icone)
                                 .resizable()
+                                .aspectRatio(contentMode: .fill)
                                 .frame(width: 100, height: 30)
                         }
                         .padding(.horizontal)

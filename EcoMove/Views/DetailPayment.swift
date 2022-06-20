@@ -17,7 +17,7 @@ struct DetailPayment: View {
                 VStack(alignment: .leading, spacing: 10){
                     Image(payment.image)
                         .resizable()
-                        .frame(width: 400, height: 310)
+                        .frame(maxWidth: .infinity, maxHeight: 300)
                     VStack(alignment: .leading, spacing: 5){
                     HStack{
                         Text(payment.name)
@@ -31,12 +31,13 @@ struct DetailPayment: View {
                     }
                     Text(payment.subtitle)
                             .bold()
+                            
+                    Text("Prix : \(payment.price) \(Image(systemName: "millsign.square.fill"))")
+                            .bold()
                             .foregroundColor(Color("DarkGreen"))
-                            .padding()
-                    Text("prix : \(payment.price)")
-                            .padding()
                 }.padding()
                     Text(payment.descriptif)
+                        .padding()
                 
                 }
             }.navigationBarTitleDisplayMode(.inline)
