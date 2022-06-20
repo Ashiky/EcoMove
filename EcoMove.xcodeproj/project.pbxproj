@@ -15,7 +15,11 @@
 		672E235A285C82EA00EE809C /* StructProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E2359285C82EA00EE809C /* StructProfile.swift */; };
 		672E235C285C833C00EE809C /* StructTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E235B285C833C00EE809C /* StructTransport.swift */; };
 		672E235E285C839500EE809C /* StructPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E235D285C839500EE809C /* StructPoint.swift */; };
-		9F409C0D285CB3CE00838CC3 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C0C285CB3CE00838CC3 /* Map.swift */; };
+		9F409C0D285CB3CE00838CC3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C0C285CB3CE00838CC3 /* MapView.swift */; };
+		9F409C15285CC08E00838CC3 /* ModalViewAdresse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C14285CC08E00838CC3 /* ModalViewAdresse.swift */; };
+		9F409C18285CC0F400838CC3 /* ModalViewTrajet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C17285CC0F400838CC3 /* ModalViewTrajet.swift */; };
+		9F409C1A285CC21000838CC3 /* ModalViewWinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C19285CC21000838CC3 /* ModalViewWinPoint.swift */; };
+		9F409C57285FCEC000838CC3 /* FlexibleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C56285FCEC000838CC3 /* FlexibleSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +32,11 @@
 		672E2359285C82EA00EE809C /* StructProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructProfile.swift; sourceTree = "<group>"; };
 		672E235B285C833C00EE809C /* StructTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructTransport.swift; sourceTree = "<group>"; };
 		672E235D285C839500EE809C /* StructPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructPoint.swift; sourceTree = "<group>"; };
-		9F409C0C285CB3CE00838CC3 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		9F409C0C285CB3CE00838CC3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		9F409C14285CC08E00838CC3 /* ModalViewAdresse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewAdresse.swift; sourceTree = "<group>"; };
+		9F409C17285CC0F400838CC3 /* ModalViewTrajet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewTrajet.swift; sourceTree = "<group>"; };
+		9F409C19285CC21000838CC3 /* ModalViewWinPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewWinPoint.swift; sourceTree = "<group>"; };
+		9F409C56285FCEC000838CC3 /* FlexibleSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +72,7 @@
 			children = (
 				672E2348285C7A1600EE809C /* EcoMoveApp.swift */,
 				672E234A285C7A1600EE809C /* ContentView.swift */,
-				9F409C0C285CB3CE00838CC3 /* Map.swift */,
+				9F409C13285CC07900838CC3 /* MapView */,
 				672E234C285C7A1900EE809C /* Assets.xcassets */,
 				672E234E285C7A1900EE809C /* Preview Content */,
 			);
@@ -88,6 +96,26 @@
 				672E235B285C833C00EE809C /* StructTransport.swift */,
 			);
 			path = Struct;
+			sourceTree = "<group>";
+		};
+		9F409C13285CC07900838CC3 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				9F409C0C285CB3CE00838CC3 /* MapView.swift */,
+				9F409C16285CC09300838CC3 /* ModalView */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		9F409C16285CC09300838CC3 /* ModalView */ = {
+			isa = PBXGroup;
+			children = (
+				9F409C14285CC08E00838CC3 /* ModalViewAdresse.swift */,
+				9F409C17285CC0F400838CC3 /* ModalViewTrajet.swift */,
+				9F409C19285CC21000838CC3 /* ModalViewWinPoint.swift */,
+				9F409C56285FCEC000838CC3 /* FlexibleSheet.swift */,
+			);
+			path = ModalView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,11 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F409C15285CC08E00838CC3 /* ModalViewAdresse.swift in Sources */,
 				672E235C285C833C00EE809C /* StructTransport.swift in Sources */,
 				672E235A285C82EA00EE809C /* StructProfile.swift in Sources */,
+				9F409C57285FCEC000838CC3 /* FlexibleSheet.swift in Sources */,
 				672E234B285C7A1600EE809C /* ContentView.swift in Sources */,
-				9F409C0D285CB3CE00838CC3 /* Map.swift in Sources */,
+				9F409C1A285CC21000838CC3 /* ModalViewWinPoint.swift in Sources */,
+				9F409C0D285CB3CE00838CC3 /* MapView.swift in Sources */,
 				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
+				9F409C18285CC0F400838CC3 /* ModalViewTrajet.swift in Sources */,
 				672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */,
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
 			);
