@@ -14,10 +14,11 @@ struct DetailBonAchat: View {
     var body: some View {
         ZStack{
             ScrollView{
-                VStack(alignment: .leading, spacing: 10){
+                VStack(spacing: 10){
                     Image(bonpurchase.image)
                         .resizable()
-                        .frame(width: 400, height: 310)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 300, height: 300)
                     VStack(alignment: .leading, spacing: 5){
                     HStack{
                         Text(bonpurchase.name)
@@ -26,6 +27,7 @@ struct DetailBonAchat: View {
                         Spacer()
                         Image(bonpurchase.icone)
                             .resizable()
+                            .aspectRatio(contentMode: .fill)
                             .frame(width: 115, height: 50, alignment: .trailing)
                             
                     }
