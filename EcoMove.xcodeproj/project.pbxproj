@@ -371,6 +371,13 @@
 				62F68753285D03BB00F45564 /* DetailPayment.swift in Sources */,
 				47BE220E2862FEBB0042EEBA /* DetailDon.swift in Sources */,
 				62F68757285D0D0200F45564 /* HistoryView.swift in Sources */,
+				676947962863145400EE5C16 /* GraphiqueEMView.swift in Sources */,
+				62F6873D285CBCC200F45564 /* StartViews.swift in Sources */,
+				672E235A285C82EA00EE809C /* StructProfile.swift in Sources */,
+				67893C3928606B4700E6D14B /* PickerMaConso.swift in Sources */,
+				672E234B285C7A1600EE809C /* ContentView.swift in Sources */,
+				676947742862FB9B00EE5C16 /* GraphiquePHView.swift in Sources */,
+				67CB03672862025F007E648C /* Test.swift in Sources */,
 				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
 				62F68751285D023900F45564 /* RewardView.swift in Sources */,
 				672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */,
@@ -380,6 +387,13 @@
 				62F68745285CC90C00F45564 /* ButtonDon.swift in Sources */,
 				47DFFFEF2861B36500385E74 /* ScrollDon.swift in Sources */,
 				672E2364285CBFA200EE809C /* MaConsoView.swift in Sources */,
+				67893C3B286071F700E6D14B /* MaconsoView.swift in Sources */,
+				67694777286303E100EE5C16 /* GraphiqueEHView.swift in Sources */,
+				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
+				672E2364285CBFA200EE809C /* MaConsoQView.swift in Sources */,
+				676947982863157400EE5C16 /* GraphiquePMView.swift in Sources */,
+				6769479A286315F800EE5C16 /* MaConsoMView.swift in Sources */,
+				67893C3D28607D7100E6D14B /* MaConsoHView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
