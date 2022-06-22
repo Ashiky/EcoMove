@@ -173,13 +173,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		62A8C32B285DA50000CE251E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		672E233C285C7A1600EE809C = {
 			isa = PBXGroup;
 			children = (
