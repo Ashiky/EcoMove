@@ -1,9 +1,4 @@
-//
-//  StartViews.swift
-//  EcoMove
-//
-//  Created by Tristan Aly on 17/06/2022.
-//
+
 
 import SwiftUI
 
