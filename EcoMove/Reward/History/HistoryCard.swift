@@ -12,6 +12,8 @@ struct HistoryCard: View {
         VStack(spacing: 2){
             HStack{
                 Text("@Chris_REDFIELD")
+                    .foregroundColor(Color("DarkGreen"))
+                    .bold()
                 Spacer()
             }.padding()
             Image("ecomove")
@@ -24,6 +26,7 @@ struct HistoryCard: View {
                 Image(systemName: "chevron.right.2")
             }.font(.title)
                 .foregroundColor(Color("DarkGreen"))
+                .font(Font.system(size: 60, weight: .bold))
                 .padding()
         }.padding()
             .background( RoundedRectangle(cornerRadius: 8)

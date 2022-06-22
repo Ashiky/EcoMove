@@ -15,12 +15,12 @@ struct CardPayment: View {
                     .font(.system(size: 40))
                     .foregroundColor(Color("DarkGreen"))
                 VStack(alignment: .leading,spacing: 5){
-                Text("Virement de 20€")
+                Text("Virement de 20 €")
                         .font(.title3)
                     Text("12h30")
                         .font(.subheadline)
                 }
-                Text("20 \(Image(systemName: "dollarsign.circle.fill"))")
+                Text("20 \(Image(systemName: "eurosign.circle.fill"))")
                     .font(.system(size: 30))
                     .foregroundColor(Color("DarkGreen"))
             }
