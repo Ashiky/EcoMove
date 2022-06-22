@@ -151,13 +151,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		62A8C32B285DA50000CE251E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		672E233C285C7A1600EE809C = {
 			isa = PBXGroup;
 			children = (
@@ -182,7 +175,6 @@
 				672E234A285C7A1600EE809C /* ContentView.swift */,
 				47BE2211286313880042EEBA /* Reward */,
 				62F6873C285CBCC200F45564 /* StartViews.swift */,
-				62A8C32B285DA50000CE251E /* Views */,
 				672E234C285C7A1900EE809C /* Assets.xcassets */,
 				672E234E285C7A1900EE809C /* Preview Content */,
 			);
