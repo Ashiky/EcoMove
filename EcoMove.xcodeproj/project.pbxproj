@@ -176,6 +176,7 @@
 		672E233C285C7A1600EE809C = {
 			isa = PBXGroup;
 			children = (
+				672E2348285C7A1600EE809C /* EcoMoveApp.swift */,
 				672E2356285C7EE300EE809C /* Struct */,
 				672E2347285C7A1600EE809C /* EcoMove */,
 				672E2346285C7A1600EE809C /* Products */,
@@ -194,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				67893C3028605A1E00E6D14B /* MaConso */,
-				672E2348285C7A1600EE809C /* EcoMoveApp.swift */,
 				672E234A285C7A1600EE809C /* ContentView.swift */,
 				47BE2211286313880042EEBA /* Reward */,
 				62F6873C285CBCC200F45564 /* StartViews.swift */,
@@ -356,7 +356,7 @@
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
 				62F68745285CC90C00F45564 /* ButtonDon.swift in Sources */,
 				47DFFFEF2861B36500385E74 /* ScrollDon.swift in Sources */,
-				672E2364285CBFA200EE809C /* MaConsoView.swift in Sources */,
+				672E2364285CBFA200EE809C /* MaConsoQView.swift in Sources */,
 				67893C3B286071F700E6D14B /* MaconsoView.swift in Sources */,
 				67694777286303E100EE5C16 /* GraphiqueEHView.swift in Sources */,
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
