@@ -26,7 +26,8 @@ struct RewardView: View {
            
             if choose == 0 {
                 ScrollView{
-                    VStack (spacing: 25) {
+                    Spacer(minLength: 33)
+                    VStack(spacing: 40) {
                         ForEach(donations, id: \.name){ dons in
                             NavigationLink{
                                 DetailDon(donations: dons)//                            DetailView des dons
