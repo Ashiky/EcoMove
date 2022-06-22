@@ -9,17 +9,33 @@ import SwiftUI
 
 struct ComingReward: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 10){
-            Text("20 Juin 2022")
-                .padding(.horizontal)
+        VStack(alignment: .leading){
+            Text("20 Juin")
                 .font(.title2)
-            HStack{
-                Spacer()
-            CardPayment()
-                Spacer()
+                .padding()
+        VStack{
+            
+            HStack(spacing: 24){
+                Image(systemName:"millsign.square.fill")
+                    .font(.system(size: 50))
+                    .foregroundColor(Color("DarkGreen"))
+                VStack(alignment: .leading,spacing: 5){
+                Text("Virement de 20€")
+                        .font(.title3)
+                    Text("12h30")
+                        .font(.subheadline)
+                }
+                Text("400 \(Image(systemName: "millsign.circle.fill"))")
+                    .font(.system(size: 30))
+                    .foregroundColor(Color("DarkGreen"))
             }
-            Divider()
-        }//: VStack
+        }
+        .padding()
+        .background(RoundedRectangle(cornerRadius: 8)
+            .fill(.white)
+            .frame(width: 370)
+            .shadow(color: Color("DarkGreen"), radius: 5, x: 2, y: 3))//: VStack
+        }
     }
 }
 

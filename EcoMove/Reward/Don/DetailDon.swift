@@ -12,7 +12,7 @@ struct DetailDon: View {
     let donations: GetInfoDon
     
     var body: some View {
-        ZStack{
+        VStack{
             ScrollView{
                 VStack(spacing: 10){
                     Image(donations.image)
@@ -41,7 +41,7 @@ struct DetailDon: View {
                 }
             }.navigationBarTitleDisplayMode(.inline)
             ButtonDon()
-        } //: ZStack
+        } //: VStack
     }
 }
 

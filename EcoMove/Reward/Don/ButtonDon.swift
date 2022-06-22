@@ -10,7 +10,6 @@ import SwiftUI
 struct ButtonDon: View {
     var body: some View {
         VStack{
-            Spacer()
             Button{
 //               Screen donation validation
             }label: {
@@ -30,5 +29,6 @@ struct ButtonDon: View {
 struct ButtonDon_Previews: PreviewProvider {
     static var previews: some View {
         ButtonDon()
+            .previewLayout(.sizeThatFits)
     }
 }

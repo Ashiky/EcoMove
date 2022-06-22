@@ -12,7 +12,7 @@ struct DetailBonAchat: View {
     let bonpurchase: GetInfo
     
     var body: some View {
-        ZStack{
+        VStack{
             ScrollView{
                 VStack(spacing: 10){
                     Image(bonpurchase.image)
@@ -44,7 +44,7 @@ struct DetailBonAchat: View {
                 }
             }.navigationBarTitleDisplayMode(.inline)
             ButtonReward()
-        } //: ZStack
+        } //: VStack
     }
 }
 
