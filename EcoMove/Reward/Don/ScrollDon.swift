@@ -28,7 +28,7 @@ struct ScrollDon: View {
                 .cornerRadius(8)
                 .shadow(color: .black.opacity(0.2), radius: 2, x: 2, y: 1)
                 .padding()
-                .offset(y:-22)
+                .offset(y:-32)
                
             Rectangle()
                 .fill(.white)
@@ -36,16 +36,17 @@ struct ScrollDon: View {
                 .cornerRadius(8)
                 .shadow(color: .black.opacity(0.3), radius: 5, x: 4, y: 3)
                 .overlay(
-                    VStack{
+                    VStack(alignment: .leading){
                         Text(donations.name)
                             .font(.title2)
                             .bold()
+                        Text(donations.subtitle)
+                            .font(.footnote)
+                            .multilineTextAlignment(.leading)
                         Spacer()
                         
                         VStack{
-                            Text(donations.subtitle)
                             Spacer()
-                            
                             ProgressDon(getInfoDon:donations)
                             
                             
@@ -70,12 +71,14 @@ struct ScrollDon: View {
                             }
                         }
                         Spacer()
-                    }.padding(.horizontal)
+                    } // VStack
+                        .padding(.horizontal)
                        
-                    )}//:VStack
-                    //: ovarlay
-    
-    }//:ZStack
+                    )//: overlay
+            
+        }//:ZStack
+              
+    }//:VStack
     
 }
 }

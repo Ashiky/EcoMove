@@ -88,7 +88,7 @@ struct GetInfoDon{
 }
 
 let donations = [
-    GetInfoDon(image: "croixR", name: "Convoi humanitaire", donne: 70000, objectif: 3500000, subtitle: "Financez l'acheminement des dons humanitaires en UKRAINE", descriptif: """
+    GetInfoDon(image: "wars", name: "Convoi humanitaire", donne: 70000, objectif: 3500000, subtitle: "Financez l'acheminement des dons humanitaires en UKRAINE", descriptif: """
                         Les bénévoles de la Croix-Rouge française s’engagent quotidiennement dans les missions les plus diverses. Ils investissent leur temps et leur énergie pour venir en aide et soulager les souffrances.
                         
                         Par leur dévouement, nos 60 000 bénévoles entretiennent l’espoir d’un lendemain meilleur auprès de toutes les personnes en situation de vulnérabilité.
