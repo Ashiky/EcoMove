@@ -386,7 +386,7 @@
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
 				62F68745285CC90C00F45564 /* ButtonDon.swift in Sources */,
 				47DFFFEF2861B36500385E74 /* ScrollDon.swift in Sources */,
-				672E2364285CBFA200EE809C /* MaConsoView.swift in Sources */,
+				672E2364285CBFA200EE809C /* MaConsoQView.swift in Sources */,
 				67893C3B286071F700E6D14B /* MaconsoView.swift in Sources */,
 				67694777286303E100EE5C16 /* GraphiqueEHView.swift in Sources */,
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
