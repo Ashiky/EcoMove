@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47BE220E2862FEBB0042EEBA /* DetailDon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE220D2862FEBB0042EEBA /* DetailDon.swift */; };
+		47BE22102863014B0042EEBA /* ProgressDon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE220F2863014B0042EEBA /* ProgressDon.swift */; };
+		47DFFFEF2861B36500385E74 /* ScrollDon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DFFFEE2861B36500385E74 /* ScrollDon.swift */; };
 		62A8C32D285DA9AB00CE251E /* HistoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C32C285DA9AB00CE251E /* HistoryCard.swift */; };
 		62A8C331285DC35300CE251E /* TopCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C330285DC35300CE251E /* TopCardView.swift */; };
 		62A8C333285DC8CC00CE251E /* HistoryTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C332285DC8CC00CE251E /* HistoryTravel.swift */; };
@@ -45,6 +48,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47BE220D2862FEBB0042EEBA /* DetailDon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDon.swift; sourceTree = "<group>"; };
+		47BE220F2863014B0042EEBA /* ProgressDon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDon.swift; sourceTree = "<group>"; };
+		47DFFFEE2861B36500385E74 /* ScrollDon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollDon.swift; sourceTree = "<group>"; };
 		62A8C32C285DA9AB00CE251E /* HistoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCard.swift; sourceTree = "<group>"; };
 		62A8C330285DC35300CE251E /* TopCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardView.swift; sourceTree = "<group>"; };
 		62A8C332285DC8CC00CE251E /* HistoryTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTravel.swift; sourceTree = "<group>"; };
@@ -94,6 +100,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47BE2211286313880042EEBA /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+				62F68750285D023900F45564 /* RewardView.swift */,
+				62A8C330285DC35300CE251E /* TopCardView.swift */,
+				47BE22162863147A0042EEBA /* Payment */,
+				47BE22132863140D0042EEBA /* History */,
+				47BE2214286314270042EEBA /* BonAchat */,
+				47BE2212286313E80042EEBA /* Reward */,
+				47BE2215286314640042EEBA /* Don */,
+				62A8C32A285DA4ED00CE251E /* Models */,
+			);
+			path = Reward;
+			sourceTree = "<group>";
+		};
+		47BE2212286313E80042EEBA /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+				62A8C334285DD08A00CE251E /* ComingReward.swift */,
+				62F68742285CC5C300F45564 /* ButtonReward.swift */,
+			);
+			path = Reward;
+			sourceTree = "<group>";
+		};
+		47BE22132863140D0042EEBA /* History */ = {
+			isa = PBXGroup;
+			children = (
+				62F68756285D0D0200F45564 /* HistoryView.swift */,
+				62A8C32C285DA9AB00CE251E /* HistoryCard.swift */,
+				62A8C332285DC8CC00CE251E /* HistoryTravel.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		47BE2214286314270042EEBA /* BonAchat */ = {
+			isa = PBXGroup;
+			children = (
+				62F68748285CCD2700F45564 /* ScrollBonAchat.swift */,
+				62F6874C285CD97C00F45564 /* DetailBonAchat.swift */,
+			);
+			path = BonAchat;
+			sourceTree = "<group>";
+		};
+		47BE2215286314640042EEBA /* Don */ = {
+			isa = PBXGroup;
+			children = (
+				47DFFFEE2861B36500385E74 /* ScrollDon.swift */,
+				47BE220F2863014B0042EEBA /* ProgressDon.swift */,
+				47BE220D2862FEBB0042EEBA /* DetailDon.swift */,
+				62F68744285CC90C00F45564 /* ButtonDon.swift */,
+			);
+			path = Don;
+			sourceTree = "<group>";
+		};
+		47BE22162863147A0042EEBA /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				62F6874E285CDAB600F45564 /* ScrollPayment.swift */,
+				62F68752285D03BB00F45564 /* DetailPayment.swift */,
+				62A8C336285DD2F300CE251E /* CardPayment.swift */,
+				62F68754285D075600F45564 /* ButtonPayment.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
 		62A8C32A285DA4ED00CE251E /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,20 +176,6 @@
 		62A8C32B285DA50000CE251E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				62F68742285CC5C300F45564 /* ButtonReward.swift */,
-				62F68744285CC90C00F45564 /* ButtonDon.swift */,
-				62F68748285CCD2700F45564 /* ScrollBonAchat.swift */,
-				62F6874C285CD97C00F45564 /* DetailBonAchat.swift */,
-				62F6874E285CDAB600F45564 /* ScrollPayment.swift */,
-				62F68752285D03BB00F45564 /* DetailPayment.swift */,
-				62F68756285D0D0200F45564 /* HistoryView.swift */,
-				62A8C32C285DA9AB00CE251E /* HistoryCard.swift */,
-				62A8C332285DC8CC00CE251E /* HistoryTravel.swift */,
-				62A8C330285DC35300CE251E /* TopCardView.swift */,
-				62F68750285D023900F45564 /* RewardView.swift */,
-				62A8C334285DD08A00CE251E /* ComingReward.swift */,
-				62A8C336285DD2F300CE251E /* CardPayment.swift */,
-				62F68754285D075600F45564 /* ButtonPayment.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,6 +203,7 @@
 				67893C3028605A1E00E6D14B /* MaConso */,
 				672E2348285C7A1600EE809C /* EcoMoveApp.swift */,
 				672E234A285C7A1600EE809C /* ContentView.swift */,
+				47BE2211286313880042EEBA /* Reward */,
 				62F6873C285CBCC200F45564 /* StartViews.swift */,
 				67CB03662862025F007E648C /* Test.swift */,
 				62F68740285CC30B00F45564 /* DataRewards.swift */,
@@ -309,11 +367,13 @@
 				676947982863157400EE5C16 /* GraphiquePMView.swift in Sources */,
 				6769479A286315F800EE5C16 /* MaConsoMView.swift in Sources */,
 				67893C3D28607D7100E6D14B /* MaConsoHView.swift in Sources */,
+				47BE22102863014B0042EEBA /* ProgressDon.swift in Sources */,
 				62F6874D285CD97C00F45564 /* DetailBonAchat.swift in Sources */,
 				62F68755285D075600F45564 /* ButtonPayment.swift in Sources */,
 				62A8C331285DC35300CE251E /* TopCardView.swift in Sources */,
 				62F68749285CCD2700F45564 /* ScrollBonAchat.swift in Sources */,
 				62F68753285D03BB00F45564 /* DetailPayment.swift in Sources */,
+				47BE220E2862FEBB0042EEBA /* DetailDon.swift in Sources */,
 				62F68757285D0D0200F45564 /* HistoryView.swift in Sources */,
 				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
 				62F68751285D023900F45564 /* RewardView.swift in Sources */,
@@ -322,6 +382,7 @@
 				62F68741285CC30B00F45564 /* DataRewards.swift in Sources */,
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
 				62F68745285CC90C00F45564 /* ButtonDon.swift in Sources */,
+				47DFFFEF2861B36500385E74 /* ScrollDon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

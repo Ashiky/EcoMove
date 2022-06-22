@@ -12,6 +12,8 @@ struct TopCardView: View {
         VStack(spacing: 2){
             HStack{
                 Text("@Chris_REDFIELD")
+                    .foregroundColor(Color("DarkGreen"))
+                    .bold()
                 Spacer()
             
             Image("ecomove")
@@ -23,11 +25,14 @@ struct TopCardView: View {
                 .rotationEffect(.degrees(2))
             Text("8000 \(Image(systemName: "millsign.square.fill"))")
                 .font(.largeTitle)
+                .foregroundColor(.white)
                 .fontWeight(.bold)
                 .padding()
             HStack{
             Text("4.555 € ")
                         .font(.title3)
+                        .foregroundColor(Color("DarkGreen"))
+                        .bold()
                 Spacer()
                 NavigationLink {
                     HistoryView()

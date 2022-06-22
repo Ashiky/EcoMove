@@ -80,8 +80,7 @@ let purchase = [
 struct GetInfoDon{
     var image: String
     var name: String
-    var icone: String
-    var Donné: Int
+    var donne: Int
     var objectif: Int
     var subtitle: String
     var descriptif: String
@@ -89,22 +88,22 @@ struct GetInfoDon{
 }
 
 let donations = [
-    GetInfoDon(image: "croixR", name: "Ecole pour 800 enfants", icone: "croixRouge", Donné: 70000, objectif: 3500000, subtitle: "Financez la réparation de 2 établissement scolaire", descriptif: """
+    GetInfoDon(image: "croixR", name: "Convoi humanitaire", donne: 70000, objectif: 3500000, subtitle: "Financez l'acheminement des dons humanitaires en UKRAINE", descriptif: """
                         Les bénévoles de la Croix-Rouge française s’engagent quotidiennement dans les missions les plus diverses. Ils investissent leur temps et leur énergie pour venir en aide et soulager les souffrances.
                         
                         Par leur dévouement, nos 60 000 bénévoles entretiennent l’espoir d’un lendemain meilleur auprès de toutes les personnes en situation de vulnérabilité.
                         Ces interventions nécessitent des moyens importants et nous avons besoin de vous pour continuer nos actions. Chaque don compte !
                         
                         Si chaque jour, nos bénévoles peuvent agir concrètement sur le terrain, c’est grâce à vos dons ponctuels ou dons réguliers. Mobilisez-vous à nos côtés pour les aider. Faites un don !
-                        """,donateur: 67890),
-    GetInfoDon(image: "resto", name: "Distribution de repas", icone: "restoCoeur", Donné: 80000, objectif: 300000, subtitle: "Financez la réparation de 2 établissement scolaire", descriptif: """
+                        """,donateur: 3489),
+    GetInfoDon(image: "resto", name: "Distribution de repas", donne: 80000, objectif: 300000, subtitle: "Financez les repas pour les plus démunis", descriptif: """
                                     Les bénévoles du resto du coeur s’engagent quotidiennement dans les missions les plus diverses. Ils investissent leur temps et leur énergie pour venir en aide et soulager les souffrances.
                                     
                                     les Restaurants du Cœur ont pour but « d’aider et d’apporter une assistance bénévole aux personnes démunies, notamment dans le domaine alimentaire par l’accès à des repas gratuits, et par la participation à leur insertion sociale et économique, ainsi qu’à toute action contre la pauvreté sous toutes ses formes
                                     
                                     Si chaque jour, nos bénévoles peuvent agir concrètement sur le terrain, c’est grâce à vos dons ponctuels ou dons réguliers. Mobilisez-vous à nos côtés pour les aider. Faites un don !
-                                    """, donateur: 3000),
-    GetInfoDon(image: "arbre", name: "Plantez 100 000 arbres", icone: "sosArbre", Donné: 500000, objectif: 10000000, subtitle: "et redonnez un emploi aux populations locales en situation d'extreme pauvreté", descriptif: """
+                                    """, donateur: 67140),
+    GetInfoDon(image: "arbre", name: "Plantez 100 000 arbres", donne: 500000, objectif: 10000000, subtitle: "Et redonnez un emploi aux populations locales en situation d'extrême pauvreté", descriptif: """
                                     Notre philosophie est de créer des écosystèmes durables et de permettre aux paysans de faire face aux coûts initiaux de plantation des arbres, en garantissant une indépendance alimentaire et des opportunités de revenus.
                                     
                                     Bénéfices environnementaux

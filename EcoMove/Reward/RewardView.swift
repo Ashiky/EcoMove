@@ -19,19 +19,19 @@ struct RewardView: View {
             Picker("test", selection: $choose, content: {
                 Text("Dons").tag(0)
                 Text("Virements").tag(1)
-                Text("Bons d'achats").tag(2)
+                Text("Bons d'achat").tag(2)
             }).pickerStyle(.segmented)
                 .padding(.horizontal)
             
-            
+           
             if choose == 0 {
                 ScrollView{
-                    VStack {
+                    VStack (spacing: 25) {
                         ForEach(donations, id: \.name){ dons in
                             NavigationLink{
-                                //                            DetailView des dons
+                                DetailDon(donations: dons)//                            DetailView des dons
                             } label: {
-                                //                            ScrollView des dons
+                                ScrollDon(donations: dons)     //                            ScrollView des dons
                             }
                             
                         }
@@ -66,7 +66,7 @@ struct RewardView: View {
             
         }//:VStack
         .foregroundColor(.black)
-            .navigationBarHidden(true)
+        .navigationBarHidden(true)
     }
 }
 
