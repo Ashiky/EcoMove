@@ -178,6 +178,7 @@
 		672E233C285C7A1600EE809C = {
 			isa = PBXGroup;
 			children = (
+				672E2348285C7A1600EE809C /* EcoMoveApp.swift */,
 				672E2356285C7EE300EE809C /* Struct */,
 				672E2347285C7A1600EE809C /* EcoMove */,
 				672E2346285C7A1600EE809C /* Products */,
@@ -363,6 +364,8 @@
 				676947982863157400EE5C16 /* GraphiquePMView.swift in Sources */,
 				6769479A286315F800EE5C16 /* MaConsoMView.swift in Sources */,
 				67893C3D28607D7100E6D14B /* MaConsoHView.swift in Sources */,
+				62A8C335285DD08A00CE251E /* ComingReward.swift in Sources */,
+				672E234B285C7A1600EE809C /* ContentView.swift in Sources */,
 				47BE22102863014B0042EEBA /* ProgressDon.swift in Sources */,
 				62F6874D285CD97C00F45564 /* DetailBonAchat.swift in Sources */,
 				62F68755285D075600F45564 /* ButtonPayment.swift in Sources */,
