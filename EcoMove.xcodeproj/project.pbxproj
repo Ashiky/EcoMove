@@ -21,6 +21,8 @@
 		9F409C1A285CC21000838CC3 /* ModalViewWinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C19285CC21000838CC3 /* ModalViewWinPoint.swift */; };
 		9F409C57285FCEC000838CC3 /* FlexibleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C56285FCEC000838CC3 /* FlexibleSheet.swift */; };
 		9F409C59286074C800838CC3 /* ModalViewTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C58286074C800838CC3 /* ModalViewTransport.swift */; };
+		9F409C662861ADE000838CC3 /* DataBaseTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C652861ADE000838CC3 /* DataBaseTransport.swift */; };
+		9F409C682861B07500838CC3 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C672861B07500838CC3 /* Map.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		9F409C19285CC21000838CC3 /* ModalViewWinPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewWinPoint.swift; sourceTree = "<group>"; };
 		9F409C56285FCEC000838CC3 /* FlexibleSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleSheet.swift; sourceTree = "<group>"; };
 		9F409C58286074C800838CC3 /* ModalViewTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewTransport.swift; sourceTree = "<group>"; };
+		9F409C652861ADE000838CC3 /* DataBaseTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseTransport.swift; sourceTree = "<group>"; };
+		9F409C672861B07500838CC3 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				9F409C0C285CB3CE00838CC3 /* MapView.swift */,
+				9F409C672861B07500838CC3 /* Map.swift */,
+				9F409C652861ADE000838CC3 /* DataBaseTransport.swift */,
 				9F409C16285CC09300838CC3 /* ModalView */,
 			);
 			path = MapView;
@@ -199,7 +205,9 @@
 				9F409C1A285CC21000838CC3 /* ModalViewWinPoint.swift in Sources */,
 				9F409C0D285CB3CE00838CC3 /* MapView.swift in Sources */,
 				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
+				9F409C662861ADE000838CC3 /* DataBaseTransport.swift in Sources */,
 				9F409C59286074C800838CC3 /* ModalViewTransport.swift in Sources */,
+				9F409C682861B07500838CC3 /* Map.swift in Sources */,
 				9F409C18285CC0F400838CC3 /* ModalViewTrajet.swift in Sources */,
 				672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */,
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,

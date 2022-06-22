@@ -11,6 +11,8 @@ struct ModalViewAdresse: View {
     
     @State private var startPoint: String = ""
     @State private var endPoint: String = ""
+    @State private var modalViewTransport: Bool = false
+    
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -25,13 +27,61 @@ struct ModalViewAdresse: View {
             )
             .disableAutocorrection(true)
            
-            Button("Modes de transports alentours") {
-                ModalViewTransport()
+            HStack {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10.0)
+                        .frame(maxWidth: 50,maxHeight: 50)
+                        .foregroundColor(Color("DarkGreen"))
+                    Text("Tous")
+                        .foregroundColor(.white)
+                        .fontWeight(.bold)
+                    }
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10.0)
+                        .frame(maxWidth: 50,maxHeight: 50)
+                        .foregroundColor(Color("DarkGreen"))
+                Image(systemName: "bicycle")
+                    .foregroundColor(.white)
+                }
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10.0)
+                        .frame(maxWidth: 50,maxHeight: 50)
+                        .foregroundColor(Color("DarkGreen"))
+                Image(systemName: "scooter")
+                    .foregroundColor(.white)
+                }
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10.0)
+                        .frame(maxWidth: 50,maxHeight: 50)
+                        .foregroundColor(Color("DarkGreen"))
+                Image(systemName: "tram")
+                    .foregroundColor(.white)
+                }
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10.0)
+                        .frame(maxWidth: 50,maxHeight: 50)
+                        .foregroundColor(Color("DarkGreen"))
+                Image(systemName: "tram.fill.tunnel")
+                    .foregroundColor(.white)
+                }
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10.0)
+                        .frame(maxWidth: 50,maxHeight: 50)
+                        .foregroundColor(Color("DarkGreen"))
+                Image(systemName: "bus")
+                    .foregroundColor(.white)
+                }
             }
-            .frame(maxWidth: 500, maxHeight: 50, alignment: .center)
-            .foregroundColor(Color("DarkGreen"))
-            .background(.white)
-            .cornerRadius(5)
+//            Button("Modes de transports alentours") {
+//                modalViewTransport.toggle()
+//                if modalViewTransport == true {
+//                    ModalViewTransport()
+//                }
+//            }
+//            .frame(maxWidth: 500, maxHeight: 50, alignment: .center)
+//            .foregroundColor(Color("DarkGreen"))
+//            .background(.white)
+//            .cornerRadius(5)
             
         }
         .textFieldStyle(.roundedBorder)
@@ -98,3 +148,4 @@ struct ModalViewAdresse_Previews: PreviewProvider {
         ModalViewAdresse()
     }
 }
+
