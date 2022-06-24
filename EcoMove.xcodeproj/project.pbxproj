@@ -23,6 +23,10 @@
 		9F409C59286074C800838CC3 /* ModalViewTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C58286074C800838CC3 /* ModalViewTransport.swift */; };
 		9F409C662861ADE000838CC3 /* DataBaseTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C652861ADE000838CC3 /* DataBaseTransport.swift */; };
 		9F409C682861B07500838CC3 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C672861B07500838CC3 /* Map.swift */; };
+		9F68BFD82864653D009E139C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F68BFD72864653D009E139C /* GoogleService-Info.plist */; };
+		9F68BFDB286466D9009E139C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9F68BFDA286466D9009E139C /* FirebaseDatabase */; };
+		9F68BFDD286466D9009E139C /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9F68BFDC286466D9009E139C /* FirebaseDatabaseSwift */; };
+		9F68BFE22865B97E009E139C /* PlaceAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68BFE12865B97E009E139C /* PlaceAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,8 @@
 		9F409C58286074C800838CC3 /* ModalViewTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewTransport.swift; sourceTree = "<group>"; };
 		9F409C652861ADE000838CC3 /* DataBaseTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseTransport.swift; sourceTree = "<group>"; };
 		9F409C672861B07500838CC3 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		9F68BFD72864653D009E139C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9F68BFE12865B97E009E139C /* PlaceAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F68BFDD286466D9009E139C /* FirebaseDatabaseSwift in Frameworks */,
+				9F68BFDB286466D9009E139C /* FirebaseDatabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +88,7 @@
 				672E234A285C7A1600EE809C /* ContentView.swift */,
 				9F409C13285CC07900838CC3 /* MapView */,
 				672E234C285C7A1900EE809C /* Assets.xcassets */,
+				9F68BFD72864653D009E139C /* GoogleService-Info.plist */,
 				672E234E285C7A1900EE809C /* Preview Content */,
 			);
 			path = EcoMove;
@@ -108,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				9F409C0C285CB3CE00838CC3 /* MapView.swift */,
-				9F409C672861B07500838CC3 /* Map.swift */,
-				9F409C652861ADE000838CC3 /* DataBaseTransport.swift */,
+				9F68BFE12865B97E009E139C /* PlaceAnnotationView.swift */,
+				9F68BFE02864A595009E139C /* TestMap */,
 				9F409C16285CC09300838CC3 /* ModalView */,
 			);
 			path = MapView;
@@ -125,6 +134,15 @@
 				9F409C56285FCEC000838CC3 /* FlexibleSheet.swift */,
 			);
 			path = ModalView;
+			sourceTree = "<group>";
+		};
+		9F68BFE02864A595009E139C /* TestMap */ = {
+			isa = PBXGroup;
+			children = (
+				9F409C672861B07500838CC3 /* Map.swift */,
+				9F409C652861ADE000838CC3 /* DataBaseTransport.swift */,
+			);
+			path = TestMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +161,10 @@
 			dependencies = (
 			);
 			name = EcoMove;
+			packageProductDependencies = (
+				9F68BFDA286466D9009E139C /* FirebaseDatabase */,
+				9F68BFDC286466D9009E139C /* FirebaseDatabaseSwift */,
+			);
 			productName = EcoMove;
 			productReference = 672E2345285C7A1600EE809C /* EcoMove.app */;
 			productType = "com.apple.product-type.application";
@@ -171,6 +193,9 @@
 				Base,
 			);
 			mainGroup = 672E233C285C7A1600EE809C;
+			packageReferences = (
+				9F68BFD9286466D9009E139C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 672E2346285C7A1600EE809C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,6 +212,7 @@
 			files = (
 				672E2350285C7A1900EE809C /* Preview Assets.xcassets in Resources */,
 				672E234D285C7A1900EE809C /* Assets.xcassets in Resources */,
+				9F68BFD82864653D009E139C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +231,7 @@
 				9F409C1A285CC21000838CC3 /* ModalViewWinPoint.swift in Sources */,
 				9F409C0D285CB3CE00838CC3 /* MapView.swift in Sources */,
 				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
+				9F68BFE22865B97E009E139C /* PlaceAnnotationView.swift in Sources */,
 				9F409C662861ADE000838CC3 /* DataBaseTransport.swift in Sources */,
 				9F409C59286074C800838CC3 /* ModalViewTransport.swift in Sources */,
 				9F409C682861B07500838CC3 /* Map.swift in Sources */,
@@ -411,6 +438,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F68BFD9286466D9009E139C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F68BFDA286466D9009E139C /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F68BFD9286466D9009E139C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		9F68BFDC286466D9009E139C /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F68BFD9286466D9009E139C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 672E233D285C7A1600EE809C /* Project object */;
 }
