@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		016EF143285CBF4000261680 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016EF142285CBF4000261680 /* ProfileView.swift */; };
+		01ECDCC72865DC92004778FA /* TransportButum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ECDCC62865DC92004778FA /* TransportButum.swift */; };
+		01ECDCC92865E4EB004778FA /* TansportPersoButum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ECDCC82865E4EB004778FA /* TansportPersoButum.swift */; };
+		01ECDCCB2865E789004778FA /* TransportFavorisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ECDCCA2865E789004778FA /* TransportFavorisView.swift */; };
+		01ECDCCD2865E8E6004778FA /* TransportFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ECDCCC2865E8E6004778FA /* TransportFile.swift */; };
 		672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E2348285C7A1600EE809C /* EcoMoveApp.swift */; };
 		672E234B285C7A1600EE809C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E234A285C7A1600EE809C /* ContentView.swift */; };
 		672E234D285C7A1900EE809C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 672E234C285C7A1900EE809C /* Assets.xcassets */; };
@@ -20,6 +24,10 @@
 
 /* Begin PBXFileReference section */
 		016EF142285CBF4000261680 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		01ECDCC62865DC92004778FA /* TransportButum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportButum.swift; sourceTree = "<group>"; };
+		01ECDCC82865E4EB004778FA /* TansportPersoButum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TansportPersoButum.swift; sourceTree = "<group>"; };
+		01ECDCCA2865E789004778FA /* TransportFavorisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportFavorisView.swift; sourceTree = "<group>"; };
+		01ECDCCC2865E8E6004778FA /* TransportFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportFile.swift; sourceTree = "<group>"; };
 		672E2345285C7A1600EE809C /* EcoMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		672E2348285C7A1600EE809C /* EcoMoveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoMoveApp.swift; sourceTree = "<group>"; };
 		672E234A285C7A1600EE809C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +50,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01ECDCCE2865EB10004778FA /* ProfilView */ = {
+			isa = PBXGroup;
+			children = (
+				016EF142285CBF4000261680 /* ProfileView.swift */,
+				01ECDCCA2865E789004778FA /* TransportFavorisView.swift */,
+				01ECDCC82865E4EB004778FA /* TansportPersoButum.swift */,
+				01ECDCC62865DC92004778FA /* TransportButum.swift */,
+			);
+			path = ProfilView;
+			sourceTree = "<group>";
+		};
 		672E233C285C7A1600EE809C = {
 			isa = PBXGroup;
 			children = (
@@ -62,9 +81,9 @@
 		672E2347285C7A1600EE809C /* EcoMove */ = {
 			isa = PBXGroup;
 			children = (
+				01ECDCCE2865EB10004778FA /* ProfilView */,
 				672E2348285C7A1600EE809C /* EcoMoveApp.swift */,
 				672E234A285C7A1600EE809C /* ContentView.swift */,
-				016EF142285CBF4000261680 /* ProfileView.swift */,
 				672E234C285C7A1900EE809C /* Assets.xcassets */,
 				672E234E285C7A1900EE809C /* Preview Content */,
 			);
@@ -86,6 +105,7 @@
 				672E2359285C82EA00EE809C /* StructProfile.swift */,
 				672E2357285C82C300EE809C /* StructReward.swift */,
 				672E235B285C833C00EE809C /* StructTransport.swift */,
+				01ECDCCC2865E8E6004778FA /* TransportFile.swift */,
 			);
 			path = Struct;
 			sourceTree = "<group>";
@@ -161,12 +181,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				016EF143285CBF4000261680 /* ProfileView.swift in Sources */,
+				01ECDCC72865DC92004778FA /* TransportButum.swift in Sources */,
+				01ECDCCD2865E8E6004778FA /* TransportFile.swift in Sources */,
+				01ECDCC92865E4EB004778FA /* TansportPersoButum.swift in Sources */,
 				672E235C285C833C00EE809C /* StructTransport.swift in Sources */,
 				672E235A285C82EA00EE809C /* StructProfile.swift in Sources */,
 				672E234B285C7A1600EE809C /* ContentView.swift in Sources */,
 				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
 				672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */,
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
+				01ECDCCB2865E789004778FA /* TransportFavorisView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
