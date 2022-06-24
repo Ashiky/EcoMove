@@ -10,6 +10,7 @@ import SwiftUI
 struct ButtonDon: View {
     var body: some View {
         VStack{
+          
             Button{
 //               Screen donation validation
             }label: {

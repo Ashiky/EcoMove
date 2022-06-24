@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		47BE220E2862FEBB0042EEBA /* DetailDon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE220D2862FEBB0042EEBA /* DetailDon.swift */; };
 		47BE22102863014B0042EEBA /* ProgressDon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE220F2863014B0042EEBA /* ProgressDon.swift */; };
+		47BE221D286356A60042EEBA /* CardDonator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE221C286356A60042EEBA /* CardDonator.swift */; };
 		47DFFFEF2861B36500385E74 /* ScrollDon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DFFFEE2861B36500385E74 /* ScrollDon.swift */; };
 		62A8C32D285DA9AB00CE251E /* HistoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C32C285DA9AB00CE251E /* HistoryCard.swift */; };
 		62A8C331285DC35300CE251E /* TopCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C330285DC35300CE251E /* TopCardView.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		47BE220D2862FEBB0042EEBA /* DetailDon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDon.swift; sourceTree = "<group>"; };
 		47BE220F2863014B0042EEBA /* ProgressDon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDon.swift; sourceTree = "<group>"; };
+		47BE221C286356A60042EEBA /* CardDonator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDonator.swift; sourceTree = "<group>"; };
 		47DFFFEE2861B36500385E74 /* ScrollDon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollDon.swift; sourceTree = "<group>"; };
 		62A8C32C285DA9AB00CE251E /* HistoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCard.swift; sourceTree = "<group>"; };
 		62A8C330285DC35300CE251E /* TopCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardView.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				47BE220F2863014B0042EEBA /* ProgressDon.swift */,
 				47BE220D2862FEBB0042EEBA /* DetailDon.swift */,
 				62F68744285CC90C00F45564 /* ButtonDon.swift */,
+				47BE221C286356A60042EEBA /* CardDonator.swift */,
 			);
 			path = Don;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				672E235A285C82EA00EE809C /* StructProfile.swift in Sources */,
 				62A8C335285DD08A00CE251E /* ComingReward.swift in Sources */,
 				672E234B285C7A1600EE809C /* ContentView.swift in Sources */,
+				47BE221D286356A60042EEBA /* CardDonator.swift in Sources */,
 				47BE22102863014B0042EEBA /* ProgressDon.swift in Sources */,
 				62F6874D285CD97C00F45564 /* DetailBonAchat.swift in Sources */,
 				62F68755285D075600F45564 /* ButtonPayment.swift in Sources */,
