@@ -10,7 +10,7 @@
 //struct PlaceAnnotationView: View {
 //    @State private var showTitle = true
 //    
-//    let metroTramPAV: MetroTram
+//    var metroTramPAV: MetroTram
 //    
 //    var body: some View {
 //        VStack(spacing: 0) {
@@ -40,6 +40,6 @@
 //
 //struct PlaceAnnotationView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        PlaceAnnotationView(metroTramPAV: MetroTram(arret: "Blancarde", commune: "Marseille", modeDeTransport: "Tramway", nomDuResau: "RTM", pointGeo: CLLocationCoordinate2D(latitude: 43.2942625915, longitude: 5.4290510711), identifiantInterne: "T1"))
+//        PlaceAnnotationView(metroTramPAV: MetroTram(arret: "Blancarde", commune: "Marseille", modeDeTransport: "Tramway", nomDuResau: "RTM", pointGeo: metroTramPAV.pointGeo, identifiantInterne: "T1"))
 //    }
 //}

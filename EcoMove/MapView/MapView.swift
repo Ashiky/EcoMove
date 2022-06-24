@@ -39,8 +39,6 @@ struct MapView: View {
         })
     }
     
-    //    let transportMV: Transports
-    
     var body: some View {
         ZStack {
             Map(coordinateRegion: $mapRegion, annotationItems: metroTramList) { metroTram in
@@ -48,6 +46,11 @@ struct MapView: View {
                 MapMarker(coordinate: metroTram.pointGeo, tint: metroTram.color)
                 
             }
+//            .onTapGesture {
+//              withAnimation(.easeInOut) {
+//                  $$metroTramList.arret.toggle
+//              }
+//            }
             
             FlexibleSheet(sheetMode: $sheetMode) {
                 ModalViewAdresse()
