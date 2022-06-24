@@ -16,6 +16,9 @@
 		62A8C333285DC8CC00CE251E /* HistoryTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C332285DC8CC00CE251E /* HistoryTravel.swift */; };
 		62A8C335285DD08A00CE251E /* ComingReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C334285DD08A00CE251E /* ComingReward.swift */; };
 		62A8C337285DD2F300CE251E /* CardPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C336285DD2F300CE251E /* CardPayment.swift */; };
+		62ACD9CB2865F1B400059B14 /* GiveDon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ACD9CA2865F1B300059B14 /* GiveDon.swift */; };
+		62ACD9CE2865F23400059B14 /* HalfSheetManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ACD9CD2865F23400059B14 /* HalfSheetManagers.swift */; };
+		62ACD9D12865F29900059B14 /* HalfSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ACD9D02865F29900059B14 /* HalfSheet.swift */; };
 		62F6873D285CBCC200F45564 /* StartViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6873C285CBCC200F45564 /* StartViews.swift */; };
 		62F68741285CC30B00F45564 /* DataRewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68740285CC30B00F45564 /* DataRewards.swift */; };
 		62F68743285CC5C300F45564 /* ButtonReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68742285CC5C300F45564 /* ButtonReward.swift */; };
@@ -58,6 +61,9 @@
 		62A8C332285DC8CC00CE251E /* HistoryTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTravel.swift; sourceTree = "<group>"; };
 		62A8C334285DD08A00CE251E /* ComingReward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingReward.swift; sourceTree = "<group>"; };
 		62A8C336285DD2F300CE251E /* CardPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPayment.swift; sourceTree = "<group>"; };
+		62ACD9CA2865F1B300059B14 /* GiveDon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiveDon.swift; sourceTree = "<group>"; };
+		62ACD9CD2865F23400059B14 /* HalfSheetManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheetManagers.swift; sourceTree = "<group>"; };
+		62ACD9D02865F29900059B14 /* HalfSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheet.swift; sourceTree = "<group>"; };
 		62F6873C285CBCC200F45564 /* StartViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViews.swift; sourceTree = "<group>"; };
 		62F68740285CC30B00F45564 /* DataRewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRewards.swift; sourceTree = "<group>"; };
 		62F68742285CC5C300F45564 /* ButtonReward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonReward.swift; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 			children = (
 				47DFFFEE2861B36500385E74 /* ScrollDon.swift */,
 				47BE220F2863014B0042EEBA /* ProgressDon.swift */,
+				62ACD9CA2865F1B300059B14 /* GiveDon.swift */,
 				47BE220D2862FEBB0042EEBA /* DetailDon.swift */,
 				62F68744285CC90C00F45564 /* ButtonDon.swift */,
 				47BE221C286356A60042EEBA /* CardDonator.swift */,
@@ -174,6 +181,22 @@
 				62F68740285CC30B00F45564 /* DataRewards.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		62ACD9CC2865F20D00059B14 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				62ACD9CD2865F23400059B14 /* HalfSheetManagers.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		62ACD9CF2865F25E00059B14 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				62ACD9D02865F29900059B14 /* HalfSheet.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		672E233C285C7A1600EE809C = {
@@ -201,7 +224,9 @@
 				672E234A285C7A1600EE809C /* ContentView.swift */,
 				47BE2211286313880042EEBA /* Reward */,
 				62F6873C285CBCC200F45564 /* StartViews.swift */,
+				62ACD9CC2865F20D00059B14 /* Managers */,
 				67CB03662862025F007E648C /* Test.swift */,
+				62ACD9CF2865F25E00059B14 /* ViewModels */,
 				672E234C285C7A1900EE809C /* Assets.xcassets */,
 				672E234E285C7A1900EE809C /* Preview Content */,
 			);
@@ -331,6 +356,7 @@
 				62A8C32D285DA9AB00CE251E /* HistoryCard.swift in Sources */,
 				672E235C285C833C00EE809C /* StructTransport.swift in Sources */,
 				62F6874F285CDAB600F45564 /* ScrollPayment.swift in Sources */,
+				62ACD9CB2865F1B400059B14 /* GiveDon.swift in Sources */,
 				62F68743285CC5C300F45564 /* ButtonReward.swift in Sources */,
 				62F6873D285CBCC200F45564 /* StartViews.swift in Sources */,
 				672E235A285C82EA00EE809C /* StructProfile.swift in Sources */,
@@ -348,6 +374,7 @@
 				676947962863145400EE5C16 /* GraphiqueEMView.swift in Sources */,
 				62F6873D285CBCC200F45564 /* StartViews.swift in Sources */,
 				672E235A285C82EA00EE809C /* StructProfile.swift in Sources */,
+				62ACD9D12865F29900059B14 /* HalfSheet.swift in Sources */,
 				67893C3928606B4700E6D14B /* PickerMaConso.swift in Sources */,
 				672E234B285C7A1600EE809C /* ContentView.swift in Sources */,
 				676947742862FB9B00EE5C16 /* GraphiquePHView.swift in Sources */,
@@ -360,6 +387,7 @@
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
 				62F68745285CC90C00F45564 /* ButtonDon.swift in Sources */,
 				47DFFFEF2861B36500385E74 /* ScrollDon.swift in Sources */,
+				62ACD9CE2865F23400059B14 /* HalfSheetManagers.swift in Sources */,
 				672E2364285CBFA200EE809C /* MaConsoQView.swift in Sources */,
 				67893C3B286071F700E6D14B /* MaconsoView.swift in Sources */,
 				67694777286303E100EE5C16 /* GraphiqueEHView.swift in Sources */,

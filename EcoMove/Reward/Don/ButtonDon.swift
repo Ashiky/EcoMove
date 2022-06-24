@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct ButtonDon: View {
+    
+    @State var getDons = false
+    
     var body: some View {
         VStack{
-          
             Button{
-//               Screen donation validation
+                getDons = true
             }label: {
                 Text("Faire un Don")
                     .font(.system(size: 25))
@@ -23,6 +25,11 @@ struct ButtonDon: View {
              .background(Color("LightGreen"))
              .cornerRadius(10)
              .padding()
+             .sheet(isPresented: $getDons, content: {
+                 HalfSheet{
+                     GiveDon()
+                 }
+             })
         }//: VStack
     }
 }
