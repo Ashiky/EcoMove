@@ -42,19 +42,19 @@ struct DetailDon: View {
                 
                 HStack{
                     VStack(alignment: .leading, spacing: 5){
-                        Text("Objectif")
+                        Text("Donné")
                         
                         
-                        Text(" \(donations.objectif) \(Image(systemName:"millsign.square.fill"))")
+                        Text(" \(donations.donne) \(Image(systemName:"millsign.square.fill"))")
                             .bold()
                             .foregroundColor(Color("DarkGreen"))
                     }
                     Spacer()
                     VStack(alignment: .trailing, spacing: 5){
-                        Text("Donateurs")
+                        Text("Objectif")
                         
                         
-                        Text("\(donations.donateur)")
+                        Text("\(donations.objectif) \(Image(systemName:"millsign.square.fill"))")
                             .bold()
                             .foregroundColor(Color("DarkGreen"))
                     }
