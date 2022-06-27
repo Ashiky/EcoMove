@@ -9,7 +9,7 @@ import SwiftUI
 import Foundation
 //imoport de StrucuPoint
 
-struct ProileView: View {
+struct ProfileView: View {
     var body: some View{
         VStack{
             ZStack{
@@ -35,8 +35,8 @@ struct ProileView: View {
     }
 }
 
-struct ProileView_Previews: PreviewProvider {
+struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProileView()
+        ProfileView()
     }
 }
