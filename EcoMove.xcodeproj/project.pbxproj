@@ -113,7 +113,6 @@
 		67893C3828606B4700E6D14B /* PickerMaConso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerMaConso.swift; sourceTree = "<group>"; };
 		67893C3A286071F700E6D14B /* MaconsoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaconsoView.swift; sourceTree = "<group>"; };
 		67893C3C28607D7100E6D14B /* MaConsoHView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaConsoHView.swift; sourceTree = "<group>"; };
-		67CB03662862025F007E648C /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Test.swift; path = ../Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +297,8 @@
 				9F409C56285FCEC000838CC3 /* FlexibleSheet.swift */,
 			);
 			path = ModalView;
+   			sourceTree = "<group>";
+        };
 		676947752863032300EE5C16 /* Graphique */ = {
 			isa = PBXGroup;
 			children = (
@@ -665,6 +666,8 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 9.0.0;
+            };
+        };
 		67CB036A2862067D007E648C /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/willdale/SwiftUICharts#multi-line-chart";
@@ -685,6 +688,7 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9F68BFD9286466D9009E139C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabaseSwift;
+        };
 		67CB036B2862067D007E648C /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 67CB036A2862067D007E648C /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
