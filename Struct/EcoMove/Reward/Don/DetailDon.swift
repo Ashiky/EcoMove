@@ -8,45 +8,101 @@
 import SwiftUI
 
 struct DetailDon: View {
-
+    
+    @State var isHeight : CGFloat = 135
+    @State var showText : Bool = false
+    
     let donations: GetInfoDon
     
     var body: some View {
-        ZStack{
-            ScrollView{
-                VStack(spacing: 10){
-                    Image(donations.image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame (maxWidth: 300, maxHeight: 300)
-                    VStack(alignment: .leading, spacing: 5){
+        VStack{
+            //     ScrollView{
+            VStack(spacing: 10){
+                Image(donations.image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame (maxWidth: 300, maxHeight: 300)
+                VStack(alignment: .leading, spacing: 5){
                     HStack{
                         Text(donations.name)
                             .font(.title)
                             .bold()
                         Spacer()
-              
-                            
                     }
                     Text(donations.subtitle)
-                        Text("Donateurs : \(donations.donateur) ")
+                        .multilineTextAlignment(.leading)
+                        .frame(height: 50)
+                    Spacer()
+                    
+                }
+                VStack{
+                    Spacer(minLength: 20)
+                    ProgressDon(getInfoDon:donations)
+                }
+                
+                HStack{
+                    VStack(alignment: .leading, spacing: 5){
+                        Text("Donné")
+                        
+                        
+                        Text(" \(donations.donne) \(Image(systemName:"millsign.square.fill"))")
                             .bold()
                             .foregroundColor(Color("DarkGreen"))
-                            
-                }.padding()
+                    }
+                    Spacer()
+                    VStack(alignment: .trailing, spacing: 5){
+                        Text("Objectif")
+                        
+                        
+                        Text("\(donations.objectif) \(Image(systemName:"millsign.square.fill"))")
+                            .bold()
+                            .foregroundColor(Color("DarkGreen"))
+                    }
+                }
+                
+                
+            }.padding()
+            ScrollView{
+                VStack {
                     Text(donations.descriptif)
                         .multilineTextAlignment(.leading)
-                        .padding(.horizontal)
-                
-                }
+                        .frame(height: isHeight)
+                    HStack {
+                        Spacer()
+                        Button(action : {
+                            showText.toggle()
+                            //   showText = true
+                            if showText == true {
+                                isHeight = 400
+                                
+                            }else{
+                                isHeight = 135
+                            }
+                        }, label: {
+                            Text(showText == false ? "Lire la suite" : "moins d'infos")
+                                .foregroundColor(showText == false ? Color("LightGreen") : Color.clear)
+                             
+                        }).padding(.horizontal)
+                    }
+                    
+                }.padding()
+         
+                VStack (alignment: .leading) {
+                Text("Derniers dons")
+                        .font(.title3)
+                    .foregroundColor(Color("DarkGreen"))
+                    .bold()
+                    .padding(.vertical)
+                CardDonator()
+                } //VStack
             }.navigationBarTitleDisplayMode(.inline)
             ButtonDon()
-        } //: ZStack
+        } //: VStack
     }
 }
 
 struct DetailDon_Previews: PreviewProvider {
     static var previews: some View {
-        DetailDon(donations: donations[2])
+        DetailDon(donations: donations[1])
     }
 }

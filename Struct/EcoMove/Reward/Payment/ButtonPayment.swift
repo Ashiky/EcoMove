@@ -13,10 +13,6 @@ struct ButtonPayment: View {
     
     var body: some View {
         VStack{
-            Spacer()
-            HStack{
-                
-            }
             Button{
 //               Screen to validate
             }label: {
@@ -43,5 +39,6 @@ struct ButtonPayment: View {
 struct ButtonPayment_Previews: PreviewProvider {
     static var previews: some View {
         ButtonPayment()
+            .previewLayout(.sizeThatFits)
     }
 }

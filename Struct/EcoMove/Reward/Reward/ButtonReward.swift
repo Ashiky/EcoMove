@@ -10,10 +10,6 @@ import SwiftUI
 struct ButtonReward: View {
     var body: some View {
         VStack{
-            Spacer()
-            HStack{
-                
-            }
             Button{
 //               Screen to validate
             }label: {
@@ -34,6 +30,6 @@ struct ButtonReward: View {
 struct ButtonReward_Previews: PreviewProvider {
     static var previews: some View {
         ButtonReward()
-            .previewInterfaceOrientation(.portrait)
+            .previewLayout(.sizeThatFits)
     }
 }

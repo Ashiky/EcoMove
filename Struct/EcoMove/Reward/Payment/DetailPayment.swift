@@ -12,7 +12,7 @@ struct DetailPayment: View {
     let payment : GetInfo
     
     var body: some View {
-        ZStack{
+        VStack{
             ScrollView{
                 VStack(alignment: .leading, spacing: 10){
                     Image(payment.image)
@@ -42,7 +42,7 @@ struct DetailPayment: View {
                 }
             }.navigationBarTitleDisplayMode(.inline)
             ButtonPayment()
-        } //: ZStack
+        } //: VStack
     }
 }
 

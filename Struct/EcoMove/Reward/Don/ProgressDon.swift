@@ -22,7 +22,7 @@ struct ProgressDon: View {
                 .fill(Color("DarkGreen"))
                 .frame(width: 100, height: 5)
                 .overlay(alignment: .bottomTrailing, content: {
-                    Text("\(getInfoDon.donne)")
+                    Text("\(getInfoDon.donne) \(Image(systemName: "millsign.square.fill"))")
                         .foregroundColor(.white)
                         .padding(5)
                         .background(Color("DarkGreen"))
