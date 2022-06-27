@@ -35,7 +35,7 @@ struct TransportFavorisView: View {
                         .fill(Color("LightGreen"))
                         .frame(width: 250.0, height: 20.0)
                     HStack{
-                        Text("MES TRANSPORT FAVORIS")
+                        Text("MES TRANSPORTS FAVORIS")
                             .font(.footnote)
                         Image(systemName: "plus.circle")
                     }
@@ -50,7 +50,7 @@ struct TransportFavorisView: View {
                         RoundedRectangle(cornerRadius: 8)
                             .fill(Color("LightGreen"))
                             .frame(width: 250.0, height: 20.0)
-                        Text("MES TRANSPORT FAVORIS")
+                        Text("MES TRANSPORTS FAVORIS")
                             .font(.footnote)
                     }
                 }
@@ -61,7 +61,7 @@ struct TransportFavorisView: View {
                         RoundedRectangle(cornerRadius: 8)
                             .fill(Color("LightGreen"))
                             .frame(width: 250.0, height: 20.0)
-                        Text("MES TRANSPORT PERSONNELS")
+                        Text("MES TRANSPORTS PERSONNELS")
                             .font(.footnote)
                     }
                 }

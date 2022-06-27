@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9F82DA462869D71000BF6E7C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9F82DA452869D71000BF6E7C /* FirebaseDatabase */; };
 		9F82DA492869D76700BF6E7C /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 9F82DA482869D76700BF6E7C /* SwiftUICharts */; };
+		9F82DA4B2869DE1900BF6E7C /* ButtonTransportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82DA4A2869DE1900BF6E7C /* ButtonTransportView.swift */; };
 		B8519CAD2869B49100896105 /* HalfSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8519C642869B49100896105 /* HalfSheet.swift */; };
 		B8519CAE2869B49100896105 /* ModaleAdresseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8519C652869B49100896105 /* ModaleAdresseView.swift */; };
 		B8519CAF2869B49100896105 /* StartViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8519C662869B49100896105 /* StartViews.swift */; };
@@ -69,6 +70,7 @@
 
 /* Begin PBXFileReference section */
 		672E2345285C7A1600EE809C /* EcoMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F82DA4A2869DE1900BF6E7C /* ButtonTransportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTransportView.swift; sourceTree = "<group>"; };
 		B8519C642869B49100896105 /* HalfSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfSheet.swift; sourceTree = "<group>"; };
 		B8519C652869B49100896105 /* ModaleAdresseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModaleAdresseView.swift; sourceTree = "<group>"; };
 		B8519C662869B49100896105 /* StartViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViews.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				B8519C832869B49100896105 /* ModalViewTransport.swift */,
 				B8519C842869B49100896105 /* ModalViewAdresse.swift */,
 				B8519C852869B49100896105 /* ModalViewTrajet.swift */,
+				9F82DA4A2869DE1900BF6E7C /* ButtonTransportView.swift */,
 			);
 			path = ModalView;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				B8519CE42869B49100896105 /* ButtonView.swift in Sources */,
 				B8519CE72869B4A100896105 /* EcoMoveApp.swift in Sources */,
 				B8519CE32869B49100896105 /* StructButton.swift in Sources */,
+				9F82DA4B2869DE1900BF6E7C /* ButtonTransportView.swift in Sources */,
 				B8519CD02869B49100896105 /* ProgressDon.swift in Sources */,
 				B8519CD82869B49100896105 /* DetailBonAchat.swift in Sources */,
 				B8519CE02869B49100896105 /* TransportFavorisView.swift in Sources */,
