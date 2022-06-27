@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62DD82122869E0B800A9F683 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DD82112869E0B800A9F683 /* CustomTabBar.swift */; };
+		62DD82142869E11F00A9F683 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DD82132869E11F00A9F683 /* TabBar.swift */; };
 		9F82DA462869D71000BF6E7C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9F82DA452869D71000BF6E7C /* FirebaseDatabase */; };
 		9F82DA492869D76700BF6E7C /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 9F82DA482869D76700BF6E7C /* SwiftUICharts */; };
 		B8519CAD2869B49100896105 /* HalfSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8519C642869B49100896105 /* HalfSheet.swift */; };
@@ -68,6 +70,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62DD82112869E0B800A9F683 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		62DD82132869E11F00A9F683 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		672E2345285C7A1600EE809C /* EcoMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8519C642869B49100896105 /* HalfSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfSheet.swift; sourceTree = "<group>"; };
 		B8519C652869B49100896105 /* ModaleAdresseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModaleAdresseView.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 			children = (
 				B8519CAC2869B49100896105 /* ContentView.swift */,
 				B8519C662869B49100896105 /* StartViews.swift */,
+				62DD82112869E0B800A9F683 /* CustomTabBar.swift */,
+				62DD82132869E11F00A9F683 /* TabBar.swift */,
 				B8519C652869B49100896105 /* ModaleAdresseView.swift */,
 				B8519C672869B49100896105 /* MaConso */,
 				B8519C712869B49100896105 /* Managers */,
@@ -438,6 +444,7 @@
 				B8519CCC2869B49100896105 /* CardDonator.swift in Sources */,
 				B8519CB82869B49100896105 /* HalfSheetManagers.swift in Sources */,
 				B8519CD72869B49100896105 /* RewardView.swift in Sources */,
+				62DD82122869E0B800A9F683 /* CustomTabBar.swift in Sources */,
 				B8519CCD2869B49100896105 /* ScrollDon.swift in Sources */,
 				B8519CB02869B49100896105 /* MaConsoHView.swift in Sources */,
 				B8519CC32869B49100896105 /* FlexibleSheet.swift in Sources */,
@@ -452,6 +459,7 @@
 				B8519CD52869B49100896105 /* DetailPayment.swift in Sources */,
 				B8519CBE2869B49100896105 /* StructProfile.swift in Sources */,
 				B8519CB22869B49100896105 /* GraphiqueEHView.swift in Sources */,
+				62DD82142869E11F00A9F683 /* TabBar.swift in Sources */,
 				B8519CD22869B49100896105 /* ScrollPayment.swift in Sources */,
 				B8519CBD2869B49100896105 /* StructReward.swift in Sources */,
 				B8519CAE2869B49100896105 /* ModaleAdresseView.swift in Sources */,
