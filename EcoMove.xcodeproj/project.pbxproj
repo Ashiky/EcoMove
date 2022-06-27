@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47BE220E2862FEBB0042EEBA /* DetailDon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE220D2862FEBB0042EEBA /* DetailDon.swift */; };
+		47BE22102863014B0042EEBA /* ProgressDon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE220F2863014B0042EEBA /* ProgressDon.swift */; };
+		47BE221D286356A60042EEBA /* CardDonator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BE221C286356A60042EEBA /* CardDonator.swift */; };
+		47DFFFEF2861B36500385E74 /* ScrollDon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DFFFEE2861B36500385E74 /* ScrollDon.swift */; };
+		62A8C32D285DA9AB00CE251E /* HistoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C32C285DA9AB00CE251E /* HistoryCard.swift */; };
+		62A8C331285DC35300CE251E /* TopCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C330285DC35300CE251E /* TopCardView.swift */; };
+		62A8C333285DC8CC00CE251E /* HistoryTravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C332285DC8CC00CE251E /* HistoryTravel.swift */; };
+		62A8C335285DD08A00CE251E /* ComingReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C334285DD08A00CE251E /* ComingReward.swift */; };
+		62A8C337285DD2F300CE251E /* CardPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A8C336285DD2F300CE251E /* CardPayment.swift */; };
+		62ACD9CB2865F1B400059B14 /* GiveDon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ACD9CA2865F1B300059B14 /* GiveDon.swift */; };
+		62ACD9CE2865F23400059B14 /* HalfSheetManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ACD9CD2865F23400059B14 /* HalfSheetManagers.swift */; };
+		62ACD9D12865F29900059B14 /* HalfSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ACD9D02865F29900059B14 /* HalfSheet.swift */; };
+		62F6873D285CBCC200F45564 /* StartViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6873C285CBCC200F45564 /* StartViews.swift */; };
+		62F68741285CC30B00F45564 /* DataRewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68740285CC30B00F45564 /* DataRewards.swift */; };
+		62F68743285CC5C300F45564 /* ButtonReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68742285CC5C300F45564 /* ButtonReward.swift */; };
+		62F68745285CC90C00F45564 /* ButtonDon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68744285CC90C00F45564 /* ButtonDon.swift */; };
+		62F68749285CCD2700F45564 /* ScrollBonAchat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68748285CCD2700F45564 /* ScrollBonAchat.swift */; };
+		62F6874D285CD97C00F45564 /* DetailBonAchat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6874C285CD97C00F45564 /* DetailBonAchat.swift */; };
+		62F6874F285CDAB600F45564 /* ScrollPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6874E285CDAB600F45564 /* ScrollPayment.swift */; };
+		62F68751285D023900F45564 /* RewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68750285D023900F45564 /* RewardView.swift */; };
+		62F68753285D03BB00F45564 /* DetailPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68752285D03BB00F45564 /* DetailPayment.swift */; };
+		62F68755285D075600F45564 /* ButtonPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68754285D075600F45564 /* ButtonPayment.swift */; };
+		62F68757285D0D0200F45564 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F68756285D0D0200F45564 /* HistoryView.swift */; };
 		672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E2348285C7A1600EE809C /* EcoMoveApp.swift */; };
 		672E234B285C7A1600EE809C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E234A285C7A1600EE809C /* ContentView.swift */; };
 		672E234D285C7A1900EE809C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 672E234C285C7A1900EE809C /* Assets.xcassets */; };
@@ -26,9 +49,43 @@
 		9F68BFDD286466D9009E139C /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9F68BFDC286466D9009E139C /* FirebaseDatabaseSwift */; };
 		9F68BFE22865B97E009E139C /* PlaceAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68BFE12865B97E009E139C /* PlaceAnnotationView.swift */; };
 		9F68BFE42867987C009E139C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68BFE32867987C009E139C /* ButtonView.swift */; };
+		672E2364285CBFA200EE809C /* MaConsoQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E2363285CBFA200EE809C /* MaConsoQView.swift */; };
+		676947742862FB9B00EE5C16 /* GraphiquePHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676947732862FB9B00EE5C16 /* GraphiquePHView.swift */; };
+		67694777286303E100EE5C16 /* GraphiqueEHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67694776286303E100EE5C16 /* GraphiqueEHView.swift */; };
+		676947962863145400EE5C16 /* GraphiqueEMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676947952863145400EE5C16 /* GraphiqueEMView.swift */; };
+		676947982863157400EE5C16 /* GraphiquePMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676947972863157400EE5C16 /* GraphiquePMView.swift */; };
+		6769479A286315F800EE5C16 /* MaConsoMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67694799286315F800EE5C16 /* MaConsoMView.swift */; };
+		67893C3928606B4700E6D14B /* PickerMaConso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67893C3828606B4700E6D14B /* PickerMaConso.swift */; };
+		67893C3B286071F700E6D14B /* MaconsoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67893C3A286071F700E6D14B /* MaconsoView.swift */; };
+		67893C3D28607D7100E6D14B /* MaConsoHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67893C3C28607D7100E6D14B /* MaConsoHView.swift */; };
+		67CB03672862025F007E648C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CB03662862025F007E648C /* Test.swift */; };
+		67CB036C2862067D007E648C /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 67CB036B2862067D007E648C /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47BE220D2862FEBB0042EEBA /* DetailDon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDon.swift; sourceTree = "<group>"; };
+		47BE220F2863014B0042EEBA /* ProgressDon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDon.swift; sourceTree = "<group>"; };
+		47BE221C286356A60042EEBA /* CardDonator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDonator.swift; sourceTree = "<group>"; };
+		47DFFFEE2861B36500385E74 /* ScrollDon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollDon.swift; sourceTree = "<group>"; };
+		62A8C32C285DA9AB00CE251E /* HistoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCard.swift; sourceTree = "<group>"; };
+		62A8C330285DC35300CE251E /* TopCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCardView.swift; sourceTree = "<group>"; };
+		62A8C332285DC8CC00CE251E /* HistoryTravel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTravel.swift; sourceTree = "<group>"; };
+		62A8C334285DD08A00CE251E /* ComingReward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingReward.swift; sourceTree = "<group>"; };
+		62A8C336285DD2F300CE251E /* CardPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPayment.swift; sourceTree = "<group>"; };
+		62ACD9CA2865F1B300059B14 /* GiveDon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiveDon.swift; sourceTree = "<group>"; };
+		62ACD9CD2865F23400059B14 /* HalfSheetManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheetManagers.swift; sourceTree = "<group>"; };
+		62ACD9D02865F29900059B14 /* HalfSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheet.swift; sourceTree = "<group>"; };
+		62F6873C285CBCC200F45564 /* StartViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViews.swift; sourceTree = "<group>"; };
+		62F68740285CC30B00F45564 /* DataRewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRewards.swift; sourceTree = "<group>"; };
+		62F68742285CC5C300F45564 /* ButtonReward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonReward.swift; sourceTree = "<group>"; };
+		62F68744285CC90C00F45564 /* ButtonDon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDon.swift; sourceTree = "<group>"; };
+		62F68748285CCD2700F45564 /* ScrollBonAchat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollBonAchat.swift; sourceTree = "<group>"; };
+		62F6874C285CD97C00F45564 /* DetailBonAchat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBonAchat.swift; sourceTree = "<group>"; };
+		62F6874E285CDAB600F45564 /* ScrollPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPayment.swift; sourceTree = "<group>"; };
+		62F68750285D023900F45564 /* RewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardView.swift; sourceTree = "<group>"; };
+		62F68752285D03BB00F45564 /* DetailPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPayment.swift; sourceTree = "<group>"; };
+		62F68754285D075600F45564 /* ButtonPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPayment.swift; sourceTree = "<group>"; };
+		62F68756285D0D0200F45564 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		672E2345285C7A1600EE809C /* EcoMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		672E2348285C7A1600EE809C /* EcoMoveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoMoveApp.swift; sourceTree = "<group>"; };
 		672E234A285C7A1600EE809C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +104,16 @@
 		9F68BFD72864653D009E139C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9F68BFE12865B97E009E139C /* PlaceAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotationView.swift; sourceTree = "<group>"; };
 		9F68BFE32867987C009E139C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		672E2363285CBFA200EE809C /* MaConsoQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaConsoQView.swift; sourceTree = "<group>"; };
+		676947732862FB9B00EE5C16 /* GraphiquePHView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphiquePHView.swift; sourceTree = "<group>"; };
+		67694776286303E100EE5C16 /* GraphiqueEHView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphiqueEHView.swift; sourceTree = "<group>"; };
+		676947952863145400EE5C16 /* GraphiqueEMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphiqueEMView.swift; sourceTree = "<group>"; };
+		676947972863157400EE5C16 /* GraphiquePMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphiquePMView.swift; sourceTree = "<group>"; };
+		67694799286315F800EE5C16 /* MaConsoMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaConsoMView.swift; sourceTree = "<group>"; };
+		67893C3828606B4700E6D14B /* PickerMaConso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerMaConso.swift; sourceTree = "<group>"; };
+		67893C3A286071F700E6D14B /* MaconsoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaconsoView.swift; sourceTree = "<group>"; };
+		67893C3C28607D7100E6D14B /* MaConsoHView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaConsoHView.swift; sourceTree = "<group>"; };
+		67CB03662862025F007E648C /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Test.swift; path = ../Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +123,108 @@
 			files = (
 				9F68BFDD286466D9009E139C /* FirebaseDatabaseSwift in Frameworks */,
 				9F68BFDB286466D9009E139C /* FirebaseDatabase in Frameworks */,
+				67CB036C2862067D007E648C /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47BE2211286313880042EEBA /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+				62F68750285D023900F45564 /* RewardView.swift */,
+				62A8C330285DC35300CE251E /* TopCardView.swift */,
+				47BE22162863147A0042EEBA /* Payment */,
+				47BE22132863140D0042EEBA /* History */,
+				47BE2214286314270042EEBA /* BonAchat */,
+				47BE2212286313E80042EEBA /* Reward */,
+				47BE2215286314640042EEBA /* Don */,
+				62A8C32A285DA4ED00CE251E /* Models */,
+			);
+			path = Reward;
+			sourceTree = "<group>";
+		};
+		47BE2212286313E80042EEBA /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+				62A8C334285DD08A00CE251E /* ComingReward.swift */,
+				62F68742285CC5C300F45564 /* ButtonReward.swift */,
+			);
+			path = Reward;
+			sourceTree = "<group>";
+		};
+		47BE22132863140D0042EEBA /* History */ = {
+			isa = PBXGroup;
+			children = (
+				62F68756285D0D0200F45564 /* HistoryView.swift */,
+				62A8C32C285DA9AB00CE251E /* HistoryCard.swift */,
+				62A8C332285DC8CC00CE251E /* HistoryTravel.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		47BE2214286314270042EEBA /* BonAchat */ = {
+			isa = PBXGroup;
+			children = (
+				62F68748285CCD2700F45564 /* ScrollBonAchat.swift */,
+				62F6874C285CD97C00F45564 /* DetailBonAchat.swift */,
+			);
+			path = BonAchat;
+			sourceTree = "<group>";
+		};
+		47BE2215286314640042EEBA /* Don */ = {
+			isa = PBXGroup;
+			children = (
+				47DFFFEE2861B36500385E74 /* ScrollDon.swift */,
+				47BE220F2863014B0042EEBA /* ProgressDon.swift */,
+				62ACD9CA2865F1B300059B14 /* GiveDon.swift */,
+				47BE220D2862FEBB0042EEBA /* DetailDon.swift */,
+				62F68744285CC90C00F45564 /* ButtonDon.swift */,
+				47BE221C286356A60042EEBA /* CardDonator.swift */,
+			);
+			path = Don;
+			sourceTree = "<group>";
+		};
+		47BE22162863147A0042EEBA /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				62F6874E285CDAB600F45564 /* ScrollPayment.swift */,
+				62F68752285D03BB00F45564 /* DetailPayment.swift */,
+				62A8C336285DD2F300CE251E /* CardPayment.swift */,
+				62F68754285D075600F45564 /* ButtonPayment.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		62A8C32A285DA4ED00CE251E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62F68740285CC30B00F45564 /* DataRewards.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62ACD9CC2865F20D00059B14 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				62ACD9CD2865F23400059B14 /* HalfSheetManagers.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		62ACD9CF2865F25E00059B14 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				62ACD9D02865F29900059B14 /* HalfSheet.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		672E233C285C7A1600EE809C = {
 			isa = PBXGroup;
 			children = (
+				672E2348285C7A1600EE809C /* EcoMoveApp.swift */,
 				672E2356285C7EE300EE809C /* Struct */,
 				672E2347285C7A1600EE809C /* EcoMove */,
 				672E2346285C7A1600EE809C /* Products */,
@@ -82,9 +242,14 @@
 		672E2347285C7A1600EE809C /* EcoMove */ = {
 			isa = PBXGroup;
 			children = (
-				672E2348285C7A1600EE809C /* EcoMoveApp.swift */,
+				67893C3028605A1E00E6D14B /* MaConso */,
 				672E234A285C7A1600EE809C /* ContentView.swift */,
 				9F409C13285CC07900838CC3 /* MapView */,
+				47BE2211286313880042EEBA /* Reward */,
+				62F6873C285CBCC200F45564 /* StartViews.swift */,
+				62ACD9CC2865F20D00059B14 /* Managers */,
+				67CB03662862025F007E648C /* Test.swift */,
+				62ACD9CF2865F25E00059B14 /* ViewModels */,
 				672E234C285C7A1900EE809C /* Assets.xcassets */,
 				9F68BFD72864653D009E139C /* GoogleService-Info.plist */,
 				672E234E285C7A1900EE809C /* Preview Content */,
@@ -103,6 +268,7 @@
 		672E2356285C7EE300EE809C /* Struct */ = {
 			isa = PBXGroup;
 			children = (
+				67893C3828606B4700E6D14B /* PickerMaConso.swift */,
 				672E235D285C839500EE809C /* StructPoint.swift */,
 				672E2359285C82EA00EE809C /* StructProfile.swift */,
 				672E2357285C82C300EE809C /* StructReward.swift */,
@@ -132,6 +298,27 @@
 				9F409C56285FCEC000838CC3 /* FlexibleSheet.swift */,
 			);
 			path = ModalView;
+		676947752863032300EE5C16 /* Graphique */ = {
+			isa = PBXGroup;
+			children = (
+				676947972863157400EE5C16 /* GraphiquePMView.swift */,
+				676947952863145400EE5C16 /* GraphiqueEMView.swift */,
+				67694776286303E100EE5C16 /* GraphiqueEHView.swift */,
+				676947732862FB9B00EE5C16 /* GraphiquePHView.swift */,
+			);
+			path = Graphique;
+			sourceTree = "<group>";
+		};
+		67893C3028605A1E00E6D14B /* MaConso */ = {
+			isa = PBXGroup;
+			children = (
+				676947752863032300EE5C16 /* Graphique */,
+				67893C3A286071F700E6D14B /* MaconsoView.swift */,
+				672E2363285CBFA200EE809C /* MaConsoQView.swift */,
+				67893C3C28607D7100E6D14B /* MaConsoHView.swift */,
+				67694799286315F800EE5C16 /* MaConsoMView.swift */,
+			);
+			path = MaConso;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +340,7 @@
 			packageProductDependencies = (
 				9F68BFDA286466D9009E139C /* FirebaseDatabase */,
 				9F68BFDC286466D9009E139C /* FirebaseDatabaseSwift */,
+				67CB036B2862067D007E648C /* SwiftUICharts */,
 			);
 			productName = EcoMove;
 			productReference = 672E2345285C7A1600EE809C /* EcoMove.app */;
@@ -184,6 +372,7 @@
 			mainGroup = 672E233C285C7A1600EE809C;
 			packageReferences = (
 				9F68BFD9286466D9009E139C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				67CB036A2862067D007E648C /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
 			);
 			productRefGroup = 672E2346285C7A1600EE809C /* Products */;
 			projectDirPath = "";
@@ -224,8 +413,50 @@
 				9F68BFE22865B97E009E139C /* PlaceAnnotationView.swift in Sources */,
 				9F409C59286074C800838CC3 /* ModalViewTransport.swift in Sources */,
 				9F409C18285CC0F400838CC3 /* ModalViewTrajet.swift in Sources */,
+				62A8C333285DC8CC00CE251E /* HistoryTravel.swift in Sources */,
+				62A8C32D285DA9AB00CE251E /* HistoryCard.swift in Sources */,
+				672E235C285C833C00EE809C /* StructTransport.swift in Sources */,
+				62F6874F285CDAB600F45564 /* ScrollPayment.swift in Sources */,
+				62ACD9CB2865F1B400059B14 /* GiveDon.swift in Sources */,
+				62F68743285CC5C300F45564 /* ButtonReward.swift in Sources */,
+				62F6873D285CBCC200F45564 /* StartViews.swift in Sources */,
+				672E235A285C82EA00EE809C /* StructProfile.swift in Sources */,
+				62A8C335285DD08A00CE251E /* ComingReward.swift in Sources */,
+				672E234B285C7A1600EE809C /* ContentView.swift in Sources */,
+				47BE221D286356A60042EEBA /* CardDonator.swift in Sources */,
+				47BE22102863014B0042EEBA /* ProgressDon.swift in Sources */,
+				62F6874D285CD97C00F45564 /* DetailBonAchat.swift in Sources */,
+				62F68755285D075600F45564 /* ButtonPayment.swift in Sources */,
+				62A8C331285DC35300CE251E /* TopCardView.swift in Sources */,
+				62F68749285CCD2700F45564 /* ScrollBonAchat.swift in Sources */,
+				62F68753285D03BB00F45564 /* DetailPayment.swift in Sources */,
+				47BE220E2862FEBB0042EEBA /* DetailDon.swift in Sources */,
+				62F68757285D0D0200F45564 /* HistoryView.swift in Sources */,
+				676947962863145400EE5C16 /* GraphiqueEMView.swift in Sources */,
+				62F6873D285CBCC200F45564 /* StartViews.swift in Sources */,
+				672E235A285C82EA00EE809C /* StructProfile.swift in Sources */,
+				62ACD9D12865F29900059B14 /* HalfSheet.swift in Sources */,
+				67893C3928606B4700E6D14B /* PickerMaConso.swift in Sources */,
+				672E234B285C7A1600EE809C /* ContentView.swift in Sources */,
+				676947742862FB9B00EE5C16 /* GraphiquePHView.swift in Sources */,
+				67CB03672862025F007E648C /* Test.swift in Sources */,
+				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
+				62F68751285D023900F45564 /* RewardView.swift in Sources */,
 				672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */,
+				62A8C337285DD2F300CE251E /* CardPayment.swift in Sources */,
+				62F68741285CC30B00F45564 /* DataRewards.swift in Sources */,
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
+				62F68745285CC90C00F45564 /* ButtonDon.swift in Sources */,
+				47DFFFEF2861B36500385E74 /* ScrollDon.swift in Sources */,
+				62ACD9CE2865F23400059B14 /* HalfSheetManagers.swift in Sources */,
+				672E2364285CBFA200EE809C /* MaConsoQView.swift in Sources */,
+				67893C3B286071F700E6D14B /* MaconsoView.swift in Sources */,
+				67694777286303E100EE5C16 /* GraphiqueEHView.swift in Sources */,
+				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
+				672E2364285CBFA200EE809C /* MaConsoQView.swift in Sources */,
+				676947982863157400EE5C16 /* GraphiquePMView.swift in Sources */,
+				6769479A286315F800EE5C16 /* MaConsoMView.swift in Sources */,
+				67893C3D28607D7100E6D14B /* MaConsoHView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +665,12 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 9.0.0;
+		67CB036A2862067D007E648C /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/willdale/SwiftUICharts#multi-line-chart";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -448,6 +685,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9F68BFD9286466D9009E139C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabaseSwift;
+		67CB036B2862067D007E648C /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67CB036A2862067D007E648C /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
