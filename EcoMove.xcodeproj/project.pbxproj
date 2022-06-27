@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		67CB036C2862067D007E648C /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 67CB036B2862067D007E648C /* SwiftUICharts */; };
-		9F68BFDB286466D9009E139C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9F68BFDA286466D9009E139C /* FirebaseDatabase */; };
-		9F68BFDD286466D9009E139C /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9F68BFDC286466D9009E139C /* FirebaseDatabaseSwift */; };
+		9F82DA462869D71000BF6E7C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9F82DA452869D71000BF6E7C /* FirebaseDatabase */; };
+		9F82DA492869D76700BF6E7C /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 9F82DA482869D76700BF6E7C /* SwiftUICharts */; };
 		B8519CAD2869B49100896105 /* HalfSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8519C642869B49100896105 /* HalfSheet.swift */; };
 		B8519CAE2869B49100896105 /* ModaleAdresseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8519C652869B49100896105 /* ModaleAdresseView.swift */; };
 		B8519CAF2869B49100896105 /* StartViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8519C662869B49100896105 /* StartViews.swift */; };
@@ -133,9 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F68BFDD286466D9009E139C /* FirebaseDatabaseSwift in Frameworks */,
-				9F68BFDB286466D9009E139C /* FirebaseDatabase in Frameworks */,
-				67CB036C2862067D007E648C /* SwiftUICharts in Frameworks */,
+				9F82DA462869D71000BF6E7C /* FirebaseDatabase in Frameworks */,
+				9F82DA492869D76700BF6E7C /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,9 +372,8 @@
 			);
 			name = EcoMove;
 			packageProductDependencies = (
-				9F68BFDA286466D9009E139C /* FirebaseDatabase */,
-				9F68BFDC286466D9009E139C /* FirebaseDatabaseSwift */,
-				67CB036B2862067D007E648C /* SwiftUICharts */,
+				9F82DA452869D71000BF6E7C /* FirebaseDatabase */,
+				9F82DA482869D76700BF6E7C /* SwiftUICharts */,
 			);
 			productName = EcoMove;
 			productReference = 672E2345285C7A1600EE809C /* EcoMove.app */;
@@ -407,8 +404,8 @@
 			);
 			mainGroup = 672E233C285C7A1600EE809C;
 			packageReferences = (
-				9F68BFD9286466D9009E139C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				67CB036A2862067D007E648C /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+				9F82DA442869D71000BF6E7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9F82DA472869D76700BF6E7C /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
 			);
 			productRefGroup = 672E2346285C7A1600EE809C /* Products */;
 			projectDirPath = "";
@@ -694,15 +691,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		67CB036A2862067D007E648C /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/willdale/SwiftUICharts#multi-line-chart";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-		9F68BFD9286466D9009E139C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		9F82DA442869D71000BF6E7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -710,23 +699,26 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		9F82DA472869D76700BF6E7C /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/willdale/SwiftUICharts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		67CB036B2862067D007E648C /* SwiftUICharts */ = {
+		9F82DA452869D71000BF6E7C /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 67CB036A2862067D007E648C /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
-			productName = SwiftUICharts;
-		};
-		9F68BFDA286466D9009E139C /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9F68BFD9286466D9009E139C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 9F82DA442869D71000BF6E7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
 		};
-		9F68BFDC286466D9009E139C /* FirebaseDatabaseSwift */ = {
+		9F82DA482869D76700BF6E7C /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9F68BFD9286466D9009E139C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabaseSwift;
+			package = 9F82DA472869D76700BF6E7C /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
