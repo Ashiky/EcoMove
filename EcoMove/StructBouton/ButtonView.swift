@@ -11,15 +11,13 @@ struct ButtonView: View {
     @State var colorButton: [Bouton]
     var body: some View {
         HStack{
-            Text("Icones")
-                .foregroundColor(Color("LightGreen"))
             ForEach(0..<colorButton.count, id: \.self){ index in
                 Button{
-                    if colorButton[index].colors == "gray" {
+                    if colorButton[index].colors == "Grayperso" {
                         colorButton[index].colors = "LightGreen"
                     }
                     else {
-                        colorButton[index].colors = "gray"
+                        colorButton[index].colors = "Grayperso"
                     }
                 }label: {
                     ZStack{
@@ -37,6 +35,6 @@ struct ButtonView: View {
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView(colorButton: [Bouton(colors: "DarkGreen", iconne: "house")])
+        ButtonView(colorButton: [Bouton(colors: "Grayperso", iconne: "house")])
     }
 }

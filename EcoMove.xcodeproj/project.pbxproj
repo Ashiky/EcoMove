@@ -242,8 +242,8 @@
 		B8519C7F2869B49100896105 /* MapView */ = {
 			isa = PBXGroup;
 			children = (
-				B8519C802869B49100896105 /* ModalView */,
 				B8519C862869B49100896105 /* MapView.swift */,
+				B8519C802869B49100896105 /* ModalView */,
 			);
 			path = MapView;
 			sourceTree = "<group>";
