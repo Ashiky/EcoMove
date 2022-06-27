@@ -40,11 +40,14 @@
 		676947962863145400EE5C16 /* GraphiqueEMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676947952863145400EE5C16 /* GraphiqueEMView.swift */; };
 		676947982863157400EE5C16 /* GraphiquePMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676947972863157400EE5C16 /* GraphiquePMView.swift */; };
 		6769479A286315F800EE5C16 /* MaConsoMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67694799286315F800EE5C16 /* MaConsoMView.swift */; };
+		676B35D42865BC220084C249 /* StructButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676B35D32865BC220084C249 /* StructButton.swift */; };
 		67893C3928606B4700E6D14B /* PickerMaConso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67893C3828606B4700E6D14B /* PickerMaConso.swift */; };
 		67893C3B286071F700E6D14B /* MaconsoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67893C3A286071F700E6D14B /* MaconsoView.swift */; };
 		67893C3D28607D7100E6D14B /* MaConsoHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67893C3C28607D7100E6D14B /* MaConsoHView.swift */; };
-		67CB03672862025F007E648C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CB03662862025F007E648C /* Test.swift */; };
+		67B592842869A8230054D5EE /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B592832869A8230054D5EE /* ButtonView.swift */; };
 		67CB036C2862067D007E648C /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 67CB036B2862067D007E648C /* SwiftUICharts */; };
+		67D4B9CE2864A5AF001C984F /* ModaleAdresseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4B9CD2864A5AF001C984F /* ModaleAdresseView.swift */; };
+		67D4B9D02864AFA4001C984F /* StructAdresse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4B9CF2864AFA4001C984F /* StructAdresse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,10 +85,13 @@
 		676947952863145400EE5C16 /* GraphiqueEMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphiqueEMView.swift; sourceTree = "<group>"; };
 		676947972863157400EE5C16 /* GraphiquePMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphiquePMView.swift; sourceTree = "<group>"; };
 		67694799286315F800EE5C16 /* MaConsoMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaConsoMView.swift; sourceTree = "<group>"; };
+		676B35D32865BC220084C249 /* StructButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructButton.swift; sourceTree = "<group>"; };
 		67893C3828606B4700E6D14B /* PickerMaConso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerMaConso.swift; sourceTree = "<group>"; };
 		67893C3A286071F700E6D14B /* MaconsoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaconsoView.swift; sourceTree = "<group>"; };
 		67893C3C28607D7100E6D14B /* MaConsoHView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaConsoHView.swift; sourceTree = "<group>"; };
-		67CB03662862025F007E648C /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Test.swift; path = ../Test.swift; sourceTree = "<group>"; };
+		67B592832869A8230054D5EE /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		67D4B9CD2864A5AF001C984F /* ModaleAdresseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModaleAdresseView.swift; sourceTree = "<group>"; };
+		67D4B9CF2864AFA4001C984F /* StructAdresse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructAdresse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +184,6 @@
 			children = (
 				672E2348285C7A1600EE809C /* EcoMoveApp.swift */,
 				672E2356285C7EE300EE809C /* Struct */,
-				672E2347285C7A1600EE809C /* EcoMove */,
 				672E2346285C7A1600EE809C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -194,11 +199,11 @@
 		672E2347285C7A1600EE809C /* EcoMove */ = {
 			isa = PBXGroup;
 			children = (
+				67D4B9CD2864A5AF001C984F /* ModaleAdresseView.swift */,
 				67893C3028605A1E00E6D14B /* MaConso */,
 				672E234A285C7A1600EE809C /* ContentView.swift */,
 				47BE2211286313880042EEBA /* Reward */,
 				62F6873C285CBCC200F45564 /* StartViews.swift */,
-				67CB03662862025F007E648C /* Test.swift */,
 				672E234C285C7A1900EE809C /* Assets.xcassets */,
 				672E234E285C7A1900EE809C /* Preview Content */,
 			);
@@ -217,10 +222,13 @@
 			isa = PBXGroup;
 			children = (
 				67893C3828606B4700E6D14B /* PickerMaConso.swift */,
+				67D4B9CF2864AFA4001C984F /* StructAdresse.swift */,
 				672E235D285C839500EE809C /* StructPoint.swift */,
 				672E2359285C82EA00EE809C /* StructProfile.swift */,
 				672E2357285C82C300EE809C /* StructReward.swift */,
 				672E235B285C833C00EE809C /* StructTransport.swift */,
+				67B592852869AB4C0054D5EE /* StructBouton */,
+				672E2347285C7A1600EE809C /* EcoMove */,
 			);
 			path = Struct;
 			sourceTree = "<group>";
@@ -246,6 +254,15 @@
 				67694799286315F800EE5C16 /* MaConsoMView.swift */,
 			);
 			path = MaConso;
+			sourceTree = "<group>";
+		};
+		67B592852869AB4C0054D5EE /* StructBouton */ = {
+			isa = PBXGroup;
+			children = (
+				67B592832869A8230054D5EE /* ButtonView.swift */,
+				676B35D32865BC220084C249 /* StructButton.swift */,
+			);
+			path = StructBouton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +347,7 @@
 				62F6874F285CDAB600F45564 /* ScrollPayment.swift in Sources */,
 				62F68743285CC5C300F45564 /* ButtonReward.swift in Sources */,
 				62F6873D285CBCC200F45564 /* StartViews.swift in Sources */,
+				67B592842869A8230054D5EE /* ButtonView.swift in Sources */,
 				672E235A285C82EA00EE809C /* StructProfile.swift in Sources */,
 				62A8C335285DD08A00CE251E /* ComingReward.swift in Sources */,
 				672E234B285C7A1600EE809C /* ContentView.swift in Sources */,
@@ -347,12 +365,13 @@
 				67893C3928606B4700E6D14B /* PickerMaConso.swift in Sources */,
 				672E234B285C7A1600EE809C /* ContentView.swift in Sources */,
 				676947742862FB9B00EE5C16 /* GraphiquePHView.swift in Sources */,
-				67CB03672862025F007E648C /* Test.swift in Sources */,
 				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
+				67D4B9CE2864A5AF001C984F /* ModaleAdresseView.swift in Sources */,
 				62F68751285D023900F45564 /* RewardView.swift in Sources */,
 				672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */,
 				62A8C337285DD2F300CE251E /* CardPayment.swift in Sources */,
 				62F68741285CC30B00F45564 /* DataRewards.swift in Sources */,
+				67D4B9D02864AFA4001C984F /* StructAdresse.swift in Sources */,
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
 				62F68745285CC90C00F45564 /* ButtonDon.swift in Sources */,
 				47DFFFEF2861B36500385E74 /* ScrollDon.swift in Sources */,
@@ -362,6 +381,7 @@
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,
 				672E2364285CBFA200EE809C /* MaConsoQView.swift in Sources */,
 				676947982863157400EE5C16 /* GraphiquePMView.swift in Sources */,
+				676B35D42865BC220084C249 /* StructButton.swift in Sources */,
 				6769479A286315F800EE5C16 /* MaConsoMView.swift in Sources */,
 				67893C3D28607D7100E6D14B /* MaConsoHView.swift in Sources */,
 			);
