@@ -5,6 +5,7 @@
 //  Created by apprenant70 on 17/06/2022.
 //
 
+import CoreLocationUI
 import MapKit
 import SwiftUI
 import FirebaseDatabase
@@ -40,22 +41,22 @@ struct MapView: View {
     }
     
     var body: some View {
-        ZStack {
-            Map(coordinateRegion: $mapRegion, annotationItems: metroTramList) { metroTram in
+        ZStack(alignment: .top) {
+            Map(coordinateRegion: $mapRegion, showsUserLocation: true, annotationItems: metroTramList) { metroTram in
         
                 MapMarker(coordinate: metroTram.pointGeo, tint: metroTram.color)
                 
             }
-//            .onTapGesture {
-//              withAnimation(.easeInOut) {
-//                  $$metroTramList.arret.toggle
-//              }
-//            }
-            
-            FlexibleSheet(sheetMode: $sheetMode) {
-                ModalViewAdresse()
+            .ignoresSafeArea()
+            LocationButton(.currentLocation) {
+
             }
-            .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
+            .foregroundColor(.white)
+            .cornerRadius(25)
+            .labelStyle(.iconOnly)
+            .tint(Color("DarkGreen"))
+            .padding(.top, 30)
+            .padding(.leading, 300)
             
         }
         .onAppear{
@@ -72,6 +73,16 @@ struct MetroTram: Identifiable {
     var nomDuResau: String
     var pointGeo: CLLocationCoordinate2D
     var identifiantInterne: String
+    var icon: String {
+        switch nomDuResau {
+        case "Métro":
+            return "tram.fill.tunnel"
+        case "Tramway":
+            return "tram"
+        default:
+            return "Rien"
+        }
+    }
     var color: Color {
         switch identifiantInterne {
         case "M1":

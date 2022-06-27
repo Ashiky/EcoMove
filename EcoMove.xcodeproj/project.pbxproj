@@ -21,12 +21,11 @@
 		9F409C1A285CC21000838CC3 /* ModalViewWinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C19285CC21000838CC3 /* ModalViewWinPoint.swift */; };
 		9F409C57285FCEC000838CC3 /* FlexibleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C56285FCEC000838CC3 /* FlexibleSheet.swift */; };
 		9F409C59286074C800838CC3 /* ModalViewTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C58286074C800838CC3 /* ModalViewTransport.swift */; };
-		9F409C662861ADE000838CC3 /* DataBaseTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C652861ADE000838CC3 /* DataBaseTransport.swift */; };
-		9F409C682861B07500838CC3 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F409C672861B07500838CC3 /* Map.swift */; };
 		9F68BFD82864653D009E139C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F68BFD72864653D009E139C /* GoogleService-Info.plist */; };
 		9F68BFDB286466D9009E139C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9F68BFDA286466D9009E139C /* FirebaseDatabase */; };
 		9F68BFDD286466D9009E139C /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9F68BFDC286466D9009E139C /* FirebaseDatabaseSwift */; };
 		9F68BFE22865B97E009E139C /* PlaceAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68BFE12865B97E009E139C /* PlaceAnnotationView.swift */; };
+		9F68BFE42867987C009E139C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68BFE32867987C009E139C /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,10 +44,9 @@
 		9F409C19285CC21000838CC3 /* ModalViewWinPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewWinPoint.swift; sourceTree = "<group>"; };
 		9F409C56285FCEC000838CC3 /* FlexibleSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleSheet.swift; sourceTree = "<group>"; };
 		9F409C58286074C800838CC3 /* ModalViewTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewTransport.swift; sourceTree = "<group>"; };
-		9F409C652861ADE000838CC3 /* DataBaseTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseTransport.swift; sourceTree = "<group>"; };
-		9F409C672861B07500838CC3 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		9F68BFD72864653D009E139C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9F68BFE12865B97E009E139C /* PlaceAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotationView.swift; sourceTree = "<group>"; };
+		9F68BFE32867987C009E139C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				9F409C0C285CB3CE00838CC3 /* MapView.swift */,
+				9F68BFE32867987C009E139C /* ButtonView.swift */,
 				9F68BFE12865B97E009E139C /* PlaceAnnotationView.swift */,
-				9F68BFE02864A595009E139C /* TestMap */,
 				9F409C16285CC09300838CC3 /* ModalView */,
 			);
 			path = MapView;
@@ -134,15 +132,6 @@
 				9F409C56285FCEC000838CC3 /* FlexibleSheet.swift */,
 			);
 			path = ModalView;
-			sourceTree = "<group>";
-		};
-		9F68BFE02864A595009E139C /* TestMap */ = {
-			isa = PBXGroup;
-			children = (
-				9F409C672861B07500838CC3 /* Map.swift */,
-				9F409C652861ADE000838CC3 /* DataBaseTransport.swift */,
-			);
-			path = TestMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +214,7 @@
 			files = (
 				9F409C15285CC08E00838CC3 /* ModalViewAdresse.swift in Sources */,
 				672E235C285C833C00EE809C /* StructTransport.swift in Sources */,
+				9F68BFE42867987C009E139C /* ButtonView.swift in Sources */,
 				672E235A285C82EA00EE809C /* StructProfile.swift in Sources */,
 				9F409C57285FCEC000838CC3 /* FlexibleSheet.swift in Sources */,
 				672E234B285C7A1600EE809C /* ContentView.swift in Sources */,
@@ -232,9 +222,7 @@
 				9F409C0D285CB3CE00838CC3 /* MapView.swift in Sources */,
 				672E2358285C82C300EE809C /* StructReward.swift in Sources */,
 				9F68BFE22865B97E009E139C /* PlaceAnnotationView.swift in Sources */,
-				9F409C662861ADE000838CC3 /* DataBaseTransport.swift in Sources */,
 				9F409C59286074C800838CC3 /* ModalViewTransport.swift in Sources */,
-				9F409C682861B07500838CC3 /* Map.swift in Sources */,
 				9F409C18285CC0F400838CC3 /* ModalViewTrajet.swift in Sources */,
 				672E2349285C7A1600EE809C /* EcoMoveApp.swift in Sources */,
 				672E235E285C839500EE809C /* StructPoint.swift in Sources */,

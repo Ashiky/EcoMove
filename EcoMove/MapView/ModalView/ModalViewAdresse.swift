@@ -135,6 +135,14 @@ struct ModalViewAdresse: View {
                             .foregroundColor(Color("DarkGreen"))
                             .padding()
                     }
+                    HStack {
+                        Image(systemName: "heart")
+                            .foregroundColor(Color("DarkGreen"))
+                        Text("Sophie")
+                            .fontWeight(.bold)
+                            .foregroundColor(Color("DarkGreen"))
+                            .padding()
+                    }
                 }
                 .font(.callout)
             }
