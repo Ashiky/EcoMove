@@ -4,7 +4,7 @@ import SwiftUI
 
 struct MaConsoQView: View {
     @State var animation: Double = 0
-    @State var consoJV: Double = 0.5
+    @State var consoJV: Double = 0.3
     var body: some View {
         VStack {
             

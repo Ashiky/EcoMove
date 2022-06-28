@@ -357,6 +357,7 @@
 				B8519CA62869B49100896105 /* TransportFavorisView.swift */,
 				B8519CA72869B49100896105 /* TansportPersoButum.swift */,
 				B8519CA82869B49100896105 /* TransportButum.swift */,
+				B8519C652869B49100896105 /* ModaleAdresseView.swift */,
 			);
 			path = ProfilView;
 			sourceTree = "<group>";

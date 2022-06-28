@@ -8,27 +8,10 @@
 import SwiftUI
 
 struct TransportFavorisView: View {
+    @State var showSheet: Bool = false
     var body: some View {
         VStack{
-            HStack{
-                ZStack{
-                    Rectangle()
-                        .fill(Color("LightGreen"))
-                        .frame(width: 140.0, height: 20.0)
-                        .cornerRadius(8)
-                    Text("PROFIL")
-                        .font(.footnote)
-                        .padding(10)
-                }
-                ZStack{
-                    Rectangle()
-                        .fill(Color("LightGreen"))
-                        .frame(width: 140, height: 20.0)
-                        .cornerRadius(8)
-                    Text("MA CONSO CO2")
-                        .font(.footnote)
-                }
-            }
+            
             HStack{
                 ZStack{
                     RoundedRectangle(cornerRadius: 8)
@@ -37,38 +20,52 @@ struct TransportFavorisView: View {
                     HStack{
                         Text("MES TRANSPORTS FAVORIS")
                             .font(.footnote)
-                        Image(systemName: "plus.circle")
-                    }
-                }
-            }
-            FavorisView(favorisTransport: "Maison", transportImage: "house")
-            FavorisView(favorisTransport: "Travail", transportImage: "briefcase")
-            FavorisView(favorisTransport: "Sophie", transportImage: "heart")
-            Group{
-                HStack{
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(Color("LightGreen"))
-                            .frame(width: 250.0, height: 20.0)
-                        Text("MES TRANSPORTS FAVORIS")
-                            .font(.footnote)
-                    }
-                }
-                TransportButum()
-                HStack{
-                    ZStack{
+                        Button{
+                            showSheet.toggle()
+                        }label: {
+                            Image(systemName: "plus.circle")
+                                .foregroundColor(.white)
+                        }
+                        .sheet(isPresented: $showSheet) {
+                            HalfSheet{ModaleAdresseView(adresse: "", adresseName:"")
+                                                        
+                        }
                         
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(Color("LightGreen"))
-                            .frame(width: 250.0, height: 20.0)
-                        Text("MES TRANSPORTS PERSONNELS")
-                            .font(.footnote)
+                        
+                        
                     }
+                    
                 }
-                TransportPersoButum()
             }
         }
+        FavorisView(favorisTransport: "Maison", transportImage: "house")
+        FavorisView(favorisTransport: "Travail", transportImage: "briefcase")
+        FavorisView(favorisTransport: "Sophie", transportImage: "heart")
+        Group{
+            HStack{
+                ZStack{
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(Color("LightGreen"))
+                        .frame(width: 250.0, height: 20.0)
+                    Text("MES TRANSPORTS FAVORIS")
+                        .font(.footnote)
+                }
+            }
+            TransportButum()
+            HStack{
+                ZStack{
+                    
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(Color("LightGreen"))
+                        .frame(width: 250.0, height: 20.0)
+                    Text("MES TRANSPORTS PERSONNELS")
+                        .font(.footnote)
+                }
+            }
+            TransportPersoButum()
+        }
     }
+}
 }
 
 
