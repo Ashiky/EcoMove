@@ -54,7 +54,7 @@ struct MapView: View {
     
     @State private var mapType: MKMapType = .standard
     
-    @State private var routeSohpie: MKRoute
+//    @State private var routeSohpie: MKRoute
     
     @State var metroTramList: [MetroTram] = []
     func getMT(){
