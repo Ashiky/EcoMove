@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct TransportFavorisView: View {
+    @State var showSheet: Bool = false
     var body: some View {
+
         ScrollView{
             VStack(spacing: 20) {
                 //            HStack{
@@ -96,10 +98,13 @@ struct TransportFavorisView: View {
                     }
                     TransportPersoButum()
                         .padding(.horizontal)
+
                 }
             }
+            TransportPersoButum()
         }
     }
+}
 }
 
 

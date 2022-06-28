@@ -15,6 +15,7 @@ struct ModalViewAdresse: View {
     
     
     var body: some View {
+        NavigationView {
         VStack(alignment: .leading) {
         VStack {
             TextField("\(Image(systemName: "location")) Ma position",
@@ -22,7 +23,7 @@ struct ModalViewAdresse: View {
             )
             .disableAutocorrection(true)
             TextField(
-                "Arrivé",
+                "Arrivée",
                 text: $endPoint
             )
             .disableAutocorrection(true)
@@ -89,8 +90,11 @@ struct ModalViewAdresse: View {
                 }
                 .font(.callout)
             }
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
         }
     }
+}
 }
 
 

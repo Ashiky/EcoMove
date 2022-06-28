@@ -16,7 +16,7 @@ struct DetailDon: View {
     
     var body: some View {
         VStack{
-            //     ScrollView{
+                 ScrollView{
             VStack(spacing: 10){
                 Image(donations.image)
                     .resizable()
@@ -62,7 +62,7 @@ struct DetailDon: View {
                 
                 
             }.padding()
-            ScrollView{
+     //       ScrollView{
                 VStack {
                     Text(donations.descriptif)
                         .multilineTextAlignment(.leading)
@@ -79,8 +79,9 @@ struct DetailDon: View {
                                 isHeight = 135
                             }
                         }, label: {
-                            Text(showText == false ? "Lire la suite" : "moins d'infos")
-                                .foregroundColor(showText == false ? Color("LightGreen") : Color.clear)
+                            withAnimation {
+                                Text(showText == false ? "Lire la suite" : "moins d'infos")
+                            }.foregroundColor(Color("LightGreen"))
                              
                         }).padding(.horizontal)
                     }
