@@ -15,9 +15,12 @@ struct ProfileView: View {
         VStack{
             
             ZStack{
-                Rectangle()
+                RoundedRectangle(cornerRadius: 8)
                     .fill(Color("LightGreen"))
-                    .frame(width: 380.0, height: 220.0)
+                    .frame(width: 350, height: 200, alignment: .center)
+                    .rotationEffect(.degrees(2))
+                    .shadow(color: Color("DarkGreen"), radius: 2, x: 4, y: 3)
+                    .padding()
                 HStack{
                     Image("Chris")
                         .resizable()
@@ -27,12 +30,19 @@ struct ProfileView: View {
                     
                     VStack{
                         Text("Chris REDFIELD")
+
+                            .font(.title2)
                             .foregroundColor(Color("DarkGreen"))
+                        
+                            .fontWeight(.bold)
                             .padding()
                         Text("8000 W")
-                            
+                            .font(.title2)
+                            .foregroundColor(Color("DarkGreen"))
+
                     }
                 }
+                .frame(width:300)
             }
             HStack{
                 Button{
