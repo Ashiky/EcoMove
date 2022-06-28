@@ -10,6 +10,7 @@ import SwiftUI
 struct ButtonView: View {
     @State var colorButton: [Bouton]
     var body: some View {
+        VStack{
         HStack{
             ForEach(0..<colorButton.count, id: \.self){ index in
                 Button{
@@ -28,6 +29,7 @@ struct ButtonView: View {
                             .foregroundColor(.white)
                     }//Z
                     }
+            }
                 }
             }
     }
@@ -35,6 +37,6 @@ struct ButtonView: View {
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView(colorButton: [Bouton(colors: "Grayperso", iconne: "house")])
+        ButtonView(colorButton: [Bouton(colors: "Grayperso", iconne: "house"),Bouton(colors: "Grayperso", iconne: "case")])
     }
 }
