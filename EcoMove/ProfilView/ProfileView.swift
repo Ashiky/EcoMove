@@ -71,7 +71,7 @@ struct ProfileView: View {
                 }label:{
                     ZStack{
                         Rectangle()
-                            .fill(vuMaConso == true ? Color("LightGreen"): Color("Grayperso")) 
+                            .fill(vuMaConso == true ? Color("LightGreen"): Color("Grayperso"))
                             .frame(width: 180, height: 40.0)
                             .cornerRadius(8)
                         Text("MA CONSO CO2")
@@ -87,7 +87,7 @@ struct ProfileView: View {
                     
             }
             if vuMaConso == true {
-                MaconsoView(consoJV: 0.3)
+                MaconsoView(consoJV: 0.7)
                     
             }
             Spacer()

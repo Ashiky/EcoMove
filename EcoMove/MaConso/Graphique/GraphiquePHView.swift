@@ -15,20 +15,20 @@ struct GraphiquePHView: View {
             
             LineChart(chartData: consoH)
                 .pointMarkers(chartData: consoH)
-                .foregroundColor(Color("DarkGreen"))
+                .foregroundColor(.gray)
                 .frame(width: 343, height: 190)
         }
     }
 }
 func ConsoH()  -> LineChartData {
     let prodH = LineDataSet(dataPoints: [
-        LineChartDataPoint(value: 12, xAxisLabel: "M", description: "Monday"),
-        LineChartDataPoint(value: 100, xAxisLabel: "T", description: "Tuesday"),
-        LineChartDataPoint(value: 150,  xAxisLabel: "W", description: "Wednesday"),
+        LineChartDataPoint(value: 500, xAxisLabel: "M", description: "Monday"),
+        LineChartDataPoint(value: 410, xAxisLabel: "T", description: "Tuesday"),
+        LineChartDataPoint(value: 360,  xAxisLabel: "W", description: "Wednesday"),
         LineChartDataPoint(value: 275, xAxisLabel: "T", description: "Thursday"),
-        LineChartDataPoint(value: 360, xAxisLabel: "F", description: "Friday"),
-        LineChartDataPoint(value: 410, xAxisLabel: "S", description: "Saturday"),
-        LineChartDataPoint(value: 500,  xAxisLabel: "S", description: "Sunday")
+        LineChartDataPoint(value: 100, xAxisLabel: "F", description: "Friday"),
+        LineChartDataPoint(value: 20, xAxisLabel: "S", description: "Saturday"),
+        LineChartDataPoint(value: 3,  xAxisLabel: "S", description: "Sunday")
     ],
                              legendTitle: "Steps",
                                      pointStyle: PointStyle(),

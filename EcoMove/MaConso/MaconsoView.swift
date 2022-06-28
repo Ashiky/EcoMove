@@ -14,8 +14,9 @@ struct MaconsoView: View {
                 Text("Hebdomadaire").tag(1)
                 Text("Mensuel").tag(2)
                 }
-            
             .pickerStyle(.segmented)
+            .frame(width: 350)
+            .padding()
             if selectedConso == 0 {
                 MaConsoQView()
             }

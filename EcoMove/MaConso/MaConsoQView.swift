@@ -4,21 +4,22 @@ import SwiftUI
 
 struct MaConsoQView: View {
     @State var animation: Double = 0
-    @State var consoJV: Double = 0.3
+    @State var consoJV: Double = 0.7
     var body: some View {
         VStack {
-            
             ZStack {
                 Circle()
                     .trim(from: 0.0, to: (1))
                     .stroke(style: StrokeStyle(lineWidth: 10.0, lineCap: .round, lineJoin: .round))
-                    .frame(width: 150, height: 150)
+                    .frame(width: 190, height: 190)
                     .foregroundColor(Color("Rouge"))
+                    .padding()
                 Circle()
                     .trim(from: 0.0, to: animation )
                     .stroke(style: StrokeStyle(lineWidth: 10.0, lineCap: .round, lineJoin: .round))
-                    .frame(width: 150, height: 150)
+                    .frame(width: 190, height: 190)
                     .foregroundColor(Color("LightGreen"))
+                    .padding()
                     .onAppear {
                                    let baseAnimation = Animation.easeInOut(duration: 1)
                                    
@@ -26,28 +27,39 @@ struct MaConsoQView: View {
                                    withAnimation(baseAnimation) {
                                        animation = consoJV
                                    }
-                                
                     }
+                
             }//Z
             HStack{
-                Text("CO2 Economisé")
-                    .frame(width: 125, height: 20, alignment: .leading)
-                RoundedRectangle(cornerRadius: 16)
-                    .frame(width: 20, height: 10)
+                HStack{
+                    ZStack{
+                RoundedRectangle(cornerRadius: 8)
+                    .frame(width: 180.0, height: 40.0)
+                    .cornerRadius(8)
                     .foregroundColor(Color("LightGreen"))
-                Spacer()
-            }//H
-            HStack{
-                Text("CO2 Produit")
-                    .frame(width: 126, height: 20, alignment: .leading)
-                RoundedRectangle(cornerRadius: 16)
-                    .frame(width: 20, height: 10)
+                Text("CO2 economisé")
+                    .fontWeight(.bold)
+                    .frame(height: 20)
+                    .foregroundColor(.white)
+                    }
+                }
+           
+                HStack{
+                    ZStack{
+                RoundedRectangle(cornerRadius: 8)
+                    .frame(width: 180.0, height: 40.0)
+                    .cornerRadius(8)
                     .foregroundColor(Color("Rouge"))
-                Spacer()
-                
+                Text("CO2 Produit")
+                    .fontWeight(.bold)
+                    .frame(height: 20)
+                    .foregroundColor(.white)
+                    }
+                }
             }//H
+            Spacer()
         }//V
-        .frame(height: 300)
+       
     
 }
 }
