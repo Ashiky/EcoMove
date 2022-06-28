@@ -10,25 +10,7 @@ import SwiftUI
 struct TransportFavorisView: View {
     var body: some View {
         VStack{
-            HStack{
-                ZStack{
-                    Rectangle()
-                        .fill(Color("LightGreen"))
-                        .frame(width: 140.0, height: 20.0)
-                        .cornerRadius(8)
-                    Text("PROFIL")
-                        .font(.footnote)
-                        .padding(10)
-                }
-                ZStack{
-                    Rectangle()
-                        .fill(Color("LightGreen"))
-                        .frame(width: 140, height: 20.0)
-                        .cornerRadius(8)
-                    Text("MA CONSO CO2")
-                        .font(.footnote)
-                }
-            }
+            
             HStack{
                 ZStack{
                     RoundedRectangle(cornerRadius: 8)
