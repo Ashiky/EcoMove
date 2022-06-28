@@ -10,7 +10,9 @@ import Foundation
 //imoport de StrucuPoint
 
 struct ProfileView: View {
-    @State var vue: Bool = false
+    @State var vuProfil: Bool = true
+    @State var vuMaConso: Bool = false
+    @State var colorM = ""
     var body: some View{
         VStack{
             
@@ -46,44 +48,49 @@ struct ProfileView: View {
             }
             HStack{
                 Button{
-                    if vue == true{
-                        vue = false
-                    }
+                    vuProfil = true
+                    vuMaConso = false
                 }label: {
-                ZStack{
-                    Rectangle()
-                        .fill(Color("LightGreen"))
-                        .frame(width: 140.0, height: 20.0)
-                        .cornerRadius(8)
-                    Text("PROFIL")
-                        .foregroundColor(.white)
-                        .font(.footnote)
-                    .padding(10)}
+                    HStack{
+                        ZStack{
+                            Rectangle()
+                                .fill(vuProfil == true ? Color("LightGreen"): Color("Grayperso"))
+                                .frame(width: 180.0, height: 40.0)
+                                .cornerRadius(8)
+                            Text("PROFIL")
+                                .font(.system(size:18,weight: .bold))
+                                .foregroundColor(.white)
+                                .padding(10)
+                        }
                 }
+                }
+                    HStack{
                 Button{
-                    if vue == false{
-                        vue = true
-                    }
+                    vuMaConso = true
+                    vuProfil = false
                 }label:{
-                ZStack{
-                    Rectangle()
-                        .fill(Color("LightGreen"))
-                        .frame(width: 140, height: 20.0)
-                        .cornerRadius(8)
-                    Text("MA CONSO CO2")
-                    .font(.footnote)}
-                .foregroundColor(.white)
+                    ZStack{
+                        Rectangle()
+                            .fill(vuMaConso == true ? Color("LightGreen"): Color("Grayperso")) 
+                            .frame(width: 180, height: 40.0)
+                            .cornerRadius(8)
+                        Text("MA CONSO CO2")
+                            .foregroundColor(.white)
+                            .font(.system(size:18,weight: .bold))
+                    }
+                }
                 }
             }
             
-            if vue == false{
+            if vuProfil == true{
             TransportFavorisView()
-                    .frame(height: 325)
+                    
             }
-            else {
+            if vuMaConso == true {
                 MaconsoView(consoJV: 0.3)
-                    .frame(height: 325)
+                    
             }
+            Spacer()
         }
         
     }

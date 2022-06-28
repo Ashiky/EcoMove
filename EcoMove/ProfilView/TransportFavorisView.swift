@@ -13,27 +13,8 @@ struct TransportFavorisView: View {
 
         ScrollView{
             VStack(spacing: 20) {
-                //            HStack{
-                //                ZStack{
-                //                    Rectangle()
-                //                        .fill(Color("LightGreen"))
-                //                        .frame(width: 180.0, height: 40.0)
-                //                        .cornerRadius(8)
-                //                    Text("PROFIL")
-                //                        .font(.system(size:18,weight: .bold))
-                //                        .foregroundColor(.white)
-                //                        .padding(10)
-                //                }
-                //                ZStack{
-                //                    Rectangle()
-                //                        .fill(Color("LightGreen"))
-                //                        .frame(width: 180, height: 40.0)
-                //                        .cornerRadius(8)
-                //                    Text("MA CONSO CO2")
-                //                        .foregroundColor(.white)
-                //                        .font(.system(size:18,weight: .bold))
-                //                }
-                //            }
+                            
+
                 HStack{
                     ZStack{
                         RoundedRectangle(cornerRadius: 8)
@@ -101,11 +82,10 @@ struct TransportFavorisView: View {
 
                 }
             }
-            TransportPersoButum()
         }
     }
 }
-}
+
 
 
 struct TransportFavorisView_Previews: PreviewProvider {
