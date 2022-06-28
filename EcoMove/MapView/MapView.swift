@@ -6,15 +6,55 @@
 //
 
 import CoreLocationUI
+import CoreLocation
 import MapKit
 import SwiftUI
 import FirebaseDatabase
 
+class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
+    let manager = CLLocationManager()
+    
+    @Published var location: CLLocationCoordinate2D?
+//    @Published var mapType: MKMapType
+    
+    override init() {
+        super.init()
+        manager.delegate = self
+    }
+    
+    func requestLocation() {
+        manager.requestLocation()
+    }
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error.localizedDescription)
+    }
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        
+        if manager.authorizationStatus == .authorizedWhenInUse{
+            print("Authorized")
+            manager.startUpdatingLocation()
+        } else {
+            print("not authorized")
+            manager.requestWhenInUseAuthorization()
+        }
+    }
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        location = locations.first?.coordinate
+    }
+}
+
 struct MapView: View {
+    @State var userTrackingMode: MapUserTrackingMode = .follow
+    
+    @StateObject var locationManager = LocationManager()
     
     @State private var sheetMode: SheetMode = .quarter
     
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 43.295224, longitude: 5.374155), span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007))
+    
+    @State private var mapType: MKMapType = .standard
+    
+    @State private var routeSohpie: MKRoute
     
     @State var metroTramList: [MetroTram] = []
     func getMT(){
@@ -41,26 +81,94 @@ struct MapView: View {
     }
     
     var body: some View {
-        ZStack(alignment: .top) {
-            Map(coordinateRegion: $mapRegion, showsUserLocation: true, annotationItems: metroTramList) { metroTram in
-        
-                MapMarker(coordinate: metroTram.pointGeo, tint: metroTram.color)
+        NavigationView {
+            ZStack(alignment: .top) {
                 
+                Map(coordinateRegion: $mapRegion, showsUserLocation: true, userTrackingMode: $userTrackingMode, annotationItems: metroTramList) { metroTram in
+                    MapMarker(coordinate: metroTram.pointGeo, tint: metroTram.color)
+                }
+                .ignoresSafeArea()
+                .onChange(of: locationManager.location) { newValue in
+                    if locationManager.location != nil {
+                        withAnimation {
+                            mapRegion.center = locationManager.location!
+                        }
+                    }
+                }
+                VStack(alignment: .leading) {
+                    LocationButton(.currentLocation) {
+                        locationManager.requestLocation()
+                        if locationManager.location != nil {
+                            withAnimation {
+                                mapRegion.center = locationManager.location!
+                            }
+                        }
+                    }
+                    .foregroundColor(.white)
+                    .cornerRadius(25)
+                    .labelStyle(.iconOnly)
+                    .tint(Color("DarkGreen"))
+                    
+                    Button {
+                        if mapType == MKMapType.standard {
+                            mapType = MKMapType.hybrid
+                        }else{
+                            mapType = MKMapType.standard
+                        }
+                    } label: {
+                        ZStack {
+                            Circle()
+                                .frame(width: 40, height: 40)
+                                .foregroundColor(Color("DarkGreen"))
+                            Image(systemName: "map")
+                                .foregroundColor(.white)
+                                .cornerRadius(25)
+                                .labelStyle(.iconOnly)
+                        }
+                    }
+                }
+                .padding(.top, 30)
+                .padding(.leading, 300)
+                
+                VStack {
+                    Spacer()
+                    ZStack {
+                        Rectangle()
+                            .fill(.white)
+                            .frame(maxWidth: 360,maxHeight: 140)
+                            .cornerRadius(20)
+                        VStack {
+                            Button(action: {
+                            }) {
+                                NavigationLink(destination: ModalViewAdresse()) {
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 10.0)
+                                            .frame(maxWidth: 340,maxHeight: 50)
+                                            .foregroundColor(Color("LightGreen"))
+                                        Text("Trouver mon chemin")
+                                            .foregroundColor(.white)
+                                            .fontWeight(.bold)
+                                    }
+                                }
+                            }
+                            ButtonView(colorButton: [
+                                Bouton(colors: "Grayperso", iconne: "figure.walk"),
+                                Bouton(colors: "Grayperso", iconne:"scooter"),
+                                Bouton(colors:"Grayperso", iconne:"bicycle"),
+                                Bouton(colors: "LightGreen", iconne:"tram.fill"),
+                                Bouton(colors: "LightGreen", iconne:"tram"),
+                                Bouton(colors: "Grayperso", iconne:"bus")
+                            ])
+                        }
+                    }
+                    .padding()
+                }
             }
-            .ignoresSafeArea()
-            LocationButton(.currentLocation) {
-
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
+            .onAppear{
+                getMT()
             }
-            .foregroundColor(.white)
-            .cornerRadius(25)
-            .labelStyle(.iconOnly)
-            .tint(Color("DarkGreen"))
-            .padding(.top, 30)
-            .padding(.leading, 300)
-            
-        }
-        .onAppear{
-            getMT()
         }
     }
 }
@@ -97,6 +205,16 @@ struct MetroTram: Identifiable {
             return .green
         default:
             return .gray
+        }
+    }
+    var ColorButton: String {
+        switch modeDeTransport {
+        case "Métro":
+            return "Grayperso"
+        case "Tramway":
+            return "Grayperso"
+        default:
+            return "Rien"
         }
     }
 }
