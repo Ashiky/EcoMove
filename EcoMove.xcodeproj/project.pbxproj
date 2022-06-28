@@ -170,7 +170,6 @@
 				B8519C662869B49100896105 /* StartViews.swift */,
 				62DD82112869E0B800A9F683 /* CustomTabBar.swift */,
 				62DD82132869E11F00A9F683 /* TabBar.swift */,
-				B8519C652869B49100896105 /* ModaleAdresseView.swift */,
 				B8519C672869B49100896105 /* MaConso */,
 				B8519C712869B49100896105 /* Managers */,
 				B8519C772869B49100896105 /* Struct */,
@@ -351,6 +350,7 @@
 				B8519CA62869B49100896105 /* TransportFavorisView.swift */,
 				B8519CA72869B49100896105 /* TansportPersoButum.swift */,
 				B8519CA82869B49100896105 /* TransportButum.swift */,
+				B8519C652869B49100896105 /* ModaleAdresseView.swift */,
 			);
 			path = ProfilView;
 			sourceTree = "<group>";
