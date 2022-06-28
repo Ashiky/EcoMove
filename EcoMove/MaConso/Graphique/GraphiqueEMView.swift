@@ -21,10 +21,14 @@ struct GraphiqueEMView: View {
 }
 func ConsoEM()  -> LineChartData {
     let prodH = LineDataSet(dataPoints: [
-        LineChartDataPoint(value: 500, xAxisLabel: "M", description: "Monday"),
-        LineChartDataPoint(value: 300, xAxisLabel: "T", description: "Tuesday"),
-        LineChartDataPoint(value: 200,  xAxisLabel: "W", description: "Wednesday"),
-        LineChartDataPoint(value: 175, xAxisLabel: "T", description: "Thursday"),
+//        LineChartDataPoint(value: 500, xAxisLabel: "M", description: "Monday"),
+//        LineChartDataPoint(value: 300, xAxisLabel: "T", description: "Tuesday"),
+//        LineChartDataPoint(value: 200,  xAxisLabel: "W", description: "Wednesday"),
+//        LineChartDataPoint(value: 175, xAxisLabel: "T", description: "Thursday"),
+        LineChartDataPoint(value: 175, xAxisLabel: "M", description: "Monday"),
+        LineChartDataPoint(value: 200, xAxisLabel: "T", description: "Tuesday"),
+        LineChartDataPoint(value: 300,  xAxisLabel: "W", description: "Wednesday"),
+        LineChartDataPoint(value: 500, xAxisLabel: "T", description: "Thursday"),
     ],
                             legendTitle: "Steps",
                             pointStyle: PointStyle(),

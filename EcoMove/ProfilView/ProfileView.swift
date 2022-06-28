@@ -66,29 +66,31 @@ struct ProfileView: View {
                         }
                     }
                     HStack{
-                        Button{
-                            vuMaConso = true
-                            vuProfil = false
-                        }label:{
-                            ZStack{
-                                Rectangle()
-                                    .fill(vuMaConso == true ? Color("LightGreen"): Color("Grayperso")) 
-                                    .frame(width: 180, height: 40.0)
-                                    .cornerRadius(8)
-                                Text("MA CONSO CO2")
-                                    .foregroundColor(.white)
-                                    .font(.system(size:18,weight: .bold))
-                            }
-                        }
+
+                Button{
+                    vuMaConso = true
+                    vuProfil = false
+                }label:{
+                    ZStack{
+                        Rectangle()
+                            .fill(vuMaConso == true ? Color("LightGreen"): Color("Grayperso"))
+                            .frame(width: 180, height: 40.0)
+                            .cornerRadius(8)
+                        Text("MA CONSO CO2")
+                            .foregroundColor(.white)
+                            .font(.system(size:18,weight: .bold))
+
                     }
                 }
                 
                 if vuProfil == true{
                     TransportFavorisView()
                     
-                }
-                if vuMaConso == true {
-                    MaconsoView(consoJV: 0.3)
+
+            }
+            if vuMaConso == true {
+                MaconsoView(consoJV: 0.7)
+
                     
                 }
                 Spacer()

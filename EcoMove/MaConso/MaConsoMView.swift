@@ -43,7 +43,8 @@ struct MaConsoMView: View {
                         
                     }
                 }
-
+                HStack{
+                    HStack{
                 Button {
                     if hideVLigne == false {
                         hideVLigne = true
@@ -52,17 +53,19 @@ struct MaConsoMView: View {
                         hideVLigne = false
                     }
                 } label: {
-                    HStack{
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 8)
+                            .frame(width: 180.0, height: 40.0)
+                            .cornerRadius(8)
+                            .foregroundColor(hideVLigne == false ?Color("LightGreen"): Color("Grayperso"))
                         Text("CO2 Economisé")
-                            .foregroundColor(.black)
-                            .frame(width: 125, height: 20, alignment: .leading)
-                        RoundedRectangle(cornerRadius: 16)
-                            .frame(width: 20, height: 10)
-                            .foregroundColor(Color("LightGreen"))
-                        Spacer()
-                    }//H
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .frame(height: 20, alignment: .leading)
+                    }
                 }
-                
+                    }
+                    HStack{
                 Button {
                     if hideRLigne == false {
                         hideRLigne = true
@@ -72,20 +75,20 @@ struct MaConsoMView: View {
                     }
                         
                 } label: {
-                    HStack{
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 8)
+                            .frame(width: 180.0, height: 40.0)
+                            .cornerRadius(8)
+                            .foregroundColor(hideRLigne == false ?Color("Rouge"): Color("Grayperso"))
                         Text("CO2 Produit")
-                            .frame(width: 126, height: 20, alignment: .leading)
-                            .foregroundColor(.black)
-                        RoundedRectangle(cornerRadius: 16)
-                            .frame(width: 20, height: 10)
-                            .foregroundColor(Color("Rouge"))
-                        Spacer()
+                            .fontWeight(.bold)
+                            .frame(height: 20)
+                            .foregroundColor(.white)
+                    }
                 }
-                
-                    
+                    }
                 }
             }
-            .frame(height: 300)
         }
     }
 struct MaConsoMView_Previews: PreviewProvider {
