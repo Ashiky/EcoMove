@@ -9,9 +9,10 @@ import SwiftUI
 
 struct TransportPersoButum: View {
     @State var transportsperso = [
+        Transport(image:"figure.walk", color: "Grayperso"),
     Transport(image:"scooter", color: "Grayperso"),
-    Transport(image:"bicycle", color:"Grayperso"),
-    Transport(image:"figure.walk", color: "Grayperso"),
+    Transport(image:"bicycle", color:"Grayperso")
+    
 ]
     var body: some View {
         HStack{
@@ -32,7 +33,8 @@ struct TransportPersoButum: View {
                     .frame(width: 40, height: 40)
             }
             }
-    }
+ }
+            Spacer()
 }
     }
 }

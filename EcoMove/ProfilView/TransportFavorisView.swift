@@ -9,63 +9,94 @@ import SwiftUI
 
 struct TransportFavorisView: View {
     var body: some View {
-        VStack{
-            HStack{
-                ZStack{
-                    Rectangle()
-                        .fill(Color("LightGreen"))
-                        .frame(width: 140.0, height: 20.0)
-                        .cornerRadius(8)
-                    Text("PROFIL")
-                        .font(.footnote)
-                        .padding(10)
+        ScrollView{
+            VStack(spacing: 20) {
+                //            HStack{
+                //                ZStack{
+                //                    Rectangle()
+                //                        .fill(Color("LightGreen"))
+                //                        .frame(width: 180.0, height: 40.0)
+                //                        .cornerRadius(8)
+                //                    Text("PROFIL")
+                //                        .font(.system(size:18,weight: .bold))
+                //                        .foregroundColor(.white)
+                //                        .padding(10)
+                //                }
+                //                ZStack{
+                //                    Rectangle()
+                //                        .fill(Color("LightGreen"))
+                //                        .frame(width: 180, height: 40.0)
+                //                        .cornerRadius(8)
+                //                    Text("MA CONSO CO2")
+                //                        .foregroundColor(.white)
+                //                        .font(.system(size:18,weight: .bold))
+                //                }
+                //            }
+                HStack{
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(Color("LightGreen"))
+                            .frame(width: 370.0, height: 40.0)
+                        HStack{
+                            Text("MES TRANSPORTS FAVORIS")
+                                .foregroundColor(.white)
+                                .font(.headline)
+                            
+                            Spacer()
+                            Image(systemName: "plus.circle")
+                                .foregroundColor(.white)
+                        }
+                        .padding()
+                    }
                 }
-                ZStack{
-                    Rectangle()
-                        .fill(Color("LightGreen"))
-                        .frame(width: 140, height: 20.0)
-                        .cornerRadius(8)
-                    Text("MA CONSO CO2")
-                        .font(.footnote)
+                VStack(alignment: .leading, spacing: 20){
+                    FavorisView(favorisTransport: "Maison", transportImage: "house")
+                        .foregroundColor(Color("DarkGreen"))
+                    Divider()
+                    FavorisView(favorisTransport: "Travail", transportImage: "briefcase")
+                        .foregroundColor(Color("DarkGreen"))
+                    Divider()
+                    FavorisView(favorisTransport: "Sophie", transportImage: "heart")
+                        .foregroundColor(Color("DarkGreen"))
                 }
-            }
-            HStack{
-                ZStack{
-                    RoundedRectangle(cornerRadius: 8)
-                        .fill(Color("LightGreen"))
-                        .frame(width: 250.0, height: 20.0)
+                .padding()
+                
+                Group{
                     HStack{
-                        Text("MES TRANSPORTS FAVORIS")
-                            .font(.footnote)
-                        Image(systemName: "plus.circle")
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(Color("LightGreen"))
+                                .frame(width: 370.0, height: 40.0)
+                            HStack{
+                                Text("MES TRANSPORTS FAVORIS")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.white)
+                                    .font(.headline)
+                                Spacer()
+                            }
+                            .padding(.horizontal)
+                        }
                     }
-                }
-            }
-            FavorisView(favorisTransport: "Maison", transportImage: "house")
-            FavorisView(favorisTransport: "Travail", transportImage: "briefcase")
-            FavorisView(favorisTransport: "Sophie", transportImage: "heart")
-            Group{
-                HStack{
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(Color("LightGreen"))
-                            .frame(width: 250.0, height: 20.0)
-                        Text("MES TRANSPORTS FAVORIS")
-                            .font(.footnote)
+                    TransportButum()
+                        .padding(.horizontal)
+                    HStack{
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(Color("LightGreen"))
+                                .frame(width: 370.0, height: 40.0)
+                            HStack{
+                                Text("MES TRANSPORTS PERSONNELS")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.white)
+                                    .font(.headline)
+                                Spacer()
+                            }
+                            .padding(.horizontal)
+                        }
                     }
+                    TransportPersoButum()
+                        .padding(.horizontal)
                 }
-                TransportButum()
-                HStack{
-                    ZStack{
-                        
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(Color("LightGreen"))
-                            .frame(width: 250.0, height: 20.0)
-                        Text("MES TRANSPORTS PERSONNELS")
-                            .font(.footnote)
-                    }
-                }
-                TransportPersoButum()
             }
         }
     }

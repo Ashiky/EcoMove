@@ -37,6 +37,7 @@ struct TransportButum: View {
                     }
                 }
             }
+            Spacer()
         }
     }
 }
