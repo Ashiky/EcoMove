@@ -12,6 +12,8 @@ struct RewardView: View {
     @State var choose = 0
     
     var body: some View {
+    
+        NavigationView {
         VStack{
             Spacer()
             TopCardView()
@@ -70,9 +72,10 @@ struct RewardView: View {
         .navigationBarHidden(true)
     }
 }
-
+}
 struct RewardView_Previews: PreviewProvider {
     static var previews: some View {
         RewardView()
     }
 }
+
