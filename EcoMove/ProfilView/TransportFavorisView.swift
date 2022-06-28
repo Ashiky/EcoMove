@@ -26,8 +26,16 @@ struct TransportFavorisView: View {
                                 .font(.headline)
                             
                             Spacer()
-                            Image(systemName: "plus.circle")
-                                .foregroundColor(.white)
+                            Button {
+                                showSheet.toggle()
+                            }label: {
+                                Image(systemName: "plus.circle")
+                                    .foregroundColor(.white)
+                            }.sheet(isPresented: $showSheet) {
+                                HalfSheet{
+                                    ModaleAdresseView()
+                                }
+                            }
                         }
                         .padding()
                     }
