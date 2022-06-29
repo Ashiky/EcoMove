@@ -80,6 +80,7 @@ struct ProfileView: View {
                                 }
                             }
                         }
+
                     }
                 }
                 if vuProfil == true{
