@@ -15,6 +15,8 @@ struct TrajetOnMap: View {
    @State var show = true
     
     var body: some View {
+        ZStack{
+            Color("LightGreen")
         VStack{
         VStack{
             Map(directions: $directions)
@@ -24,13 +26,14 @@ struct TrajetOnMap: View {
                 }, label: {
                     VStack{
                   Text("Voir directions")
+                            .foregroundColor(.white)
                         .padding()
                         Spacer()
                     }
                 })
                 .disabled(directions.isEmpty)
                 .padding()
-        }.background(Color("LigthGreen"))
+        }.background(Color("LightGreen"))
 
         
                 .edgesIgnoringSafeArea(.all)
@@ -47,7 +50,7 @@ struct TrajetOnMap: View {
                                         .bold()
                                 }.foregroundColor(.white)
                                 .padding()
-                                .background(.green)
+                                .background(Color("LightGreen"))
                                 Divider()
 //                                DirectionList()
                                     .foregroundColor(.green)
@@ -56,6 +59,7 @@ struct TrajetOnMap: View {
                     }
                 })
         }
+    }
     struct Map: UIViewRepresentable {
 
       typealias UIViewType = MKMapView
@@ -69,7 +73,7 @@ struct TrajetOnMap: View {
       func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
-// coordantion
+// coordination
         let region = MKCoordinateRegion(
           center: CLLocationCoordinate2D(latitude: 40.71, longitude: -74),
           span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
