@@ -31,41 +31,11 @@ struct ProfileView: View {
                             .frame(width: 150, height: 150)
                             .clipShape(Circle())
                         
-                        VStack{
-                            Text("Chris REDFIELD")
-                            
-                                .font(.title2)
-                                .foregroundColor(Color("DarkGreen"))
-                            
-                                .fontWeight(.bold)
-                                .padding()
-                            Text("8000 W")
-                                .font(.title2)
-                                .foregroundColor(Color("DarkGreen"))
-                            
-                        }
-                    }
-                    .frame(width:300)
-                }
-                HStack{
-                    Button{
-                        vuProfil = true
-                        vuMaConso = false
-                    }label: {
-                        HStack{
-                            ZStack{
-                                Rectangle()
-                                    .fill(vuProfil == true ? Color("LightGreen"): Color("Grayperso"))
-                                    .frame(width: 180.0, height: 40.0)
-                                    .cornerRadius(8)
-                                Text("PROFIL")
-                                    .font(.system(size:18,weight: .bold))
-                                    .foregroundColor(.white)
-                                    .padding(10)
-                            }
-                        }
-                    }
-                    HStack{
+                            .fontWeight(.bold)
+                            .padding()
+                        Text("8000 \(Image(systemName: "millsign.circle.fill"))")
+                            .font(.title2)
+                            .foregroundColor(Color("DarkGreen"))
 
                 Button{
                     vuMaConso = true

@@ -9,7 +9,7 @@ import SwiftUI
 struct MaConsoHView: View {
     @State var hideVLigne: Bool = false
     @State var hideRLigne: Bool = false
-    var graduations = [500,400,300,200,100,0]
+    var graduations = [1000,800,600,400,200,0]
     var jours = ["Lun","Mar","Mer","Jeu","Ven","Sam","Dim"]
     var body: some View {
         VStack{

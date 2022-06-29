@@ -10,7 +10,7 @@ import SwiftUI
 struct MaConsoMView: View {
         @State var hideVLigne: Bool = false
         @State var hideRLigne: Bool = false
-        var graduations = [500,400,300,200,100,0]
+        var graduations = [1000,800,600,400,200,0]
         var jours = ["Semaine 1", "Semaine 2", "Semaine 3", "Semaine 4"]
         var body: some View {
             VStack{
@@ -33,7 +33,7 @@ struct MaConsoMView: View {
                     .border(.black)
                    
                 }
-                HStack(spacing: 60){
+                HStack(spacing: 58){
                     
                     ForEach(jours, id: \.self) { jour in
                         
