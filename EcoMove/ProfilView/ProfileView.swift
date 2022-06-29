@@ -26,7 +26,6 @@ struct ProfileView: View {
                         .padding()
                     HStack{
                         Image("Chris")
-                        
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 150, height: 150)
@@ -34,18 +33,19 @@ struct ProfileView: View {
                         
                         VStack{
                             Text("Chris REDFIELD")
+                            
                                 .font(.title2)
                                 .foregroundColor(Color("DarkGreen"))
+                            
                                 .fontWeight(.bold)
                                 .padding()
-                        Text("8000 \(Image(systemName:"millsign.circle.fill"))")
-                            .fontWeight(.bold)
-                            .font(.title2)
-                            .foregroundColor(Color("DarkGreen"))
-                           
+                            Text("8000 \(Image(systemName: "millsign.circle.fill"))")
+                                .font(.title2)
+                                .foregroundColor(Color("DarkGreen"))
+                            
                         }
-                        }
-                    .padding()
+                    }
+                    .frame(width:300)
                 }
                 HStack{
                     HStack{
