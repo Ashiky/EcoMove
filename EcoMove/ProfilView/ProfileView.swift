@@ -26,6 +26,7 @@ struct ProfileView: View {
                         .padding()
                     HStack{
                         Image("Chris")
+                        
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 150, height: 150)
@@ -33,48 +34,28 @@ struct ProfileView: View {
                         
                         VStack{
                             Text("Chris REDFIELD")
-                            
                                 .font(.title2)
                                 .foregroundColor(Color("DarkGreen"))
-                            
                                 .fontWeight(.bold)
                                 .padding()
-                            Text("8000 W")
-                                .font(.title2)
-                                .foregroundColor(Color("DarkGreen"))
-                            
+                        Text("8000 \(Image(systemName:"millsign.circle.fill"))")
+                            .fontWeight(.bold)
+                            .font(.title2)
+                            .foregroundColor(Color("DarkGreen"))
+                           
                         }
-                    }
-                    .frame(width:300)
+                        }
+                    .padding()
                 }
                 HStack{
-                    Button{
-                        vuProfil = true
-                        vuMaConso = false
-                    }label: {
-                        HStack{
-                            ZStack{
-                                Rectangle()
-                                    .fill(vuProfil == true ? Color("LightGreen"): Color("Grayperso"))
-                                    .frame(width: 180.0, height: 40.0)
-                                    .cornerRadius(8)
-                                Text("PROFIL")
-                                    .font(.system(size:18,weight: .bold))
-                                    .foregroundColor(.white)
-                                    .padding(10)
-                            }
-                        }
-                    }
-                    
                     HStack{
-                        
                         Button{
-                            vuMaConso = true
-                            vuProfil = false
+                            vuMaConso = false
+                            vuProfil = true
                         }label:{
                             ZStack{
                                 Rectangle()
-                                    .fill(vuMaConso == true ? Color("LightGreen"): Color("Grayperso"))
+                                    .fill(vuProfil == true ? Color("LightGreen"): Color("Grayperso"))
                                     .frame(width: 180, height: 40.0)
                                     .cornerRadius(8)
                                 Text("MA CONSO CO2")
@@ -82,6 +63,24 @@ struct ProfileView: View {
                                     .font(.system(size:18,weight: .bold))
                             }
                         }
+                        HStack{
+                            
+                            Button{
+                                vuMaConso = true
+                                vuProfil = false
+                            }label:{
+                                ZStack{
+                                    Rectangle()
+                                        .fill(vuMaConso == true ? Color("LightGreen"): Color("Grayperso"))
+                                        .frame(width: 180, height: 40.0)
+                                        .cornerRadius(8)
+                                    Text("MA CONSO CO2")
+                                        .foregroundColor(.white)
+                                        .font(.system(size:18,weight: .bold))
+                                }
+                            }
+                        }
+
                     }
                 }
                 if vuProfil == true{

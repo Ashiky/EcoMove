@@ -22,7 +22,7 @@ struct GraphiquePHView: View {
 }
 func ConsoH()  -> LineChartData {
     let prodH = LineDataSet(dataPoints: [
-        LineChartDataPoint(value: 500, xAxisLabel: "M", description: "Monday"),
+        LineChartDataPoint(value: 300, xAxisLabel: "M", description: "Monday"),
         LineChartDataPoint(value: 410, xAxisLabel: "T", description: "Tuesday"),
         LineChartDataPoint(value: 360,  xAxisLabel: "W", description: "Wednesday"),
         LineChartDataPoint(value: 275, xAxisLabel: "T", description: "Thursday"),
