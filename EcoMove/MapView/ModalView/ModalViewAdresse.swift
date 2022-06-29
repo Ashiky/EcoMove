@@ -80,12 +80,14 @@ struct ModalViewAdresse: View {
                             .padding()
                     }
                     HStack {
-                        Image(systemName: "heart")
-                            .foregroundColor(Color("DarkGreen"))
-                        Text("Sophie")
-                            .fontWeight(.bold)
-                            .foregroundColor(Color("DarkGreen"))
-                            .padding()
+                        NavigationLink(destination: TrajetList(), label: {
+                            Image(systemName: "heart")
+                                .foregroundColor(Color("DarkGreen"))
+                            Text("Sophie")
+                                .fontWeight(.bold)
+                                .foregroundColor(Color("DarkGreen"))
+                                .padding()
+                        })
                     }
                 }
                 .font(.callout)
