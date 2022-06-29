@@ -11,11 +11,30 @@ import MapKit
 import SwiftUI
 import FirebaseDatabase
 
+class mapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
+//    @Published var mapview = MKMapView()
+    @Published var mapType: MKMapType = .standard
+
+    func updateMapType(){
+
+        if mapType == .standard{
+            mapType = .hybrid
+//            mapview.mapType = mapType
+        }
+        else{
+            mapType = .standard
+//            mapview.mapType = mapType
+        }
+    }
+}
 class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     let manager = CLLocationManager()
     
+    
+    
     @Published var location: CLLocationCoordinate2D?
-//    @Published var mapType: MKMapType
+
+    
     
     override init() {
         super.init()
@@ -41,6 +60,8 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         location = locations.first?.coordinate
     }
+    
+  
 }
 
 struct MapView: View {
@@ -51,8 +72,8 @@ struct MapView: View {
     @State private var sheetMode: SheetMode = .quarter
     
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 43.295224, longitude: 5.374155), span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007))
-    
-    @State private var mapType: MKMapType = .standard
+   
+    @StateObject private var mapdata = mapViewModel()
     
 ////    Coordonnée Départ
 //    let p1 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 43.295224, longitude: 5.374155))
@@ -98,6 +119,9 @@ struct MapView: View {
             }
         })
     }
+    init() {
+           MKMapView.appearance().mapType = .satellite
+       }
     
     var body: some View {
         NavigationView {
@@ -114,6 +138,8 @@ struct MapView: View {
                         }
                     }
                 }
+                
+                
                 VStack(alignment: .leading) {
                     LocationButton(.currentLocation) {
                         locationManager.requestLocation()
@@ -128,13 +154,7 @@ struct MapView: View {
                     .labelStyle(.iconOnly)
                     .tint(Color("DarkGreen"))
                     
-                    Button {
-                        if mapType == MKMapType.standard {
-                            mapType = MKMapType.hybrid
-                        }else{
-                            mapType = MKMapType.standard
-                        }
-                    } label: {
+                    Button(action: mapdata.updateMapType ,label: {
                         ZStack {
                             Circle()
                                 .frame(width: 40, height: 40)
@@ -144,7 +164,7 @@ struct MapView: View {
                                 .cornerRadius(25)
                                 .labelStyle(.iconOnly)
                         }
-                    }
+                    })
                 }
                 .padding(.top, 30)
                 .padding(.leading, 300)
@@ -242,3 +262,9 @@ struct MapView_Previews: PreviewProvider {
         MapView()
     }
 }
+//extension Map {
+//       func mapStyle(_ mapType: MKMapType) -> some View {
+//        MKMapView.appearance().mapType = mapType
+//        return self
+//    }
+//}
