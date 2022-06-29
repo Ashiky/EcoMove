@@ -18,6 +18,8 @@
 		9F82DA462869D71000BF6E7C /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9F82DA452869D71000BF6E7C /* FirebaseDatabase */; };
 		9F82DA492869D76700BF6E7C /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 9F82DA482869D76700BF6E7C /* SwiftUICharts */; };
 		9F82DA53286B0E3900BF6E7C /* CLLocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82DA52286B0E3900BF6E7C /* CLLocationHelper.swift */; };
+		9F82DA70286C70E600BF6E7C /* ModalViewChemin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82DA6F286C70E600BF6E7C /* ModalViewChemin.swift */; };
+		9F82DA72286C882200BF6E7C /* HalfSheet2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F82DA71286C882200BF6E7C /* HalfSheet2.swift */; };
 		B8519CAD2869B49100896105 /* HalfSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8519C642869B49100896105 /* HalfSheet.swift */; };
 		B8519CAF2869B49100896105 /* StartViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8519C662869B49100896105 /* StartViews.swift */; };
 		B8519CB02869B49100896105 /* MaConsoHView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8519C682869B49100896105 /* MaConsoHView.swift */; };
@@ -86,6 +88,8 @@
 		672E2345285C7A1600EE809C /* EcoMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67FA1E3F286B2A3C002B14DF /* ModalAdresseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalAdresseView.swift; sourceTree = "<group>"; };
 		9F82DA52286B0E3900BF6E7C /* CLLocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLLocationHelper.swift; sourceTree = "<group>"; };
+		9F82DA6F286C70E600BF6E7C /* ModalViewChemin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewChemin.swift; sourceTree = "<group>"; };
+		9F82DA71286C882200BF6E7C /* HalfSheet2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheet2.swift; sourceTree = "<group>"; };
 		B8519C642869B49100896105 /* HalfSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfSheet.swift; sourceTree = "<group>"; };
 		B8519C662869B49100896105 /* StartViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViews.swift; sourceTree = "<group>"; };
 		B8519C682869B49100896105 /* MaConsoHView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaConsoHView.swift; sourceTree = "<group>"; };
@@ -207,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				B8519C642869B49100896105 /* HalfSheet.swift */,
+				9F82DA71286C882200BF6E7C /* HalfSheet2.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -283,10 +288,11 @@
 			isa = PBXGroup;
 			children = (
 				B8519C812869B49100896105 /* FlexibleSheet.swift */,
-				B8519C822869B49100896105 /* ModalViewWinPoint.swift */,
 				B8519C832869B49100896105 /* ModalViewTransport.swift */,
 				B8519C842869B49100896105 /* ModalViewAdresse.swift */,
 				B8519C852869B49100896105 /* ModalViewTrajet.swift */,
+				9F82DA6F286C70E600BF6E7C /* ModalViewChemin.swift */,
+				B8519C822869B49100896105 /* ModalViewWinPoint.swift */,
 			);
 			path = ModalView;
 			sourceTree = "<group>";
@@ -492,6 +498,7 @@
 				B8519CDA2869B49100896105 /* HistoryTravel.swift in Sources */,
 				62D0524E286C35FD00141D96 /* TrajetList.swift in Sources */,
 				B8519CC22869B49100896105 /* TransportFile.swift in Sources */,
+				9F82DA70286C70E600BF6E7C /* ModalViewChemin.swift in Sources */,
 				B8519CAD2869B49100896105 /* HalfSheet.swift in Sources */,
 				B8519CC82869B49100896105 /* MapView.swift in Sources */,
 				B8519CB32869B49100896105 /* GraphiquePMView.swift in Sources */,
@@ -506,6 +513,7 @@
 				B8519CD42869B49100896105 /* CardPayment.swift in Sources */,
 				67FA1E40286B2A3C002B14DF /* ModalAdresseView.swift in Sources */,
 				B8519CC62869B49100896105 /* ModalViewAdresse.swift in Sources */,
+				9F82DA72286C882200BF6E7C /* HalfSheet2.swift in Sources */,
 				B8519CB62869B49100896105 /* MaconsoView.swift in Sources */,
 				B8519CC72869B49100896105 /* ModalViewTrajet.swift in Sources */,
 				B8519CC42869B49100896105 /* ModalViewWinPoint.swift in Sources */,

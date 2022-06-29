@@ -11,48 +11,34 @@ struct ModalViewTransport: View {
     var body: some View {
         HStack {
             ZStack {
-                RoundedRectangle(cornerRadius: 10.0)
+                RoundedRectangle(cornerRadius: 25)
                     .frame(maxWidth: 50,maxHeight: 50)
                     .foregroundColor(Color("DarkGreen"))
-                Text("Tous")
-                    .foregroundColor(.white)
-                    .fontWeight(.bold)
-                }
-            ZStack {
-                RoundedRectangle(cornerRadius: 10.0)
-                    .frame(maxWidth: 50,maxHeight: 50)
-                    .foregroundColor(Color("DarkGreen"))
-            Image(systemName: "bicycle")
+            Image(systemName: "figure.walk")
                 .foregroundColor(.white)
             }
+
             ZStack {
-                RoundedRectangle(cornerRadius: 10.0)
-                    .frame(maxWidth: 50,maxHeight: 50)
-                    .foregroundColor(Color("DarkGreen"))
-            Image(systemName: "scooter")
-                .foregroundColor(.white)
-            }
-            ZStack {
-                RoundedRectangle(cornerRadius: 10.0)
+                RoundedRectangle(cornerRadius: 25)
                     .frame(maxWidth: 50,maxHeight: 50)
                     .foregroundColor(Color("DarkGreen"))
             Image(systemName: "tram")
                 .foregroundColor(.white)
             }
             ZStack {
-                RoundedRectangle(cornerRadius: 10.0)
+                RoundedRectangle(cornerRadius: 25)
                     .frame(maxWidth: 50,maxHeight: 50)
                     .foregroundColor(Color("DarkGreen"))
             Image(systemName: "tram.fill.tunnel")
                 .foregroundColor(.white)
             }
-            ZStack {
-                RoundedRectangle(cornerRadius: 10.0)
-                    .frame(maxWidth: 50,maxHeight: 50)
-                    .foregroundColor(Color("DarkGreen"))
-            Image(systemName: "bus")
-                .foregroundColor(.white)
-            }
+//            ZStack {
+//                RoundedRectangle(cornerRadius: 10.0)
+//                    .frame(maxWidth: 50,maxHeight: 50)
+//                    .foregroundColor(Color("DarkGreen"))
+//            Image(systemName: "bus")
+//                .foregroundColor(.white)
+//            }
         }
     }
 }
@@ -62,3 +48,26 @@ struct ModalViewTransport_Previews: PreviewProvider {
         ModalViewTransport()
     }
 }
+
+//            ZStack {
+//                RoundedRectangle(cornerRadius: 10.0)
+//                    .frame(maxWidth: 50,maxHeight: 50)
+//                    .foregroundColor(Color("DarkGreen"))
+//                Text("Tous")
+//                    .foregroundColor(.white)
+//                    .fontWeight(.bold)
+//                }
+//            ZStack {
+//                RoundedRectangle(cornerRadius: 10.0)
+//                    .frame(maxWidth: 50,maxHeight: 50)
+//                    .foregroundColor(Color("DarkGreen"))
+//            Image(systemName: "bicycle")
+//                .foregroundColor(.white)
+//            }
+//            ZStack {
+//                RoundedRectangle(cornerRadius: 10.0)
+//                    .frame(maxWidth: 50,maxHeight: 50)
+//                    .foregroundColor(Color("DarkGreen"))
+//            Image(systemName: "scooter")
+//                .foregroundColor(.white)
+//            }

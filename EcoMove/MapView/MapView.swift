@@ -11,22 +11,22 @@ import MapKit
 import SwiftUI
 import FirebaseDatabase
 
-class mapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
-//    @Published var mapview = MKMapView()
-    @Published var mapType: MKMapType = .standard
-
-    func updateMapType(){
-
-        if mapType == .standard{
-            mapType = .hybrid
-//            mapview.mapType = mapType
-        }
-        else{
-            mapType = .standard
-//            mapview.mapType = mapType
-        }
-    }
-}
+//class mapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
+////    @Published var mapview = MKMapView()
+//    @Published var mapType: MKMapType = .standard
+//
+//    func updateMapType(){
+//
+//        if mapType == .standard{
+//            mapType = .hybrid
+////            mapview.mapType = mapType
+//        }
+//        else{
+//            mapType = .standard
+////            mapview.mapType = mapType
+//        }
+//    }
+//}
 class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     let manager = CLLocationManager()
     
@@ -73,28 +73,7 @@ struct MapView: View {
     
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 43.295224, longitude: 5.374155), span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007))
    
-    @StateObject private var mapdata = mapViewModel()
-    
-////    Coordonnée Départ
-//    let p1 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 43.295224, longitude: 5.374155))
-////    Coordonnée Arrivée
-//    let p2 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 43.30090983821569, longitude: 5.387577409538622))
-//    
-//    let request = MKDirections.Request()
-//    request.source = MKMapItem(placemark: p1)
-//    request.destination = MKMapItem(placemark: p2)
-//    request.transportType = .walking
-//    
-//    let directions = MKDirections(request: request)
-//    directions.calculate { response, error in
-//        guard let route = response?.route?first else { return }
-//        mapView.addAnnotation([p1, p2])
-//        mapView.addOverlay(route.polyline)
-//        mapView.setVisibleMapRect(
-//            route.polyline.boundingMapRect, edgePadding: UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20), animated: true)
-//    }
-    
-//    @State private var routeSohpie: MKRoute
+//    @StateObject private var mapdata = mapViewModel()
     
     @State var metroTramList: [MetroTram] = []
     func getMT(){
@@ -119,9 +98,9 @@ struct MapView: View {
             }
         })
     }
-    init() {
-           MKMapView.appearance().mapType = .satellite
-       }
+//    init() {
+//           MKMapView.appearance().mapType = .satellite
+//       }
     
     var body: some View {
         NavigationView {
@@ -154,7 +133,7 @@ struct MapView: View {
                     .labelStyle(.iconOnly)
                     .tint(Color("DarkGreen"))
                     
-                    Button(action: mapdata.updateMapType ,label: {
+                    Button(action: {} ,label: {
                         ZStack {
                             Circle()
                                 .frame(width: 40, height: 40)

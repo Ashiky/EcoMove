@@ -23,7 +23,7 @@ struct TrajetList: View {
                 HStack{
                     Image(systemName: "flag.fill")
                         .foregroundColor(Color("DarkGreen"))
-                Text("42 rue des petites Maries, 13000, Marseille")
+                Text("14 boulevard Longchamp, 13001, Marseille")
                     Spacer()
                 } .padding(10)
                     .background(RoundedRectangle(cornerRadius: 8).fill(Color.white).frame(width: 370, height: 40));

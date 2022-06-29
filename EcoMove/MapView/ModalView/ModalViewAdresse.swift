@@ -15,89 +15,112 @@ struct ModalViewAdresse: View {
     
     
     var body: some View {
-        NavigationView {
-        VStack(alignment: .leading) {
-        VStack {
-            TextField("\(Image(systemName: "location")) Ma position",
-                text: $startPoint
-            )
-            .disableAutocorrection(true)
-            TextField(
-                "Arrivée",
-                text: $endPoint
-            )
-            .disableAutocorrection(true)
-        }
-        .textFieldStyle(.roundedBorder)
-        .padding()
-        .background(Color("LightGreen"))
-            
-            List {
-                Text("\(Image(systemName: "location")) Ma position")
-                    .foregroundColor(Color("DarkGreen"))
-                Section("Dernières recherches") {
-                    HStack {
-                        Image(systemName: "clock")
-                            .foregroundColor(Color("DarkGreen"))
-                        VStack(alignment: .leading) {
-                            Text("1 Esp. J4")
-                                .fontWeight(.bold)
+            VStack(alignment: .leading) {
+                ZStack {
+                    VStack {
+                        HStack {
+                            Image(systemName: "location.fill")
                                 .foregroundColor(Color("DarkGreen"))
-                            Text("13002 Marseille")
-                                .foregroundColor(.gray)
+                            TextField("Ma position",
+                                      text: $startPoint
+                            )
+                            //            .disableAutocorrection(true)
                         }
-                        .padding()
-                    }
-                    HStack {
-                        Image(systemName: "clock")
-                            .foregroundColor(Color("DarkGreen"))
-                        VStack(alignment: .leading) {
-                            Text("9 Quai du Lazaret")
-                                .fontWeight(.bold)
+                        .padding(.horizontal, 10)
+                        .background(RoundedRectangle(cornerRadius: 5).fill(.white))
+                        
+                        HStack {
+                            Image(systemName: "flag.fill")
                                 .foregroundColor(Color("DarkGreen"))
-                            Text("13002 Marseille")
-                                .foregroundColor(.gray)
+                            
+                            TextField(
+                                "Arrivée",
+                                text: $endPoint
+                            )
+                            //            .disableAutocorrection(true)
                         }
-                        .padding()
+                        .padding(.horizontal, 10)
+                        .background(RoundedRectangle(cornerRadius: 5).fill(.white))
                     }
+                    .textFieldStyle(.roundedBorder)
+                    .padding()
+                    .background(Rectangle().fill(Color("LightGreen")).frame(height: 300))
+                    CircleButton()
+                        .offset(x: 170)
                 }
-                .font(.callout)
-                Section("Favoris") {
-                    HStack {
-                        Image(systemName: "house")
-                            .foregroundColor(Color("DarkGreen"))
-                        Text("Maison")
-                            .fontWeight(.bold)
-                            .foregroundColor(Color("DarkGreen"))
-                            .padding()
-                    }
-                    HStack {
-                        Image(systemName: "briefcase")
-                            .foregroundColor(Color("DarkGreen"))
-                        Text("Travail")
-                            .fontWeight(.bold)
-                            .foregroundColor(Color("DarkGreen"))
-                            .padding()
-                    }
-                    HStack {
-                        NavigationLink(destination: TrajetList(), label: {
-                            Image(systemName: "heart")
+                
+                List {
+                    Text("\(Image(systemName: "location.fill")) Ma position")
+                        .foregroundColor(Color("DarkGreen"))
+                    Section("Dernières recherches") {
+                        HStack {
+                            Image(systemName: "clock")
                                 .foregroundColor(Color("DarkGreen"))
-                            Text("Sophie")
-                                .fontWeight(.bold)
+                            VStack(alignment: .leading) {
+                                Text("1 Esp. J4")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("DarkGreen"))
+                                Text("13002 Marseille")
+                                    .foregroundColor(.gray)
+                            }
+                            .padding()
+                        }
+                        HStack {
+                            Image(systemName: "clock")
                                 .foregroundColor(Color("DarkGreen"))
-                                .padding()
-                        })
+                            VStack(alignment: .leading) {
+                                Text("9 Quai du Lazaret")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("DarkGreen"))
+                                Text("13002 Marseille")
+                                    .foregroundColor(.gray)
+                            }
+                            .padding()
+                        }
                     }
+                    .font(.callout)
+                    Section("Favoris") {
+                        HStack {
+                            NavigationLink(destination: ModalViewTrajet(), label: {
+                                
+                                Image(systemName: "house")
+                                    .foregroundColor(Color("DarkGreen"))
+                                Text("Maison")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("DarkGreen"))
+                                    .padding()
+                            })
+                        }
+                        HStack {
+                            NavigationLink(destination: ModalViewTrajet(), label: {
+                                
+                                Image(systemName: "briefcase")
+                                    .foregroundColor(Color("DarkGreen"))
+                                Text("Travail")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("DarkGreen"))
+                                    .padding()
+                            })
+                        }
+                        HStack {
+                            NavigationLink(destination: ModalViewTrajet(), label: {
+                                Image(systemName: "heart")
+                                    .foregroundColor(Color("DarkGreen"))
+                                Text("Sophie")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("DarkGreen"))
+                                    .padding()
+                            })
+                        }
+                    }
+                    .font(.callout)
                 }
-                .font(.callout)
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarHidden(true)
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarHidden(true)
         }
     }
-}
-}
+
 
 
 struct ModalViewAdresse_Previews: PreviewProvider {
