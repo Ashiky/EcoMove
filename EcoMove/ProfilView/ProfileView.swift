@@ -58,7 +58,7 @@ struct ProfileView: View {
                                     .fill(vuProfil == true ? Color("LightGreen"): Color("Grayperso"))
                                     .frame(width: 180, height: 40.0)
                                     .cornerRadius(8)
-                                Text("MA CONSO CO2")
+                                Text("MON PROFIL")
                                     .foregroundColor(.white)
                                     .font(.system(size:18,weight: .bold))
                             }
