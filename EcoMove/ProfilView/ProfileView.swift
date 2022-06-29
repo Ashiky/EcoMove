@@ -39,7 +39,7 @@ struct ProfileView: View {
                             
                                 .fontWeight(.bold)
                                 .padding()
-                            Text("8000 W")
+                            Text("8000 \(Image(systemName: "millsign.circle.fill"))")
                                 .font(.title2)
                                 .foregroundColor(Color("DarkGreen"))
                             
@@ -48,33 +48,14 @@ struct ProfileView: View {
                     .frame(width:300)
                 }
                 HStack{
-                    Button{
-                        vuProfil = true
-                        vuMaConso = false
-                    }label: {
-                        HStack{
-                            ZStack{
-                                Rectangle()
-                                    .fill(vuProfil == true ? Color("LightGreen"): Color("Grayperso"))
-                                    .frame(width: 180.0, height: 40.0)
-                                    .cornerRadius(8)
-                                Text("PROFIL")
-                                    .font(.system(size:18,weight: .bold))
-                                    .foregroundColor(.white)
-                                    .padding(10)
-                            }
-                        }
-                    }
-                    
                     HStack{
-                        
                         Button{
-                            vuMaConso = true
-                            vuProfil = false
+                            vuMaConso = false
+                            vuProfil = true
                         }label:{
                             ZStack{
                                 Rectangle()
-                                    .fill(vuMaConso == true ? Color("LightGreen"): Color("Grayperso"))
+                                    .fill(vuProfil == true ? Color("LightGreen"): Color("Grayperso"))
                                     .frame(width: 180, height: 40.0)
                                     .cornerRadius(8)
                                 Text("MA CONSO CO2")
@@ -82,6 +63,24 @@ struct ProfileView: View {
                                     .font(.system(size:18,weight: .bold))
                             }
                         }
+                        HStack{
+                            
+                            Button{
+                                vuMaConso = true
+                                vuProfil = false
+                            }label:{
+                                ZStack{
+                                    Rectangle()
+                                        .fill(vuMaConso == true ? Color("LightGreen"): Color("Grayperso"))
+                                        .frame(width: 180, height: 40.0)
+                                        .cornerRadius(8)
+                                    Text("MA CONSO CO2")
+                                        .foregroundColor(.white)
+                                        .font(.system(size:18,weight: .bold))
+                                }
+                            }
+                        }
+
                     }
                 }
                 if vuProfil == true{

@@ -10,7 +10,7 @@ import SwiftUI
 struct MaConsoMView: View {
         @State var hideVLigne: Bool = false
         @State var hideRLigne: Bool = false
-        var graduations = [500,400,300,200,100,0]
+        var graduations = [1000,800,600,400,200,0]
         var jours = ["Semaine 1", "Semaine 2", "Semaine 3", "Semaine 4"]
         var body: some View {
             VStack{
@@ -33,7 +33,7 @@ struct MaConsoMView: View {
                     .border(.black)
                    
                 }
-                HStack(spacing: 60){
+                HStack(spacing: 58){
                     
                     ForEach(jours, id: \.self) { jour in
                         
@@ -58,7 +58,7 @@ struct MaConsoMView: View {
                             .frame(width: 180.0, height: 40.0)
                             .cornerRadius(8)
                             .foregroundColor(hideVLigne == false ?Color("LightGreen"): Color("Grayperso"))
-                        Text("CO2 Economisé")
+                        Text("CO2 économisé")
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                             .frame(height: 20, alignment: .leading)
@@ -80,7 +80,7 @@ struct MaConsoMView: View {
                             .frame(width: 180.0, height: 40.0)
                             .cornerRadius(8)
                             .foregroundColor(hideRLigne == false ?Color("Rouge"): Color("Grayperso"))
-                        Text("CO2 Produit")
+                        Text("CO2 produit")
                             .fontWeight(.bold)
                             .frame(height: 20)
                             .foregroundColor(.white)

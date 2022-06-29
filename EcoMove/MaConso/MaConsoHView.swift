@@ -9,7 +9,7 @@ import SwiftUI
 struct MaConsoHView: View {
     @State var hideVLigne: Bool = false
     @State var hideRLigne: Bool = false
-    var graduations = [500,400,300,200,100,0]
+    var graduations = [1000,800,600,400,200,0]
     var jours = ["Lun","Mar","Mer","Jeu","Ven","Sam","Dim"]
     var body: some View {
         VStack{
@@ -53,7 +53,7 @@ struct MaConsoHView: View {
                                 .frame(width: 180.0, height: 40.0)
                                 .cornerRadius(8)
                                 .foregroundColor(hideVLigne == false ?Color("LightGreen"): Color("Grayperso"))
-                            Text("CO2 Economisé")
+                            Text("CO2 économisé")
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
                                 .frame(height: 20, alignment: .leading)
@@ -73,7 +73,7 @@ struct MaConsoHView: View {
                                     .frame(width: 180.0, height: 40.0)
                                     .cornerRadius(8)
                                     .foregroundColor(hideRLigne == false ?Color("Rouge"): Color("Grayperso"))
-                                Text("CO2 Produit")
+                                Text("CO2 produit")
                                     .fontWeight(.bold)
                                     .frame(height: 20)
                                     .foregroundColor(.white)
