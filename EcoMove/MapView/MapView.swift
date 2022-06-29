@@ -54,6 +54,25 @@ struct MapView: View {
     
     @State private var mapType: MKMapType = .standard
     
+////    Coordonnée Départ
+//    let p1 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 43.295224, longitude: 5.374155))
+////    Coordonnée Arrivée
+//    let p2 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 43.30090983821569, longitude: 5.387577409538622))
+//    
+//    let request = MKDirections.Request()
+//    request.source = MKMapItem(placemark: p1)
+//    request.destination = MKMapItem(placemark: p2)
+//    request.transportType = .walking
+//    
+//    let directions = MKDirections(request: request)
+//    directions.calculate { response, error in
+//        guard let route = response?.route?first else { return }
+//        mapView.addAnnotation([p1, p2])
+//        mapView.addOverlay(route.polyline)
+//        mapView.setVisibleMapRect(
+//            route.polyline.boundingMapRect, edgePadding: UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20), animated: true)
+//    }
+    
 //    @State private var routeSohpie: MKRoute
     
     @State var metroTramList: [MetroTram] = []
