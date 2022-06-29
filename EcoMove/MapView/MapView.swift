@@ -11,22 +11,6 @@ import MapKit
 import SwiftUI
 import FirebaseDatabase
 
-//class mapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
-////    @Published var mapview = MKMapView()
-//    @Published var mapType: MKMapType = .standard
-//
-//    func updateMapType(){
-//
-//        if mapType == .standard{
-//            mapType = .hybrid
-////            mapview.mapType = mapType
-//        }
-//        else{
-//            mapType = .standard
-////            mapview.mapType = mapType
-//        }
-//    }
-//}
 class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     let manager = CLLocationManager()
     
@@ -119,7 +103,11 @@ struct MapView: View {
                 }
                 
                 
-                VStack(alignment: .leading) {
+                VStack(alignment: .trailing) {
+                    HStack{
+                      PointView()
+                        Spacer()
+                       
                     LocationButton(.currentLocation) {
                         locationManager.requestLocation()
                         if locationManager.location != nil {
@@ -132,6 +120,8 @@ struct MapView: View {
                     .cornerRadius(25)
                     .labelStyle(.iconOnly)
                     .tint(Color("DarkGreen"))
+                    }
+                    
                     
                     Button(action: {} ,label: {
                         ZStack {
@@ -145,8 +135,7 @@ struct MapView: View {
                         }
                     })
                 }
-                .padding(.top, 30)
-                .padding(.leading, 300)
+                .padding()
                 
                 VStack {
                     Spacer()

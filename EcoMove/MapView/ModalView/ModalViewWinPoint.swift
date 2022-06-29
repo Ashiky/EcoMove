@@ -12,25 +12,50 @@ struct ModalViewWinPoint: View {
     
     var body: some View {
         VStack {
+            ZStack {
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(Color("LightGreen"))
+                    .frame(width: 500, height: 130)
             Text("Trajet Terminé !")
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
                 .foregroundColor(.white)
                 .font(.title)
-                .padding(.horizontal, 75)
-                .padding(.vertical, 50)
-                .background(Color("LightGreen"))
-            HStack {
-                Text("150")
-                Text("M")
             }
             
+                Text("10 \(Image(systemName: "millsign.circle.fill"))")
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color("DarkGreen"))
+                .font(.largeTitle)
+                .padding(.vertical, 20)
+            
             HStack {
-                Text("Vous avez économisé 43 g de Co2 par rapport à \(Image(systemName: "car"))")
+                VStack {
+                Text("Vous avez économisé")
                     .multilineTextAlignment(.center)
-                    .padding()
+                    .foregroundColor(Color("DarkGreen"))
+                    .font(.title)
+                    .multilineTextAlignment(.center)
+                    Text("43 g de Co2")
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color("DarkGreen"))
+                        .font(.title)
+                        .multilineTextAlignment(.center)
+                    Text("par rapport à \(Image(systemName: "car"))")
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color("DarkGreen"))
+                        .font(.title)
+                        .multilineTextAlignment(.center)
+                }
             }
             Text("Bien joué !")
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color("DarkGreen"))
+                .font(.largeTitle)
+
                 .multilineTextAlignment(.center)
                 .padding()
         }

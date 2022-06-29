@@ -8,35 +8,50 @@
 import SwiftUI
 
 struct ModalViewChemin: View {
+    
+    @Environment(\.dismiss) private var dismiss
+    
+    @State var changeModal: Bool = false
+    
     var body: some View {
         List {
-            HStack { // Marche
-                ZStack {
-                    RoundedRectangle(cornerRadius: 25)
-                        .frame(maxWidth: 35,maxHeight: 35)
-                        .foregroundColor(Color("DarkGreen"))
-                    Image(systemName: "figure.walk")
-                        .foregroundColor(.white)
-                }
-                VStack(alignment: .leading) {
-                    HStack {
-                        Text("18 min")
-                            .fontWeight(.bold)
-                            .font(.title3)
+            Button {
+                changeModal = true
+            } label: {
+                HStack { // Marche
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 25)
+                            .frame(maxWidth: 35,maxHeight: 35)
                             .foregroundColor(Color("DarkGreen"))
+                        Image(systemName: "figure.walk")
+                            .foregroundColor(.white)
                     }
-                    Text("1,4 km")
-                        .font(.title3)
-                        .foregroundColor(.gray)
-                }
-                .padding()
-                Spacer()
-                Text("10 \(Image(systemName: "millsign.circle.fill"))")
-                    .fontWeight(.bold)
-                    .font(.title)
-                    .foregroundColor(Color("DarkGreen"))
+                    VStack(alignment: .leading) {
+                        HStack {
+                            Text("18 min")
+                                .fontWeight(.bold)
+                                .font(.title3)
+                                .foregroundColor(Color("DarkGreen"))
+                        }
+                        Text("1,4 km")
+                            .font(.title3)
+                            .foregroundColor(.gray)
+                    }
                     .padding()
+                    Spacer()
+                    Text("10 \(Image(systemName: "millsign.circle.fill"))")
+                        .fontWeight(.bold)
+                        .font(.title)
+                        .foregroundColor(Color("DarkGreen"))
+                        .padding()
+                }
             }
+            .sheet(isPresented: $changeModal) {
+                HalfSheet {
+                    ModalViewWinPoint()
+                }
+            }
+            
             Section("Chemin à suivre") {
                 HStack { // Départ
                     Image(systemName: "mappin.circle")
@@ -74,12 +89,7 @@ struct ModalViewChemin: View {
                     }
                     .padding(.vertical, 5)
                     .padding(.horizontal, 10)
-                    //                    Spacer()
-                    //                    Text("10 \(Image(systemName: "millsign.circle.fill"))")
-                    //                        .fontWeight(.bold)
-                    //                        .font(.title)
-                    //                        .foregroundColor(Color("DarkGreen"))
-                    //                        .padding()
+                    
                 }
                 HStack { // Étape 2
                     ZStack {
@@ -99,12 +109,7 @@ struct ModalViewChemin: View {
                     }
                     .padding(.vertical, 5)
                     .padding(.horizontal, 10)
-                    //                    Spacer()
-                    //                    Text("10 \(Image(systemName: "millsign.circle.fill"))")
-                    //                        .fontWeight(.bold)
-                    //                        .font(.title)
-                    //                        .foregroundColor(Color("DarkGreen"))
-                    //                        .padding()
+                    
                 }
                 HStack { // Étape 3
                     ZStack {
@@ -124,12 +129,7 @@ struct ModalViewChemin: View {
                     }
                     .padding(.vertical, 5)
                     .padding(.horizontal, 10)
-                    //                    Spacer()
-                    //                    Text("10 \(Image(systemName: "millsign.circle.fill"))")
-                    //                        .fontWeight(.bold)
-                    //                        .font(.title)
-                    //                        .foregroundColor(Color("DarkGreen"))
-                    //                        .padding()
+                    
                 }
                 HStack { // Étape 4
                     ZStack {
@@ -149,12 +149,6 @@ struct ModalViewChemin: View {
                     }
                     .padding(.vertical, 5)
                     .padding(.horizontal, 10)
-                    //                    Spacer()
-                    //                    Text("10 \(Image(systemName: "millsign.circle.fill"))")
-                    //                        .fontWeight(.bold)
-                    //                        .font(.title)
-                    //                        .foregroundColor(Color("DarkGreen"))
-                    //                        .padding()
                 }
                 
                 HStack { // Arrivée
@@ -175,10 +169,9 @@ struct ModalViewChemin: View {
                     .padding(.vertical, 5)
                     .padding(.horizontal, 10)
                 }
-                
             }
-            .font(.callout)
         }
+        .font(.callout)
     }
 }
 
