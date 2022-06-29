@@ -26,41 +26,70 @@ struct ProfileView: View {
                         .padding()
                     HStack{
                         Image("Chris")
+                        
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 150, height: 150)
                             .clipShape(Circle())
                         
+                        VStack{
+                            Text("Chris REDFIELD")
+                                .font(.title2)
+                                .foregroundColor(Color("DarkGreen"))
+                                .fontWeight(.bold)
+                                .padding()
+                        Text("8000 \(Image(systemName:"millsign.circle.fill"))")
                             .fontWeight(.bold)
-                            .padding()
-                        Text("8000 \(Image(systemName: "millsign.circle.fill"))")
                             .font(.title2)
                             .foregroundColor(Color("DarkGreen"))
-
-                Button{
-                    vuMaConso = true
-                    vuProfil = false
-                }label:{
-                    ZStack{
-                        Rectangle()
-                            .fill(vuMaConso == true ? Color("LightGreen"): Color("Grayperso"))
-                            .frame(width: 180, height: 40.0)
-                            .cornerRadius(8)
-                        Text("MA CONSO CO2")
-                            .foregroundColor(.white)
-                            .font(.system(size:18,weight: .bold))
-
+                           
+                        }
+                        }
+                    .padding()
+                }
+                HStack{
+                    HStack{
+                        Button{
+                            vuMaConso = false
+                            vuProfil = true
+                        }label:{
+                            ZStack{
+                                Rectangle()
+                                    .fill(vuProfil == true ? Color("LightGreen"): Color("Grayperso"))
+                                    .frame(width: 180, height: 40.0)
+                                    .cornerRadius(8)
+                                Text("MA CONSO CO2")
+                                    .foregroundColor(.white)
+                                    .font(.system(size:18,weight: .bold))
+                            }
+                        }
+                        HStack{
+                            
+                            Button{
+                                vuMaConso = true
+                                vuProfil = false
+                            }label:{
+                                ZStack{
+                                    Rectangle()
+                                        .fill(vuMaConso == true ? Color("LightGreen"): Color("Grayperso"))
+                                        .frame(width: 180, height: 40.0)
+                                        .cornerRadius(8)
+                                    Text("MA CONSO CO2")
+                                        .foregroundColor(.white)
+                                        .font(.system(size:18,weight: .bold))
+                                }
+                            }
+                        }
                     }
                 }
-                
                 if vuProfil == true{
                     TransportFavorisView()
                     
-
-            }
-            if vuMaConso == true {
-                MaconsoView(consoJV: 0.7)
-
+                    
+                }
+                if vuMaConso == true {
+                    MaconsoView(consoJV: 0.7)
+                    
                     
                 }
                 Spacer()
