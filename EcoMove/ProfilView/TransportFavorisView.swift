@@ -40,14 +40,17 @@ struct TransportFavorisView: View {
                         .padding()
                     }
                 }
-                VStack(alignment: .leading, spacing: 20){
-                    FavorisView(favorisTransport: "Maison", transportImage: "house")
+                VStack(alignment: .leading, spacing: 15){
+                    FavorisView(favorisTransport: "Maison", transportImage: "house.fill")
+                        .font(.title3)
                         .foregroundColor(Color("DarkGreen"))
                     Divider()
-                    FavorisView(favorisTransport: "Travail", transportImage: "briefcase")
+                    FavorisView(favorisTransport: "Travail", transportImage: "briefcase.fill")
+                        .font(.title3)
                         .foregroundColor(Color("DarkGreen"))
                     Divider()
-                    FavorisView(favorisTransport: "Sophie", transportImage: "heart")
+                    FavorisView(favorisTransport: "Sophie", transportImage: "heart.fill")
+                        .font(.title3)
                         .foregroundColor(Color("DarkGreen"))
                 }
                 .padding()

@@ -42,9 +42,8 @@ import SwiftUI
 
                                  Text("Icones")
                                      .font(.system(size: 23))
-                                     .foregroundColor(Color("LightGreen"))
-                                 ButtonView(colorButton: [Bouton(colors: "Grayperso", iconne: "house"), Bouton(colors: "Grayperso", iconne: "case")])
-                                 ButtonView(colorButton:[Bouton(colors: "Grayperso", iconne: "heart")])
+                                     .foregroundColor(Color("DarkGreen"))
+                                 ButtonView(colorButton: [Bouton(colors: "Grayperso", iconne: "house"), Bouton(colors: "Grayperso", iconne: "case"),Bouton(colors: "Grayperso", iconne: "heart")])
                              }
                              .frame(width: 367,alignment: .leading)
 
