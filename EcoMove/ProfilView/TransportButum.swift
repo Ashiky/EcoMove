@@ -12,8 +12,8 @@ struct TransportButum: View {
         Transport(image:"figure.walk", color: "Grayperso"),
         Transport(image:"scooter", color: "Grayperso"),
         Transport(image:"bicycle", color:"Grayperso"),
-        Transport(image:"tram.fill", color: "Grayperso"),
-        Transport(image:"tram", color: "Grayperso"),
+        Transport(image:"tram.fill", color: "LightGreen"),
+        Transport(image:"tram", color: "LightGreen"),
         Transport(image:"bus", color: "Grayperso")
         
     ]

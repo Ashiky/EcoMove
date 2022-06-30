@@ -38,7 +38,7 @@ import SwiftUI
                  VStack(spacing: 20){
                      VStack(spacing: 10){
                          VStack(alignment: .leading){
-                             HStack(spacing: 10){
+                             HStack(spacing: 25){
 
                                  Text("Icones")
                                      .font(.system(size: 23))
@@ -52,22 +52,20 @@ import SwiftUI
                                  Text("Nom")
                                      .font(.system(size: 21))
                                      .frame(height: 30)
-                                     .foregroundColor(Color("LightGreen"))
+                                     .foregroundColor(Color("DarkGreen"))
                                  Spacer()
                                  TextField("Nom", text: $adresseName)
                                      .frame(width: 275,height: 30)
-                                     .border(Color("DarkGreen"))
                                      .textFieldStyle(.roundedBorder)
                              }
                              HStack{
                                  Text("Adresse")
 
                                      .font(.system(size: 21))
-                                     .foregroundColor(Color("LightGreen"))
+                                     .foregroundColor(Color("DarkGreen"))
                                  Spacer()
                                  TextField("Adresse", text: $adresse)
                                      .frame(width: 275,height: 30)
-                                     .border(Color("DarkGreen"))
                                      .textFieldStyle(.roundedBorder)
                              }
 
@@ -75,22 +73,20 @@ import SwiftUI
                                  Text("CP")
                                      .font(.system(size: 21))
                                      .frame(height: 30)
-                                     .foregroundColor(Color("LightGreen"))
+                                     .foregroundColor(Color("DarkGreen"))
                                  Spacer()
                                  TextField("Code postal", text: $cp)
                                      .frame(width: 275,height: 30)
-                                     .border(Color("DarkGreen"))
                                      .textFieldStyle(.roundedBorder)
                              }
                              HStack{
                                  Text("Ville")
                                      .font(.system(size: 21))
                                      .frame(height: 30)
-                                     .foregroundColor(Color("LightGreen"))
+                                     .foregroundColor(Color("DarkGreen"))
                                  Spacer()
                                  TextField("Ville", text: $ville)
                                      .frame(width: 275,height: 30)
-                                     .border(Color("DarkGreen"))
                                      .textFieldStyle(.roundedBorder)
                              }
                          }
