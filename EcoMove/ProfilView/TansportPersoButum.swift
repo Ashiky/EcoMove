@@ -13,9 +13,8 @@ struct TransportPersoButum: View {
         Transport(image:"figure.roll", color:"LightGreen"),
         Transport(image:"airplane", color:"LightGreen"),
         Transport(image:"ferry.fill", color:"LightGreen"),
-        Transport(image:"figure.stand.line.dotted.figure.stand", color:"LightGreen"),
     Transport(image:"scooter", color: "Grayperso"),
-    Transport(image:"bicycle", color:"Grayperso")
+    Transport(image:"bicycle", color:"Grayperso"),
     
 ]
     var body: some View {
