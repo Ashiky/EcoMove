@@ -50,6 +50,6 @@ struct ScrollPayment: View {
 
 struct ScrollPayment_Previews: PreviewProvider {
     static var previews: some View {
-        ScrollPayment(payment: payments[0])
+        ScrollPayment(payment: payments[1])
     }
 }

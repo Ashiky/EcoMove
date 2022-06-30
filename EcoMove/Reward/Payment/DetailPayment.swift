@@ -27,6 +27,8 @@ struct DetailPayment: View {
                         Image(payment.icone)
                             .resizable()
                             .frame(width: 55, height: 50, alignment: .trailing)
+                            .rotationEffect(.degrees(22))
+                            .shadow(color: .black.opacity(0.5), radius: 2, x: 1, y: 2)
                             
                     }
                     Text(payment.subtitle)
@@ -48,6 +50,6 @@ struct DetailPayment: View {
 
 struct DetailPayment_Previews: PreviewProvider {
     static var previews: some View {
-        DetailPayment(payment: payments[0])
+        DetailPayment(payment: payments[1])
     }
 }

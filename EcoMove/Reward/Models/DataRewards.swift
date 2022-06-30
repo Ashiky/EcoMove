@@ -17,7 +17,7 @@ struct GetInfo{
 }
 
 let payments = [
-    GetInfo(image: "mountains", name: "Virements", icone: "moneybag", price: 3000, subtitle: "Virement à partir de 20€" , descriptif: """
+    GetInfo(image: "mountains", name: "Virements", icone: "moneydollar", price: 3000, subtitle: "Virement à partir de 20€" , descriptif: """
 Virez 20, 30, 70€, directement sur votre compte bancaire
 
 Choisissez le montant que vous voulez en cliquant sur "Recevoir un virement"
@@ -27,7 +27,7 @@ sous 15 jours Tous est entierement sécurisé.
 
 Offrez-vous une belle récompense aprés toutes ces bonnes actions qui ont contibuer l'environnement 
 """),
-    GetInfo(image: "mountains", name: "PayPal", icone: "moneybag", price: 2500, subtitle: "Virement à partir de 20€" , descriptif: """
+    GetInfo(image: "woman1", name: "PayPal", icone: "moneydollar", price: 2500, subtitle: "Virement à partir de 20€" , descriptif: """
 Virez 20, 30, 70€, directement sur votre compte PayPal
 
 Choisissez le montant que vous voulez en cliquant sur "Recevoir un virement"
