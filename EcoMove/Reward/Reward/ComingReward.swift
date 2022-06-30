@@ -10,7 +10,7 @@ import SwiftUI
 struct ComingReward: View {
     var body: some View {
         VStack(alignment: .leading){
-            Text("20 Juin")
+            Text("30 Juin")
                 .font(.title2)
                 .padding()
         VStack{
