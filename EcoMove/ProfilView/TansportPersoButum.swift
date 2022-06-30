@@ -9,10 +9,11 @@ import SwiftUI
 
 struct TransportPersoButum: View {
     @State var transportsperso = [
-        Transport(image:"figure.walk", color: "Grayperso"),
+        Transport(image:"figure.walk", color: "LightGreen"),
         Transport(image:"figure.roll", color:"LightGreen"),
-        Transport(image:"airplane", color:"Grayperso"),
-        Transport(image:"figure.stand.line.dotted.figure.stand", color:"Grayperso"),
+        Transport(image:"airplane", color:"LightGreen"),
+        Transport(image:"ferry.fill", color:"LightGreen"),
+        Transport(image:"figure.stand.line.dotted.figure.stand", color:"LightGreen"),
     Transport(image:"scooter", color: "Grayperso"),
     Transport(image:"bicycle", color:"Grayperso")
     
