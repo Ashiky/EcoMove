@@ -23,6 +23,18 @@ struct TrajetOnMap: View {
             
             VStack(alignment: .trailing) {
                 HStack{
+                    NavigationLink(destination: MapView().navigationBarHidden(true)){
+                        Image(systemName: "chevron.backward")
+                            .foregroundColor(Color("DarkGreen"))
+                            .font(.system(size: 19, weight: .semibold, design: .rounded))
+                        Text("Back")
+                            .foregroundColor(Color("DarkGreen"))
+                            .font(.headline)
+                            
+                        Spacer()
+                }
+                } .padding(.leading,5)
+                HStack{
                     PointView()
                     Spacer()
                     Image(systemName: "location")
@@ -30,7 +42,7 @@ struct TrajetOnMap: View {
                         .background(Circle().fill(Color("DarkGreen")).frame(width: 40, height: 40))
                         .padding(10)
                 }
-                Button(action: {} ,label: {
+                
                     ZStack {
                         Circle()
                             .frame(width: 40, height: 40)
@@ -39,8 +51,9 @@ struct TrajetOnMap: View {
                             .foregroundColor(.white)
                             .cornerRadius(25)
                             .labelStyle(.iconOnly)
-                    }
-                })
+                    
+            
+                }
             }
             .padding()
             
@@ -62,7 +75,7 @@ struct TrajetOnMap: View {
                 .padding()
             }
         }
-       
+        .navigationBarHidden(true)
         .sheet(isPresented: $show, content: {
             HalfSheet1{
                 ModalViewChemin()
