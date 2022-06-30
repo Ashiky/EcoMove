@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ModalViewChemin: View {
     
+    @Environment(\.presentationMode) private var presentationMode
     @State var changeModal: Bool = false
     
     var body: some View {
@@ -48,6 +49,9 @@ struct ModalViewChemin: View {
                 HalfSheet {
                     ModalViewWinPoint()
                 }
+                .onTapGesture {
+                           presentationMode.wrappedValue.dismiss()
+                       }
             }
             
             Section("Chemin à suivre") {

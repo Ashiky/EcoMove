@@ -115,7 +115,7 @@ struct ModalViewAdresse: View {
                     .font(.callout)
                 }
                 .navigationBarTitleDisplayMode(.inline)
-                .navigationBarHidden(true)
+            
             }
         }
     }
