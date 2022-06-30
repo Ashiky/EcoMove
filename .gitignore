@@ -123,3 +123,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+EcoMove.xcodeproj/**
+!EcoMove.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
