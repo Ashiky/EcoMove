@@ -4,10 +4,35 @@ import SwiftUI
 
 struct MaConsoQView: View {
     @State var animation: Double = 0
-    @State var consoJV: Double = 0.7
+    @State var consoJV: Double = 0.6
+    var pourcentageV: String {
+        let chiffre = NumberFormatter()
+        chiffre.numberStyle = .percent
+        return chiffre.string(from: NSNumber(value: animation)) ?? "0"
+    }
+    var pourcentageR: String {
+        let chiffre = NumberFormatter()
+        chiffre.numberStyle = .percent
+        return chiffre.string(from: NSNumber(value: 1 - animation)) ?? "0"
+    }
     var body: some View {
         VStack {
             ZStack {
+                VStack{
+                    HStack{
+                        Spacer()
+                        Text(pourcentageR)
+                            .padding()
+                        .foregroundColor(Color("Rouge"))                    }
+                    Spacer()
+                    HStack{
+                        Text(pourcentageV)
+                            .padding()
+                            .foregroundColor(Color("LightGreen"))
+                        Spacer()
+                    }
+                }
+                .frame(height: 190)
                 if animation <= 0.5{
                     Image("nuageCO2")
                         .resizable()
@@ -31,7 +56,7 @@ struct MaConsoQView: View {
                     .foregroundColor(Color("LightGreen"))
                     .padding()
                     .onAppear {
-                        let baseAnimation = Animation.easeInOut(duration: 2)
+                        let baseAnimation = Animation.easeInOut(duration: 3)
                         
                         
                         withAnimation(baseAnimation) {
