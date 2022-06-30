@@ -34,7 +34,7 @@ struct ModalViewTrajet: View {
                     } //Vstack
                     .padding(10)
                     .padding()
-                    .background(Rectangle().fill(Color("LightGreen")).frame(height: 300))
+                    .background(Rectangle().fill(Color("LightGreen")).frame(height: 310))
                     
                     CircleButton()
                         .offset(x: 170)

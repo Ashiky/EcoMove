@@ -9,15 +9,15 @@ import SwiftUI
 
 struct ButtonPayment: View {
     
-    var pricePayment = 8000
+    var pricePayment = 1356
     
     var body: some View {
         VStack{
             Button{
 //               Screen to validate
             }label: {
-                if pricePayment < 20000 {
-                Text("Il vous manque \(20000 - pricePayment)")
+                if pricePayment < 3000 {
+                Text("Il vous manque \(3000 - pricePayment)")
                     .font(.system(size: 25))
                     .padding()
                     .foregroundColor(.white)
