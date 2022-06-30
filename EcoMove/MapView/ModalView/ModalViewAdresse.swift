@@ -11,7 +11,6 @@ struct ModalViewAdresse: View {
     
     @State private var startPoint: String = ""
     @State private var endPoint: String = ""
-    @State private var modalViewTransport: Bool = false
     
     
     var body: some View {

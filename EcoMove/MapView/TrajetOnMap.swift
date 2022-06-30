@@ -15,10 +15,35 @@ struct TrajetOnMap: View {
     @State var show = true
     
     var body: some View {
-        ZStack{
+        ZStack(alignment: .top){
             VStack{
                 Map(directions: $directions)
             }
+            .edgesIgnoringSafeArea(.all)
+            
+            VStack(alignment: .trailing) {
+                HStack{
+                    PointView()
+                    Spacer()
+                    Image(systemName: "location")
+                        .foregroundColor(.white)
+                        .background(Circle().fill(Color("DarkGreen")).frame(width: 40, height: 40))
+                        .padding(10)
+                }
+                Button(action: {} ,label: {
+                    ZStack {
+                        Circle()
+                            .frame(width: 40, height: 40)
+                            .foregroundColor(Color("DarkGreen"))
+                        Image(systemName: "map")
+                            .foregroundColor(.white)
+                            .cornerRadius(25)
+                            .labelStyle(.iconOnly)
+                    }
+                })
+            }
+            .padding()
+            
             VStack {
                 Spacer()
                 Button(action: {
@@ -37,13 +62,13 @@ struct TrajetOnMap: View {
                 .padding()
             }
         }
-            .edgesIgnoringSafeArea(.all)
-            .sheet(isPresented: $show, content: {
-                HalfSheet1{
-                    ModalViewChemin()
-                }
-            })
-        }
+       
+        .sheet(isPresented: $show, content: {
+            HalfSheet1{
+                ModalViewChemin()
+            }
+        })
+    }
     
     struct Map: UIViewRepresentable {
         

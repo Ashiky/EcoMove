@@ -53,11 +53,13 @@ struct MapView: View {
     
     @StateObject var locationManager = LocationManager()
     
-    @State private var sheetMode: SheetMode = .quarter
+//    @State private var sheetMode: SheetMode = .quarter
     
     @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 43.295224, longitude: 5.374155), span: MKCoordinateSpan(latitudeDelta: 0.007, longitudeDelta: 0.007))
    
 //    @StateObject private var mapdata = mapViewModel()
+    
+    
     
     @State var metroTramList: [MetroTram] = []
     func getMT(){
@@ -82,9 +84,6 @@ struct MapView: View {
             }
         })
     }
-//    init() {
-//           MKMapView.appearance().mapType = .satellite
-//       }
     
     var body: some View {
         NavigationView {
@@ -230,9 +229,3 @@ struct MapView_Previews: PreviewProvider {
         MapView()
     }
 }
-//extension Map {
-//       func mapStyle(_ mapType: MKMapType) -> some View {
-//        MKMapView.appearance().mapType = mapType
-//        return self
-//    }
-//}

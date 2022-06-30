@@ -39,7 +39,7 @@ struct ProfileView: View {
                             
                                 .fontWeight(.bold)
                                 .padding()
-                            Text("8000 \(Image(systemName: "millsign.circle.fill"))")
+                            Text("1356 \(Image(systemName: "millsign.circle.fill"))")
                                 .font(.title2)
                                 .foregroundColor(Color("DarkGreen"))
                             

@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		62D0524A286C346900141D96 /* TrajetOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D05249286C346900141D96 /* TrajetOne.swift */; };
-		62D0524C286C34A800141D96 /* TrajetOneAlternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D0524B286C34A800141D96 /* TrajetOneAlternative.swift */; };
-		62D0524E286C35FD00141D96 /* TrajetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D0524D286C35FD00141D96 /* TrajetList.swift */; };
 		62D05250286C362000141D96 /* TrajetOnMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D0524F286C362000141D96 /* TrajetOnMap.swift */; };
 		62D05252286C365600141D96 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D05251286C365600141D96 /* CircleButton.swift */; };
 		62DD82122869E0B800A9F683 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DD82112869E0B800A9F683 /* CustomTabBar.swift */; };
@@ -79,9 +76,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		62D05249286C346900141D96 /* TrajetOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrajetOne.swift; sourceTree = "<group>"; };
-		62D0524B286C34A800141D96 /* TrajetOneAlternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrajetOneAlternative.swift; sourceTree = "<group>"; };
-		62D0524D286C35FD00141D96 /* TrajetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrajetList.swift; sourceTree = "<group>"; };
 		62D0524F286C362000141D96 /* TrajetOnMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrajetOnMap.swift; sourceTree = "<group>"; };
 		62D05251286C365600141D96 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		62DD82112869E0B800A9F683 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
@@ -276,9 +270,6 @@
 			children = (
 				B8519C862869B49100896105 /* MapView.swift */,
 				9F82DA75286CA0D600BF6E7C /* PointView.swift */,
-				62D05249286C346900141D96 /* TrajetOne.swift */,
-				62D0524B286C34A800141D96 /* TrajetOneAlternative.swift */,
-				62D0524D286C35FD00141D96 /* TrajetList.swift */,
 				62D05251286C365600141D96 /* CircleButton.swift */,
 				62D0524F286C362000141D96 /* TrajetOnMap.swift */,
 				9F82DA52286B0E3900BF6E7C /* CLLocationHelper.swift */,
@@ -500,7 +491,6 @@
 				B8519CD22869B49100896105 /* ScrollPayment.swift in Sources */,
 				B8519CBD2869B49100896105 /* StructReward.swift in Sources */,
 				B8519CDA2869B49100896105 /* HistoryTravel.swift in Sources */,
-				62D0524E286C35FD00141D96 /* TrajetList.swift in Sources */,
 				B8519CC22869B49100896105 /* TransportFile.swift in Sources */,
 				9F82DA70286C70E600BF6E7C /* ModalViewChemin.swift in Sources */,
 				B8519CAD2869B49100896105 /* HalfSheet.swift in Sources */,
@@ -529,7 +519,6 @@
 				B8519CE72869B4A100896105 /* EcoMoveApp.swift in Sources */,
 				B8519CE32869B49100896105 /* StructButton.swift in Sources */,
 				B8519CD02869B49100896105 /* ProgressDon.swift in Sources */,
-				62D0524C286C34A800141D96 /* TrajetOneAlternative.swift in Sources */,
 				B8519CD82869B49100896105 /* DetailBonAchat.swift in Sources */,
 				B8519CE02869B49100896105 /* TransportFavorisView.swift in Sources */,
 				B8519CE12869B49100896105 /* TansportPersoButum.swift in Sources */,
@@ -538,7 +527,6 @@
 				B8519CCF2869B49100896105 /* DetailDon.swift in Sources */,
 				B8519CD62869B49100896105 /* DataRewards.swift in Sources */,
 				B8519CC02869B49100896105 /* StructTransport.swift in Sources */,
-				62D0524A286C346900141D96 /* TrajetOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

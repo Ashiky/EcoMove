@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PointView: View {
+    
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 10)

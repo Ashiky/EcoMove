@@ -9,8 +9,6 @@ import SwiftUI
 
 struct ModalViewChemin: View {
     
-    @Environment(\.dismiss) private var dismiss
-    
     @State var changeModal: Bool = false
     
     var body: some View {
