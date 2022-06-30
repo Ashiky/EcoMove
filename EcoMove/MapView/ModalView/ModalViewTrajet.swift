@@ -146,7 +146,6 @@ struct ModalViewTrajet: View {
                     .font(.callout)
                 }
                 .navigationBarTitleDisplayMode(.inline)
-                .navigationBarHidden(true)
             } //Vstack
         }
     }
