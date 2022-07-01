@@ -158,11 +158,11 @@ struct MapView: View {
                                 }
                             }
                             ButtonView(colorButton: [
-                                Bouton(colors: "Grayperso", iconne: "figure.walk"),
+                                Bouton(colors: "LightGreen", iconne: "figure.walk"),
                                 Bouton(colors: "Grayperso", iconne:"scooter"),
                                 Bouton(colors:"Grayperso", iconne:"bicycle"),
                                 Bouton(colors: "LightGreen", iconne:"tram.fill"),
-                                Bouton(colors: "LightGreen", iconne:"tram"),
+                                Bouton(colors: "LightGreen", iconne:"tram.fill.tunnel"),
                                 Bouton(colors: "Grayperso", iconne:"bus")
                             ])
                         }
