@@ -21,7 +21,7 @@ struct TransportFavorisView: View {
                             .fill(Color("LightGreen"))
                             .frame(width: 370.0, height: 40.0)
                         HStack{
-                            Text("MES TRANSPORTS FAVORIS")
+                            Text("MES ADRESSES FAVORITES")
                                 .foregroundColor(.white)
                                 .font(.headline)
                             
